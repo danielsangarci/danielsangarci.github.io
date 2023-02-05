@@ -6,8 +6,8 @@ website:
   navbar:
     background: lightgrey
     foreground: black
-    search: true
-    pinned: true
+    search: false
+    pinned: false
     left:
       - href: home.qmd
         text: Home
