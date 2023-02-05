@@ -1,0 +1,34 @@
+project:
+  type: website
+
+website:
+  title: "Daniel Sánchez-García"
+  navbar:
+    background: lightgrey
+    foreground: black
+    search: true
+    pinned: true
+    left:
+      - href: home.qmd
+        text: Home
+      - research.qmd
+      - publications.qmd
+      - cv.qmd
+      - gallery.qmd
+      - contact.qmd
+  page-footer: 
+    center: 
+      - "© Daniel Sánchez-García 2023"
+  reader-mode: true
+  cookie-consent: false
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+
+editor: visual
+

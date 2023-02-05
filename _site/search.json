@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Daniel Sánchez-García",
+    "section": "",
+    "text": "I am an ecologist working on species interactions and adaptations."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Research",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research is about…."
+  },
+  {
+    "objectID": "home.html",
+    "href": "home.html",
+    "title": "Daniel Sánchez-García",
+    "section": "",
+    "text": "I am an ecologist working on species interactions and adaptations."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "My CV"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "My list of publications"
+  },
+  {
+    "objectID": "gallery.html",
+    "href": "gallery.html",
+    "title": "Gallery",
+    "section": "",
+    "text": "Under construction…"
+  },
+  {
+    "objectID": "home.html#education",
+    "href": "home.html#education",
+    "title": "Daniel Sánchez-García",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "home.html#experience",
+    "href": "home.html#experience",
+    "title": "Daniel Sánchez-García",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
+  }
+]

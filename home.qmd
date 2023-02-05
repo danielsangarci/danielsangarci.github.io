@@ -1,0 +1,49 @@
+---
+title: "Daniel Sánchez-García"
+about:
+  template: trestles
+  image: img/dani.jpg
+  image-width: 13em
+  image-shape: round
+  links:
+    - icon: envelope
+      text: Email
+      href: contact.qmd
+    - text: Google Scholar
+      href: https://scholar.google.com/citations?user=5EQSDqwAAAAJ&hl=es
+    - icon: instagram
+      text: instagram
+      href: https://www.instagram.com/danielsangarci_wildlife/?hl=es
+    - icon: github
+      text: Github
+      href: https://github.com/danielsangarci?tab=repositories
+    - icon: orcid
+      text: Orcid
+      href: https://orcid.org/0000-0002-0710-6292
+---
+
+I am an ecologist working on species interactions and adaptations.
+
+### This content appears above the formatted about page content.
+
+:::{#hero-heading}
+
+Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+
+## Education
+
+University of California, San Diego | San Diego, CA
+PhD in Mathematics | Sept 2011 - June 2015
+
+Macalester College | St. Paul MA
+B.A in Economics | Sept 2007 - June 2011
+
+## Experience
+
+Wengo Analytics | Head Data Scientist | April 2018 - present
+
+GeoScynce | Chief Analyst | Sept 2012 - April 2018
+
+:::
+
+### This content appears below the formatted about page content.
