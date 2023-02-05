@@ -1,5 +1,5 @@
 ---
-title: "Daniel Sánchez"
+title: "Daniel Sánchez-García"
 about:
   template: trestles
   image: img/dani.jpg

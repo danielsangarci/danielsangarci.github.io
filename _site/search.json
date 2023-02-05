@@ -23,7 +23,7 @@
   {
     "objectID": "home.html",
     "href": "home.html",
-    "title": "Daniel Sánchez",
+    "title": "Daniel Sánchez-García",
     "section": "",
     "text": "I am an ecologist working on species interactions and adaptations.\nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana."
   },
@@ -39,7 +39,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "My list of publications… jaja loco"
+    "text": "juanito and pepe. Temperature or competition. PlosOne: 12 PDF"
   },
   {
     "objectID": "gallery.html",
@@ -51,15 +51,36 @@
   {
     "objectID": "home.html#education",
     "href": "home.html#education",
-    "title": "Daniel Sánchez",
+    "title": "Daniel Sánchez-García",
     "section": "Education",
     "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
   },
   {
     "objectID": "home.html#experience",
     "href": "home.html#experience",
-    "title": "Daniel Sánchez",
+    "title": "Daniel Sánchez-García",
     "section": "Experience",
     "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
+  },
+  {
+    "objectID": "publications.html#section",
+    "href": "publications.html#section",
+    "title": "Publications",
+    "section": "2022",
+    "text": "2022\nsgfsgfgf and pepe. Temperature or competition. PlosOne: 12 PDF"
+  },
+  {
+    "objectID": "publications.html#section-1",
+    "href": "publications.html#section-1",
+    "title": "Publications",
+    "section": "2021",
+    "text": "2021\ndfdf and pepe. hormigas locas. nature: 14"
+  },
+  {
+    "objectID": "publications.html#section-2",
+    "href": "publications.html#section-2",
+    "title": "Publications",
+    "section": "2020",
+    "text": "2020\ndfdf and pepe. mariposas locas. nature: 16"
   }
 ]
