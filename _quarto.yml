@@ -8,7 +8,7 @@ website:
     foreground: black
     search: true
     pinned: true
-    left:
+    right:
       - href: home.qmd
         text: Home
       - research.qmd

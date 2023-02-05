@@ -2,4 +2,14 @@
 title: "Publications"
 ---
 
-My list of publications... jaja loco
+## 2022
+
+juanito and **pepe**. Temperature or competition. PlosOne: 12 [PDF](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0267547)
+
+## 2021
+
+dfdf and **pepe**. hormigas locas. nature: 14
+
+## 2020
+
+dfdf and **pepe**. mariposas locas. nature: 16

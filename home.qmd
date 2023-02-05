@@ -1,5 +1,5 @@
 ---
-title: "Daniel Sánchez-García"
+title: "Daniel Sánchez"
 about:
   template: trestles
   image: img/dani.jpg
@@ -23,7 +23,6 @@ about:
 ---
 
 I am an ecologist working on species interactions and adaptations.
-
 
 Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.
 
