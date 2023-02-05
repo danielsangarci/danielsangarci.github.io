@@ -7,7 +7,7 @@ website:
     background: lightgrey
     foreground: black
     search: false
-    pinned: false
+    pinned: true
     left:
       - href: home.qmd
         text: Home
