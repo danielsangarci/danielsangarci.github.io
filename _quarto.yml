@@ -11,7 +11,7 @@ website:
     left:
       - href: home.qmd
         text: Home
-      - research.qmd
+      - research.qmd  
       - publications.qmd
       - cv.qmd
       - gallery.qmd
