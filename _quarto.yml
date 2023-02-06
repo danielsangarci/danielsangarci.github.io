@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Daniel Sánchez-García"
+  favicon: img/network.png
   navbar:
     background: lightgrey
     foreground: black
