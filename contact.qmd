@@ -6,8 +6,7 @@ title: "Contact"
 
 {{< fa location-dot >}} Museum and Institute of Zoology (Polish Academy of Science) Wilcza 64, 00-679 Warsaw (Poland)
 
-{{< fa people-group >}} Group of Social Insects and Myrmecophylous
-
+{{< fa people-group >}} Group of Social Insects and Myrmecophylus
 
 ```{r, echo=FALSE, warning=FALSE}
 library(leaflet)
