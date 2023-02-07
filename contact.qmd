@@ -1,3 +1,9 @@
 ---
 title: "Contact"
 ---
+
+{{< fa envelope >}} danielsangarci@gmail.com
+
+{{< fa location-dot >}} Museum and Institute of Zoology, Warsaw (Polish Academy of Science)
+
+{{< fa location-dot >}} Group of Social Insects and Myrmecophylous

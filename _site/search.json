@@ -89,5 +89,19 @@
     "title": "Publications",
     "section": "2015",
     "text": "2015\nSánchez-García, D. and Espadaler, X. (2015) Cardiocondyla obscurior Wheeler, 1929 (Hymenoptera, Formicidae) en España. Iberomyrmex 7: 7-9. PDF"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "danielsangarci@gmail.com\n Museum and Institute of Zoology, Warsaw (Polish Academy of Science)\n Group of Social Insects and Myrmecophylous"
+  },
+  {
+    "objectID": "academicons.html",
+    "href": "academicons.html",
+    "title": "Academicons Quarto Extension",
+    "section": "",
+    "text": "This extension allows you to use academicons in your Quarto HTML documents. It provides an {{< ai >}} shortcode:\n\nMandatory <icon-name>:\n{{< ai <icon-name> >}}\nOptional <size=...>:\n{{< ai <icon-name> <size=...> >}}\n\nFor example:\n\n\n\nShortcode\nIcon\n\n\n\n\n{{< ai arxiv >}}\n\n\n\n{{< ai google-scholar >}}\n\n\n\n{{< ai open-access >}}\n\n\n\n{{< ai open-access size=5x >}}"
   }
 ]
