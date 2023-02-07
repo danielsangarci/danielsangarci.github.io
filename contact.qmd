@@ -4,7 +4,7 @@ title: "Contact"
 
 {{< fa envelope >}} danielsangarci@gmail.com
 
-{{< fa location-dot >}} Museum and Institute of Zoology (Polish Academy of Science) Wilcza 64, 00-679 Warszawa
+{{< fa location-dot >}} Museum and Institute of Zoology (Polish Academy of Science) Wilcza 64, 00-679 Warsaw (Poland)
 
 {{< fa people-group >}} Group of Social Insects and Myrmecophylous
 
