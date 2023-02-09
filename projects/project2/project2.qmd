@@ -1,6 +1,6 @@
 ---
 title: "PRELUDIUM project"
-description: "R package that allows easy administration, submission and grading of online quizzes without the need of a learning management system."
+description: "My PRELUDIUM project about ant-bacteria-plant interations."
 image: featured.jpg
 about:
   template: solana
