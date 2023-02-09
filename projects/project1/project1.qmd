@@ -5,7 +5,7 @@ image: macu2.jpg
 about:
   template: solana
   image: macu2.jpg
-  image-width: 23em
+  image-width: 22em
 ---
 
 expalantion dfudfndg gfdgkfldg
