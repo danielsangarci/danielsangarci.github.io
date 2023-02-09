@@ -10,7 +10,7 @@ website:
     search: false
     pinned: true
     left:
-      - href: home.qmd
+      - href: index.qmd
         text: Home
       - research.qmd  
       - publications.qmd
