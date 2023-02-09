@@ -4,7 +4,7 @@ description: "My phd thesis project about phengaris teleius reintroduction."
 image: featured.jpg
 about:
   template: solana
-  image: featured.jpg
+  image: macu2.jpg
 ---
 
 expalantion dfudfndg gfdgkfldg
