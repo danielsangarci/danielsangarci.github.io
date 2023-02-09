@@ -1,5 +1,7 @@
 ---
 title: "CV"
+title-block-banner: true
+comments: false
 ---
 
 My CV

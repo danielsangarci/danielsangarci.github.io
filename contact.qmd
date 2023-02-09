@@ -1,5 +1,7 @@
 ---
 title: "Contact"
+title-block-banner: true
+comments: false
 ---
 
 {{< fa envelope >}} danielsangarci@gmail.com

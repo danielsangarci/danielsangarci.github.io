@@ -1,5 +1,7 @@
 ---
 title: "Publications"
+title-block-banner: true
+comments: false
 ---
 
 Also in [my Google Scholar profile](https://scholar.google.com/citations?hl=en&user=5EQSDqwAAAAJ)
