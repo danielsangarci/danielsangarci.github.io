@@ -18,7 +18,7 @@ about:
       text: Github
       href: https://github.com/danielsangarci?tab=repositories
     - icon: orcid
-      text: Orcid
+      text: ORCID
       href: https://orcid.org/0000-0002-0710-6292
 ---
 
