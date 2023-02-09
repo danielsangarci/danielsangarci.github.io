@@ -5,6 +5,7 @@ image: formica1.jpg
 about:
   template: solana
   image: formica1.jpg
+  image-width: 22em
 ---
 
 expalantion dfudfndg gfdgkfldg
