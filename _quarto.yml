@@ -26,7 +26,7 @@ website:
       {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} {{< fa brands creative-commons-nc >}} [(CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
       
     right: |
-      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
+      Made with [{{< fa brands r-project >}}](https://posit.co/) and [Quarto](https://quarto.org/)<br>
   
 format:
   html:
