@@ -18,11 +18,14 @@ website:
       - gallery.qmd
       - contact.qmd
   page-footer: 
-    center: 
-      - "© Daniel Sánchez-García 2023"
-  reader-mode: true
-  cookie-consent: false
-
+    left: |
+      {{< fa regular copyright >}} Daniel Sanchez-Garcia, 2023<br>
+      All content licensed under {{< fa brands creative-commons >}}
+      {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} {{< fa brands creative-commons-nc >}} [(CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+      
+    right: |
+      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
+      
 format:
   html:
     theme:
