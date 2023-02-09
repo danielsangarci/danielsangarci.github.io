@@ -17,6 +17,8 @@ website:
       - cv.qmd
       - gallery.qmd
       - contact.qmd
+  reader-mode: true
+  
   page-footer: 
     left: |
       {{< fa regular copyright >}} Daniel Sanchez-Garcia, 2023<br>
@@ -25,12 +27,10 @@ website:
       
     right: |
       Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
-      
+  
 format:
   html:
-    theme:
-      light: cosmo
-      dark: darkly
+    theme: cosmo
     css: styles.css
     toc: true
 
