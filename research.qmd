@@ -1,5 +1,15 @@
 ---
 title: "Research"
+listing:
+  contents: projects
+  sort: "title desc"
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+comments: false
 ---
 
 My research projects

@@ -25,5 +25,14 @@
   },
   "academicons.qmd": {
     "academicons.html": "28f037f2"
+  },
+  "projects/project2/project2.qmd": {
+    "project2.html": "7f7d3397"
+  },
+  "project2.qmd": {
+    "project2.html": "31f1a0a9"
+  },
+  "projects/project1/project1.qmd": {
+    "project1.html": "72263fee"
   }
 }

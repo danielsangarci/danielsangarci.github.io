@@ -1,0 +1,10 @@
+---
+title: "Thesis project"
+description: "R package that allows easy administration, submission and grading of online quizzes without the need of a learning management system."
+image: featured.jpg
+about:
+  template: solana
+  image: featured.jpg
+---
+
+expalantion dfudfndg gfdgkfldg
