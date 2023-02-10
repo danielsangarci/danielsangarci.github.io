@@ -32,7 +32,7 @@ format:
   html:
     theme: 
       light: lux
-      dark: sandstone
+      dark: lumen
     css: styles.css
     toc: true
     page-layout: full
