@@ -19,7 +19,7 @@ website:
       - contact.qmd
       - icon: github
         text: Report a Bug
-        href: https://github.com/danielsangarci/danielsangarci_website
+        href: https://github.com/danielsangarci/danielsangarci_website/issues/new
   reader-mode: false
   
   page-footer: 
