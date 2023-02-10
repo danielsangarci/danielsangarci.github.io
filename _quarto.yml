@@ -17,7 +17,10 @@ website:
       - cv.qmd
       - gallery.qmd
       - contact.qmd
-  reader-mode: true
+      - icon: github
+        text: Report a Bug
+        href: https://github.com/danielsangarci/danielsangarci_website
+  reader-mode: false
   
   page-footer: 
     left: |
@@ -31,8 +34,8 @@ website:
 format:
   html:
     theme: 
-      light: lux
-      dark: lumen
+      light: cosmo
+      dark: lux
     css: styles.css
     toc: true
     page-layout: full
