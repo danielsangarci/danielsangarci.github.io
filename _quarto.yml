@@ -38,7 +38,7 @@ format:
     theme: 
       light: cosmo
       dark: cosmo
-    fontsize: 1.4em
+    fontsize: 1.35em
     linestretch: 1.7
     css: styles.css
     toc: true
