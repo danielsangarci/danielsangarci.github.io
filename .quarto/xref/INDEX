@@ -40,5 +40,8 @@
   },
   "projects/phd-thesis/phd-thesis.qmd": {
     "phd-thesis.html": "578f6fc7"
+  },
+  "projects/ant-plant-bacteria/ant-plant-bacteria.qmd": {
+    "ant-plant-bacteria.html": "bd0f37d1"
   }
 }
