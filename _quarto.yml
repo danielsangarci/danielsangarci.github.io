@@ -14,7 +14,8 @@ website:
         text: Home
       - research.qmd  
       - publications.qmd
-      - cv.qmd
+      - text: CV
+        href: cv.pdf
       - gallery.qmd
       - contact.qmd
       - icon: github
