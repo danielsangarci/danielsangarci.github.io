@@ -26,4 +26,4 @@ I am an ecologist working on species interactions and adaptations. I am currentl
 
 When not doing science you can also find me shooting macrophotography, which is a great way of getting cool images to use during your talks!
 
-Feel free to contact me for scientific collaboration or getting some of my photos to use in your papers/presentations.
+Feel free to [contact me](contact.qmd) for scientific collaboration or getting some of my [photos](https://www.instagram.com/danielsangarci_wildlife/?hl=es) to use in your papers/presentations.
