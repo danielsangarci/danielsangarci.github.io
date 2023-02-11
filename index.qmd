@@ -22,7 +22,7 @@ about:
       href: https://orcid.org/0000-0002-0710-6292
 ---
 
-I am an ecologist working on species interactions and adaptations. I am currently finishing my [PhD thesis](projects/phd-thesis.qmd) in the [Museum and Institute of Zoology of Warsaw](https://miiz.waw.pl/en/2-uncategorised?type=926)
+I am an ecologist working on species interactions and adaptations. I am currently finishing my [PhD thesis](projects/phd-thesis/phd-thesis.qmd) in the [Museum and Institute of Zoology of Warsaw](https://miiz.waw.pl/en/2-uncategorised?type=926)
 
 Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.
 

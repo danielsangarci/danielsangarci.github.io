@@ -37,5 +37,8 @@
   },
   "projects/phd-thesi/phd-thesis.qmd": {
     "phd-thesis.html": "b08fd8b7"
+  },
+  "projects/phd-thesis/phd-thesis.qmd": {
+    "phd-thesis.html": "578f6fc7"
   }
 }
