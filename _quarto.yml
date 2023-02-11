@@ -14,7 +14,7 @@ website:
         text: Home
       - research.qmd  
       - publications.qmd
-      - text: CV
+      - text: CV2
         href: cv.pdf
       - gallery.qmd
       - contact.qmd
