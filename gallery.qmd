@@ -8,12 +8,6 @@ comments: false
 
 ::: {layout-ncol=3}
 
-![](img/formica1_small.jpg)
-
-![](img/macu1_small.jpg)
-
-![](img/macu2_small.jpg)
-
 ![](img/messor_structor_small.jpg)
 
 ![](img/bee1_small.jpg)
@@ -37,5 +31,11 @@ comments: false
 ![](img/spider2_small.jpg)
 
 ![](img/spider3_small.jpg)
+
+![](img/formica1_small.jpg)
+
+![](img/macu1_small.jpg)
+
+![](img/macu2_small.jpg)
 
 :::
