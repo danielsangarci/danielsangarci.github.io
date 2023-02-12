@@ -1,10 +1,10 @@
 ---
 title: "PRELUDIUM project"
 description: "My PRELUDIUM project about ant-bacteria-plant interations."
-image: formica1.jpg
+image: formica1_small.jpg
 about:
   template: solana
-  image: formica1.jpg
+  image: formica1_small.jpg
   image-width: 22em
 ---
 
