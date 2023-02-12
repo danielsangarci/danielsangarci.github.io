@@ -26,7 +26,7 @@ website:
   
   page-footer: 
     left: |
-      {{< fa regular copyright >}} Daniel Sanchez-Garcia, 2023<br>
+      {{< fa regular copyright >}} Daniel Sánchez-García, 2023<br>
       All content licensed under {{< fa brands creative-commons >}}
       {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} {{< fa brands creative-commons-nc >}} [(CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
       
