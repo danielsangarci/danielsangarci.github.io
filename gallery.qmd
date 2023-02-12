@@ -8,8 +8,7 @@ comments: false
 
 If you are interested in any of images from this gallery or my [instagram account](https://www.instagram.com/danielsangarci_wildlife/?hl=es), please [contact me](contact.qmd).
 
-::: {layout-ncol=3}
-
+::: {layout-ncol="3"}
 ![](img/messor_structor_small.jpg)
 
 ![](img/bee1_small.jpg)
@@ -39,5 +38,4 @@ If you are interested in any of images from this gallery or my [instagram accoun
 ![](img/macu1_small.jpg)
 
 ![](img/macu2_small.jpg)
-
 :::
