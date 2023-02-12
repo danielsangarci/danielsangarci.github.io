@@ -14,7 +14,9 @@ comments: false
 
 ![](img/macu2_small.jpg)
 
-![](img/bee1_small.jpg.jpg)
+![](img/messor_structor_small.jpg)
+
+![](img/bee1_small.jpg)
 
 ![](img/caterpillar_small.jpg)
 
@@ -25,8 +27,6 @@ comments: false
 ![](img/lasius_grandis_small.jpg)
 
 ![](img/mantis1_small.jpg)
-
-![](img/messor_structor_small.jpg)
 
 ![](img/snail1_small.jpg)
 
