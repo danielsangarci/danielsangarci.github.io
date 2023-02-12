@@ -3,7 +3,7 @@ title: "*Phengaris teleius* adaptations after reintroduction"
 description: " "
 image: macu1_small.jpg
 about:
-  template: solana
+  template: marquee
   image: macu1_small.jpg
   image-width: 22em
 ---
