@@ -1,12 +1,11 @@
 ---
 title: "Maculinea microbiome"
 description: "Maculinea myrmica microbiome project"
-image: macu2.jpg
+image: macu2_small.jpg
 about:
   template: solana
-  image: macu2.jpg
+  image: macu2_small.jpg
   image-width: 22em
 ---
 
 expalantion dfudfndg gfdgkfldg
-
