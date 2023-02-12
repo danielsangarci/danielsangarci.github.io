@@ -3,9 +3,10 @@ title: "*Phengaris teleius* adaptations after reintroduction"
 description: " "
 image: macu1_small.jpg
 about:
-  template: marquee
+  template: jolla
   image: macu1_small.jpg
   image-width: 22em
+  image-shape: rounded
 ---
 
 *Phengaris* (=*Maculinea*) *teleius* is a mirmecophylus butterfly which parasite *Myrmica* spp. ant nests to complete its lyfe cycle. The adult butterflies lay the eggs on *Saguisorba officinalis* flowers, in which also the caterpillars will live and feed on during their first three weeks of life. Once they are enough developed they drop to the soil and start mimicking ant sounds and perform specific behaviours to be picked up by the ants to their nest a continue their life cycle. *p. teleius* caterpillars will live as ant parasites for almost one year until they completely develop and as adult butteflies leave the nest.
