@@ -2,9 +2,9 @@
   {
     "listing": "/research.html",
     "items": [
-      "/projects/phd-thesis/phd-thesis.html",
       "/projects/ant-plant-bacteria/ant-plant-bacteria.html",
-      "/projects/maculinea-myrmica-microbiome/maculinea-myrmica-microbiome.html"
+      "/projects/maculinea-myrmica-microbiome/maculinea-myrmica-microbiome.html",
+      "/projects/phd-thesis/phd-thesis.html"
     ]
   }
 ]

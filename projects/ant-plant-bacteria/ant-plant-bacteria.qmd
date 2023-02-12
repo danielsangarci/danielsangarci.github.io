@@ -1,6 +1,6 @@
 ---
-title: "PRELUDIUM project"
-description: "My PRELUDIUM project about ant-bacteria-plant interations."
+title: "Ants as bacteria dispersal vectors and indirect drivers of plant health"
+description: " "
 image: formica1_small.jpg
 about:
   template: solana

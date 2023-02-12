@@ -1,6 +1,6 @@
 ---
-title: "Maculinea microbiome"
-description: "Maculinea myrmica microbiome project"
+title: "*Phengaris teleius* and *Myrmica* spp. microbiome interaction"
+description: " "
 image: macu2_small.jpg
 about:
   template: solana
