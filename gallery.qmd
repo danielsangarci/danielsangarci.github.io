@@ -14,4 +14,28 @@ comments: false
 
 ![](img/macu2_small.jpg)
 
+![](img/bee1_small.jpg.jpg)
+
+![](img/caterpillar_small.jpg)
+
+![](img/ephem1_small.jpg)
+
+![](img/grasshopper_small.jpg)
+
+![](img/lasius_grandis_small.jpg)
+
+![](img/mantis1_small.jpg)
+
+![](img/messor_structor_small.jpg)
+
+![](img/snail1_small.jpg)
+
+![](img/solenopsis1_small.jpg)
+
+![](img/spider1_small.jpg)
+
+![](img/spider2_small.jpg)
+
+![](img/spider3_small.jpg)
+
 :::
