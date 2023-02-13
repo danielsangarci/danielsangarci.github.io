@@ -10,5 +10,4 @@ listing:
 page-layout: full
 title-block-banner: true
 comments: false
-fontsize: 0.8em
 ---
