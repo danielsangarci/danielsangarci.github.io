@@ -2,7 +2,9 @@
   {
     "listing": "/research.html",
     "items": [
+      "/projects/urban-heat-island-lasius/urban-heat-island-lasius.html",
       "/projects/ant-plant-bacteria/ant-plant-bacteria.html",
+      "/projects/ant-community-ecology-donana/ant-community-ecology-donana.html",
       "/projects/maculinea-myrmica-microbiome/maculinea-myrmica-microbiome.html",
       "/projects/phd-thesis/phd-thesis.html"
     ]

@@ -46,5 +46,11 @@
   },
   "projects/maculinea-myrmica-microbiome/maculinea-myrmica-microbiome.qmd": {
     "maculinea-myrmica-microbiome.html": "d8c01cb6"
+  },
+  "projects/urban-heat-island-lasius/urban-heat-island-lasius.qmd": {
+    "urban-heat-island-lasius.html": "206905ec"
+  },
+  "projects/ant-community-ecology-donana/ant-community-ecology-donana.qmd": {
+    "ant-community-ecology-donana.html": "353edc1f"
   }
 }

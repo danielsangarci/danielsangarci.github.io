@@ -1,0 +1,11 @@
+---
+title: "Urban heat island effect on *Lasius niger* activity"
+description: " "
+image: lasius_grandis_small.jpg
+about:
+  template: jolla
+  image: lasius_grandis_small.jpg
+  image-width: 22em
+  image-shape: rounded
+---
+

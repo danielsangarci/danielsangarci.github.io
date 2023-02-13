@@ -1,0 +1,11 @@
+---
+title: "Ant community structuring and invasive species in Doñana National Park"
+description: " "
+image: messor_structor_small.jpg
+about:
+  template: jolla
+  image: messor_structor_small.jpg
+  image-width: 22em
+  image-shape: rounded
+---
+
