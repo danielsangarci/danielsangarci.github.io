@@ -4,6 +4,9 @@ project:
 website:
   title: "Daniel Sánchez-García"
   favicon: img/network.png
+  twitter-card: 
+    card-style: summary_large_image
+    creator: "@DanielSánchez-García"
   navbar:
     background: "#88A7C2"
     foreground: dark
