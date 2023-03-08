@@ -3,9 +3,10 @@ title: "*Phengaris teleius* and *Myrmica* spp. microbiome interaction"
 description: " "
 image: macu2_small.jpg
 about:
-  template: solana
+  template: jolla
   image: macu2_small.jpg
   image-width: 22em
+  image-shape: rounded
 ---
 
-expalantion dfudfndg gfdgkfldg
+Under construction...

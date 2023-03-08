@@ -3,7 +3,7 @@ title: "Ants as bacteria dispersal vectors and indirect drivers of plant health"
 description: " "
 image: formica1_small.jpg
 about:
-  template: solana
+  template: jolla
   image: formica1_small.jpg
   image-width: 22em
   image-shape: rounded
