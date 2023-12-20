@@ -2,8 +2,10 @@ project:
   type: website
 
 website:
+  site-url: https://danielsangarci.netlify.app/
   title: "Daniel Sánchez-García"
   favicon: img/network.png
+  open-graph: true
   twitter-card: 
     card-style: summary_large_image
     creator: "@DanielSánchez-García"
