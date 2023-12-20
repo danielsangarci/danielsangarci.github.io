@@ -22,7 +22,7 @@ about:
       href: https://orcid.org/0000-0002-0710-6292
 ---
 
-I am an ecologist working on species interactions and adaptations. I am currently finishing my [PhD thesis](projects/phd-thesis/phd-thesis.qmd) in the [Museum and Institute of Zoology of Warsaw](https://miiz.waw.pl/en/2-uncategorised?type=926). My PhD project focus on studying the adaptations of the mirmecophylus butterfly *Phengaris* (=*Maculinea*) *teleius* after 30 years of its reintroduction in the Netherlands. Additionally, during my third year of Phd I got a PRELUDIUM grant from the Polish government to carry out a [project](projects/ant-plant-bacteria/ant-plant-bacteria.qmd) to study the effect of ant activity on bacteria dispersion in the forest...
+I am an ecologist working on species interactions and adaptations. I am currently finishing my [PhD thesis](projects/phd-thesis/phd-thesis.qmd) in the [Museum and Institute of Zoology of Warsaw](https://miiz.waw.pl/en/2-uncategorised?type=926). My PhD project focus on studying the adaptations of the mirmecophylus butterfly *Phengaris* (=*Maculinea*) *teleius* after 30 years of its reintroduction in the Netherlands. Additionally, during my third year of Phd I got a PRELUDIUM grant from the Polish government to carry out a [project](projects/ant-plant-bacteria/ant-plant-bacteria.qmd) to study the effect of ant activity on bacteria dispersion in the forest.
 
 When not doing science you can also find me shooting macrophotography, which is a great way of getting cool images to use during your talks!
 
