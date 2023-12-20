@@ -6,7 +6,7 @@ comments: false
 
 Also in [my Google Scholar profile](https://scholar.google.com/citations?hl=en&user=5EQSDqwAAAAJ)
 
-## 20222
+## 20225
 
 **Sánchez-García, D.**, Cerdá, X. and Angulo, E. (2022) Temperature or competition: Which has more influence on Mediterranean ant communities? PloS ONE 17(4): e0267547. [{{< fa file-pdf >}}](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0267547&type=printable)
 
