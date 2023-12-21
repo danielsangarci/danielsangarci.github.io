@@ -186,6 +186,6 @@
     "href": "posts/post_trial/index.html",
     "title": "blog post title",
     "section": "",
-    "text": "This is a trial post 2\nlibrary(ggplot2)\n\nggplot()\n\n\n\nCitationBibTeX citation:@online{sánchezgarcía2023,\n  author = {Daniel Sánchez García},\n  title = {Blog Post Title},\n  date = {2023-12-22},\n  url = {https://danielsangarci.netlify.app/posts/post-trial/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nDaniel Sánchez García. 2023. “Blog Post Title.” December\n22, 2023. https://danielsangarci.netlify.app/posts/post-trial/."
+    "text": "This is a trial post 2\nlibrary(ggplot2)\n\nggplot()\n\n\n\nCitationBibTeX citation:@online{sánchezgarcía2023,\n  author = {Daniel Sánchez García},\n  title = {Blog Post Title},\n  date = {2023-12-22},\n  url = {https://danielsangarci.netlify.app/posts/post_trial/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nDaniel Sánchez García. 2023. “Blog Post Title.” December\n22, 2023. https://danielsangarci.netlify.app/posts/post_trial/."
   }
 ]

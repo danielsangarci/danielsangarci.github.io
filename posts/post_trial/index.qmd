@@ -8,7 +8,7 @@ author:
 date: 12-22-2023
 categories: [ggplot2] # self-defined categories
 citation: 
-  url: https://danielsangarci.netlify.app/posts/post-trial/ 
+  url: https://danielsangarci.netlify.app/posts/post_trial/ 
 image: preview-image.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
