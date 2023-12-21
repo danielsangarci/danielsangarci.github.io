@@ -186,6 +186,6 @@
     "href": "posts/post_trial/index.html",
     "title": "Post title",
     "section": "",
-    "text": "CitationBibTeX citation:@online{sánchez-garcía2023,\n  author = {Daniel Sánchez-García},\n  title = {Post Title},\n  date = {2023-12-21},\n  url = {https://danielsangarci.netlify.app/posts/post_trial/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nDaniel Sánchez-García. 2023. “Post Title.” December 21,\n2023. https://danielsangarci.netlify.app/posts/post_trial/."
+    "text": "This is a trial post\n\n\n\nCitationBibTeX citation:@online{sánchez-garcía2023,\n  author = {Daniel Sánchez-García},\n  title = {Post Title},\n  date = {2023-12-21},\n  url = {https://danielsangarci.netlify.app/posts/post_trial/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nDaniel Sánchez-García. 2023. “Post Title.” December 21,\n2023. https://danielsangarci.netlify.app/posts/post_trial/."
   }
 ]
