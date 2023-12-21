@@ -179,13 +179,13 @@
     "href": "posts.html",
     "title": "R Code Blog",
     "section": "",
-    "text": "Post title\n\n\n\n\n\n\n\nQuarto\n\n\nR\n\n\nMEDS\n\n\n\n\nPost description\n\n\n\n\n\n\nDec 21, 2023\n\n\nDaniel Sánchez-García\n\n\n\n\n\n\nNo matching items"
+    "text": "blog post title\n\n\n\n\n\n\n\nggplot2\n\n\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\n\n\n\nDec 22, 2023\n\n\nDaniel Sánchez García\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post_trial/index.html",
     "href": "posts/post_trial/index.html",
-    "title": "Post title",
+    "title": "blog post title",
     "section": "",
-    "text": "This is a trial post 2\n\n\n\nCitationBibTeX citation:@online{sánchez-garcía2023,\n  author = {Daniel Sánchez-García},\n  title = {Post Title},\n  date = {2023-12-21},\n  url = {https://danielsangarci.netlify.app/posts/post_trial/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nDaniel Sánchez-García. 2023. “Post Title.” December 21,\n2023. https://danielsangarci.netlify.app/posts/post_trial/."
+    "text": "This is a trial post 2\n\nlibrary(ggplot2)\n\nggplot()\n\n\n\n\n\n\n\nCitationBibTeX citation:@online{sánchezgarcía2023,\n  author = {Daniel Sánchez García},\n  title = {Blog Post Title},\n  date = {2023-12-22},\n  url = {https://danielsangarci.netlify.app/posts/post-trial/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nDaniel Sánchez García. 2023. “Blog Post Title.” December\n22, 2023. https://danielsangarci.netlify.app/posts/post-trial/."
   }
 ]

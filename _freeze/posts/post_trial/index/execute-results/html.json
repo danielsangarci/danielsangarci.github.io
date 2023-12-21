@@ -1,0 +1,16 @@
+{
+  "hash": "2c2922bc60216a7c70c761f8bd8a6a7a",
+  "result": {
+    "markdown": "---\ntitle: \"blog post title\"\ndescription: \"blog post description (appears underneath the title in smaller text) which is included on the listing page\"\nauthor:\n  - name: Daniel Sánchez García\n    url: https://danielsangarci.netlify.app/\n    orcid: 0000-0002-5300-3075\ndate: 12-22-2023\ncategories: [ggplot2] # self-defined categories\ncitation: \n  url: https://danielsangarci.netlify.app/posts/post-trial/ \nimage: preview-image.png\ndraft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!\n---\n\n\nThis is a trial post 2\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\n\nggplot()\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
