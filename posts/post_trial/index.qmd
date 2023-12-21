@@ -5,7 +5,7 @@ author:
   - name: Daniel Sánchez-García
     url: https://danielsangarci.netlify.app/
     orcid: 0000-0002-0710-6292
-date: 21-12-2023
+date: 12-21-2023
 categories: [Quarto, R, MEDS] # self-defined categories
 citation: 
   url: https://danielsangarci.netlify.app/posts/post_trial/ 
