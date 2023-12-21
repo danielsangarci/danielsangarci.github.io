@@ -21,6 +21,7 @@ website:
       - publications.qmd
       - text: CV
         href: cv.pdf
+      - posts.qmd
       - gallery.qmd
       - contact.qmd
       - icon: github
