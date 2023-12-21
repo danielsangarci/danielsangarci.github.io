@@ -1,10 +1,4 @@
 ---
 listing:
   type: table
-  contents: posts
-  sort:
-    - "date"
-    - "title desc"
-  categories: true
-  feed: true
 ---
