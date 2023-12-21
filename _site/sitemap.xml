@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://danielsangarci.netlify.app/publications.html</loc>
-    <lastmod>2023-12-20T23:50:50.265Z</lastmod>
+    <lastmod>2023-12-21T01:05:03.731Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.netlify.app/index.html</loc>
@@ -10,10 +10,22 @@
   </url>
   <url>
     <loc>https://danielsangarci.netlify.app/posts.html</loc>
-    <lastmod>2023-12-21T01:01:34.350Z</lastmod>
+    <lastmod>2023-12-21T01:05:28.496Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.netlify.app/posts/post_trial/index.html</loc>
     <lastmod>2023-12-21T00:57:48.792Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielsangarci.netlify.app/cv.html</loc>
+    <lastmod>2023-12-21T01:04:30.059Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielsangarci.netlify.app/gallery.html</loc>
+    <lastmod>2023-12-21T01:04:41.457Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielsangarci.netlify.app/research.html</loc>
+    <lastmod>2023-12-21T01:04:53.595Z</lastmod>
   </url>
 </urlset>
