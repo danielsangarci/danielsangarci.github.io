@@ -1,8 +1,7 @@
 ---
 listing:
   type: table
-  contents: 
-    - posts
+  contents: posts
   sort:
     - "date"
     - "title desc"
