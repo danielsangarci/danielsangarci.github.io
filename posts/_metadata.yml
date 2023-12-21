@@ -9,4 +9,4 @@ title-block-banner: true
 
 format:
   html:
-    include-after-body: footer_post.html
+    include-after-body: footer_post.Rhtml
