@@ -1,12 +1,26 @@
+# Options specified here will apply to all posts in this folder
 
-# options specified here will apply to all posts in this folder
-
-# prevents posts from re-rendering unless explicitly told to do so (for more, see https://quarto.org/docs/projects/code-execution.html#freeze)
+# freeze computational output
 freeze: auto
 
-# enable banner style title blocks (see https://quarto.org/docs/authoring/title-blocks.html)
-title-block-banner: true
+# Enable banner style title blocks
+title-block-banner: false
 
+# Author name of all blog posts
+author: 'Daniel Sánchez García'
+
+# Table of content settings
+toc: true
+toc-depth: 3
+
+page-layout: article
+
+#include a footer at the end of the posts
 format:
   html:
-    include-after-body: footer_post.Rhtml
+    include-after-body: ../footer_post.Rhtml
+
+#include the option to make comments in the posts
+comments: 
+  utterances: 
+    repo:  AlbertRapp/blogComments 
