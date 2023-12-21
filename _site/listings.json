@@ -11,8 +11,6 @@
   },
   {
     "listing": "/posts.html",
-    "items": [
-      "/posts/post_trial/index.html"
-    ]
+    "items": []
   }
 ]
