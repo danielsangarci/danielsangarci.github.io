@@ -55,5 +55,8 @@
   },
   "posts.qmd": {
     "posts.html": "57037904"
+  },
+  "posts/post_trial/index.qmd": {
+    "index.html": "ad5b79cb"
   }
 }

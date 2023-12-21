@@ -1,0 +1,14 @@
+---
+title: "Post title"
+description: "Post description"
+author:
+  - name: Daniel Sánchez-García
+    url: https://danielsangarci.netlify.app/
+    orcid: 0000-0002-0710-6292
+date: 21-12-2023
+categories: [Quarto, R, MEDS] # self-defined categories
+citation: 
+  url: https://danielsangarci.netlify.app/posts/post_trial/ 
+image: preview-image.png
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
