@@ -1,5 +1,9 @@
 ---
 listing:
-  contents: posts
   type: table
+  sort:
+    - "date"
+    - "title desc"
+  categories: true
+  feed: true
 ---
