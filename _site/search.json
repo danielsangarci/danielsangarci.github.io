@@ -179,7 +179,7 @@
     "href": "posts.html",
     "title": "R Code Blog",
     "section": "",
-    "text": "blog post title\n\n\n\n\n\n\n\nggplot2\n\n\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\n\n\n\nDec 22, 2023\n\n\nDaniel Sánchez García\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nDec 22, 2023\n\n\nblog post title\n\n\nDaniel Sánchez García\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post_trial/index.html",
