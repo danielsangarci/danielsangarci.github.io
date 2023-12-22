@@ -27,8 +27,6 @@ website:
       - icon: github
         text: Report a Bug
         href: https://github.com/danielsangarci/danielsangarci_website/issues/new
-      - icon: rss
-        href: posts/posts.xml
   cookie-consent: false
   reader-mode: false
   
