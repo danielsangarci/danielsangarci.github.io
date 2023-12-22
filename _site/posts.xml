@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Daniel Sánchez-García</title>
+<link>https://danielsangarci.netlify.app/posts.html</link>
+<atom:link href="https://danielsangarci.netlify.app/posts.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.2.335</generator>
+<lastBuildDate>Thu, 21 Dec 2023 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Post trial</title>
+  <dc:creator>Daniel Sánchez García</dc:creator>
+  <dc:creator>Daniel Sánchez García</dc:creator>
+  <link>https://danielsangarci.netlify.app/posts/post_trial/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>This is a trial post 7</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">library</span>(ggplot2)</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;">ggplot</span>()</span></code></pre></div>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{sánchezgarcía2023,
+  author = {Daniel Sánchez García and Daniel Sánchez García},
+  title = {Post Trial},
+  date = {2023-12-22},
+  url = {https://danielsangarci.netlify.app/posts/post_trial/},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-sánchezgarcía2023" class="csl-entry quarto-appendix-citeas">
+Daniel Sánchez García, and Daniel Sánchez García. 2023. <span>“Post
+Trial.”</span> December 22, 2023. <a href="https://danielsangarci.netlify.app/posts/post_trial/">https://danielsangarci.netlify.app/posts/post_trial/</a>.
+</div></div></section></div> ]]></description>
+  <category>ggplot2</category>
+  <guid>https://danielsangarci.netlify.app/posts/post_trial/index.html</guid>
+  <pubDate>Thu, 21 Dec 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://danielsangarci.netlify.app/posts/post_trial/preview-image.png" medium="image" type="image/png"/>
+</item>
+</channel>
+</rss>
