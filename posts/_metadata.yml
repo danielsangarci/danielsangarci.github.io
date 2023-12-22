@@ -16,9 +16,9 @@ toc-depth: 3
 page-layout: article
 
 #include a footer at the end of the posts
-format:
-  html:
-    include-after-body: ../footer_post.Rhtml
+#format:
+  #html:
+    #include-after-body: ../footer_post.Rhtml
 
 #include the option to make comments in the posts
 comments: 
