@@ -13,7 +13,7 @@ image: preview-image.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
-This is a trial post 5
+This is a trial post 6
 
 ``` r
 library(ggplot2)
