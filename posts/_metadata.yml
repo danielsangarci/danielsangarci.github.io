@@ -23,4 +23,4 @@ page-layout: article
 #include the option to make comments in the posts
 comments: 
   utterances: 
-    repo:  AlbertRapp/blogComments 
+    repo:  danielsangarci/danielsangarci_website/postsComments 
