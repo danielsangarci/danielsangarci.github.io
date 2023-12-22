@@ -20,7 +20,7 @@
 
 
 
-<p>This is a trial post 8</p>
+<p>This is a trial post 9</p>
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">library</span>(ggplot2)</span>
 <span id="cb1-2"></span>
 <span id="cb1-3"><span class="fu" style="color: #4758AB;">ggplot</span>()</span></code></pre></div>
