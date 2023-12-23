@@ -1,7 +1,7 @@
 {
-  "hash": "d09bd9562a65f0e56ec4939ca3e266a4",
+  "hash": "d11365131d1dc384a43815f3440b0a11",
   "result": {
-    "markdown": "---\ntitle: \"Re-usable ggplot code for quick data visualization\"\ndescription: \"\"\nauthor:\n  - name: Daniel Sánchez García\n    url: https://danielsangarci.netlify.app/\n    orcid: 0000-0002-0710-6292\ndate: 12-23-2023\ncategories: [ggplot2] # self-defined categories\ncitation: \n  url: https://danielsangarci.netlify.app/posts/post_trial/ \nimage: preview-image.png\ndraft: true # setting this to `true` will prevent your post from appearing on your listing page until you're ready!\n---\n\n\nThis is a trial post 11\n\n\n::: {.cell}\n\n```{.r .cell-code}\nvariabley <-\nvariablex <- \n  \n\n\nlibrary(ggplot2)\n\nggplot()\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Re-usable ggplot code for quick data visualization\"\ndescription: \"\"\nauthor:\n  - name: Daniel Sánchez García\n    url: https://danielsangarci.netlify.app/\n    orcid: 0000-0002-0710-6292\ndate: 12-23-2023\ncategories: [ggplot2] # self-defined categories\ncitation: \n  url: https://danielsangarci.netlify.app/posts/post_trial/ \nimage: preview-image.png\ndraft: true # setting this to `true` will prevent your post from appearing on your listing page until you're ready!\n---\n\n\nThis is a trial post 13\n\n\n::: {.cell}\n\n```{.r .cell-code}\nvariabley <-\nvariablex <- \n  \n\n\nlibrary(ggplot2)\n\nggplot()\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
     "supporting": [
       "index_files"
     ],

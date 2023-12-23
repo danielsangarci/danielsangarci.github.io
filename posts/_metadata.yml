@@ -33,9 +33,6 @@ format:
     code-fold: show
     code-summary: "Show the code"
     code-tools: true
-      source: false
-      toggle: false
-      caption: none
     code-link: true
     code-overflow: scroll
 

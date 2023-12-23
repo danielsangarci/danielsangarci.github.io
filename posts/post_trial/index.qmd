@@ -1,6 +1,6 @@
 ---
 title: "Re-usable ggplot code for quick data visualization"
-description: "000"
+description: ""
 author:
   - name: Daniel Sánchez García
     url: https://danielsangarci.netlify.app/
@@ -10,10 +10,10 @@ categories: [ggplot2] # self-defined categories
 citation: 
   url: https://danielsangarci.netlify.app/posts/post_trial/ 
 image: preview-image.png
-draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+draft: true # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
-This is a trial post 12
+This is a trial post 13
 
 ```{r}
 
