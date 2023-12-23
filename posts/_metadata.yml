@@ -24,4 +24,18 @@ page-layout: article
 comments: 
   utterances: 
     repo:  danielsangarci/danielsangarci_website_posts_comments
+    
+
+format:
+  html:
+    code-copy: true
+    code-line-numbers: false
+    code-fold: show
+    code-summary: "Show the code"
+    code-tools: true
+      source: false
+      toggle: false
+      caption: none
+    code-link: true
+    code-overflow: scroll
 
