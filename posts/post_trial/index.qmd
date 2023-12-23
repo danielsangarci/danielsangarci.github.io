@@ -1,6 +1,6 @@
 ---
 title: "Re-usable ggplot code for quick data visualization"
-description: ""
+description: "000"
 author:
   - name: Daniel Sánchez García
     url: https://danielsangarci.netlify.app/
