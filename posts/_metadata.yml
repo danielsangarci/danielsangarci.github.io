@@ -4,7 +4,7 @@
 freeze: auto
 
 # Enable banner style title blocks
-title-block-banner: false
+title-block-banner: true
 
 # Author name of all blog posts
 author: 'Daniel Sánchez García'
@@ -30,9 +30,9 @@ format:
   html:
     code-copy: true
     code-line-numbers: false
-    code-fold: show
+    code-fold: false
     code-summary: "Show the code"
-    code-tools: true
+    code-tools: false
     code-link: true
-    code-overflow: scroll
-
+    code-overflow: wrap
+    highlight-style: tango
