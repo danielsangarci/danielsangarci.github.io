@@ -28,7 +28,6 @@ comments:
 
 format:
   html:
-    highlight-style: monochrome
     code-copy: true
     code-line-numbers: false
     code-fold: false
@@ -36,3 +35,4 @@ format:
     code-tools: false
     code-link: true
     code-overflow: wrap
+    highlight-style: monochrome
