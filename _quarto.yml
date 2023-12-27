@@ -29,6 +29,7 @@ website:
         href: https://github.com/danielsangarci/danielsangarci_website/issues/new
   cookie-consent: false
   reader-mode: false
+  google-analytics: "G-H3GD3Z7KWV"
   
   page-footer: 
     left: |
