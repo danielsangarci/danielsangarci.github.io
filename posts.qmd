@@ -6,7 +6,7 @@ listing:
   fields: [date, title, author, reading-time]
   sort: "date desc" # can also sort on more than one field
   categories: true # allows you to sort posts by assigned categories
-  sort-ui: true
+  sort-ui: [title, date]
   filter-ui: true
   feed: true
 page-layout: full
