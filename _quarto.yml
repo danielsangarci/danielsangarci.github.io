@@ -14,7 +14,7 @@ website:
     foreground: dark
     search: false
     pinned: true
-    left:
+    right:
       - href: index.qmd
         text: Home
       - research.qmd  
@@ -45,7 +45,7 @@ format:
     theme: 
       light: cosmo
       dark: cosmo
-    fontsize: 1.3em
+    fontsize: 1.2em
     linestretch: 1.7
     css: styles.css
     toc: true
