@@ -32,4 +32,4 @@ format:
     code-tools: false
     code-link: true
     code-overflow: wrap
-    highlight-style: monochrome
+    code-block-bg: "#89c7bc"
