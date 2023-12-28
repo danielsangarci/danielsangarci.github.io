@@ -33,4 +33,3 @@ format:
     code-tools: false
     code-link: true
     code-overflow: wrap
-    code-color: "#2A6292" #in-line code color
