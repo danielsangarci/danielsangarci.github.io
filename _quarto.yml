@@ -50,7 +50,7 @@ format:
     css: styles.css
     toc: true
     page-layout: full
-    linkcolor: "#224C6F"
+    linkcolor: "#2A6292"
 
 editor: visual
 
