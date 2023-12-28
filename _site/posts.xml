@@ -15,7 +15,7 @@
   <title>Re-usable code for quick data visualization with ggplot
 </title>
   <dc:creator>Daniel Sánchez García</dc:creator>
-  <dc:creator>Daniel Sánchez García</dc:creator>
+  <dc:creator>Daniel Sánchez-García</dc:creator>
   <link>https://danielsangarci.netlify.app/posts/post_trial/index.html</link>
   <description><![CDATA[ <p>Visualizing data is an important part of communicating results, but it can turn into a tricky coding process when you need to plot your data in a very specific way. Not even talking if you expect having graphs with a similar looking along all your results.</p>
 <p>This is the quick way I use to plot my data to get a consistent data visualization for all my related results.</p>
@@ -167,14 +167,14 @@
 
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{sánchezgarcía2023,
-  author = {Daniel Sánchez García and Daniel Sánchez García},
+  author = {Daniel Sánchez García and Daniel Sánchez-García},
   title = {Re-Usable Code for Quick Data Visualization with `Ggplot`},
   date = {2023-12-28},
   url = {https://danielsangarci.netlify.app/posts/post_trial/},
   langid = {en}
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-sánchezgarcía2023" class="csl-entry quarto-appendix-citeas">
-Daniel Sánchez García, and Daniel Sánchez García. 2023. <span>“Re-Usable
+Daniel Sánchez García, and Daniel Sánchez-García. 2023. <span>“Re-Usable
 Code for Quick Data Visualization with `Ggplot`.”</span> December 28,
 2023. <a href="https://danielsangarci.netlify.app/posts/post_trial/">https://danielsangarci.netlify.app/posts/post_trial/</a>.
 </div></div></section></div> ]]></description>
