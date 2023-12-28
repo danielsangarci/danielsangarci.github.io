@@ -6,12 +6,6 @@ freeze: auto
 # Enable banner style title blocks
 title-block-banner: true
 
-# Author name of all blog posts
-author: 
-    - name: Daniel Sánchez-García
-    url: https://danielsangarci.netlify.app/
-    orcid: 0000-0002-0710-6292
-
 # Table of content settings
 toc: true
 toc-depth: 3
