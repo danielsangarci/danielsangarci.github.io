@@ -6,6 +6,7 @@ freeze: auto
 # Enable banner style title blocks
 title-block-banner: false
 
+monofont: 'Source Code Pro'
 monofontoptions: 
   - Scale=0.55
 
