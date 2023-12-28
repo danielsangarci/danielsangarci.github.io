@@ -10,7 +10,7 @@
 <atom:link href="https://danielsangarci.netlify.app/posts.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.2.335</generator>
-<lastBuildDate>Wed, 27 Dec 2023 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 28 Dec 2023 16:24:03 GMT</lastBuildDate>
 <item>
   <title>Re-usable code for quick data visualization with ggplot
 </title>
@@ -178,7 +178,7 @@ Visualization with `Ggplot`.”</span> December 28, 2023. <a href="https://danie
 </div></div></section></div> ]]></description>
   <category>ggplot2</category>
   <guid>https://danielsangarci.netlify.app/posts/post_trial/index.html</guid>
-  <pubDate>Wed, 27 Dec 2023 23:00:00 GMT</pubDate>
+  <pubDate>Thu, 28 Dec 2023 16:24:03 GMT</pubDate>
   <media:content url="https://danielsangarci.netlify.app/posts/post_trial/image1.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
