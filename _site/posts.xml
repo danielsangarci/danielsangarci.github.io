@@ -10,7 +10,7 @@
 <atom:link href="https://danielsangarci.netlify.app/posts.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.2.335</generator>
-<lastBuildDate>Tue, 26 Dec 2023 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 27 Dec 2023 23:00:00 GMT</lastBuildDate>
 <item>
   <title>Re-usable code for quick data visualization with ggplot
 </title>
@@ -169,18 +169,18 @@
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{sánchezgarcía2023,
   author = {Daniel Sánchez García and Daniel Sánchez García},
   title = {Re-Usable Code for Quick Data Visualization with `Ggplot`},
-  date = {2023-12-27},
+  date = {2023-12-28},
   url = {https://danielsangarci.netlify.app/posts/post_trial/},
   langid = {en}
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-sánchezgarcía2023" class="csl-entry quarto-appendix-citeas">
 Daniel Sánchez García, and Daniel Sánchez García. 2023. <span>“Re-Usable
-Code for Quick Data Visualization with `Ggplot`.”</span> December 27,
+Code for Quick Data Visualization with `Ggplot`.”</span> December 28,
 2023. <a href="https://danielsangarci.netlify.app/posts/post_trial/">https://danielsangarci.netlify.app/posts/post_trial/</a>.
 </div></div></section></div> ]]></description>
   <category>ggplot2</category>
   <guid>https://danielsangarci.netlify.app/posts/post_trial/index.html</guid>
-  <pubDate>Tue, 26 Dec 2023 23:00:00 GMT</pubDate>
+  <pubDate>Wed, 27 Dec 2023 23:00:00 GMT</pubDate>
   <media:content url="https://danielsangarci.netlify.app/posts/post_trial/preview-image.png" medium="image" type="image/png"/>
 </item>
 </channel>
