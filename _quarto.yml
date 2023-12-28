@@ -50,6 +50,7 @@ format:
     css: styles.css
     toc: true
     page-layout: full
+    colorlinks: #82a8cd
 
 editor: visual
 
