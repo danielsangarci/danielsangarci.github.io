@@ -222,7 +222,7 @@ cookieconsent.run({
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
@@ -242,42 +242,30 @@ cookieconsent.run({
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-<th>
-Title
-</th>
-<th>
-Author
-</th>
-<th>
-Reading Time
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="ggplot2" data-listing-date-sort="1703631600000" data-listing-file-modified-sort="1703711437717" data-listing-reading-time-sort="5.69" data-listing-title-sort="Re-usable code for quick data visualization with `ggplot`" data-listing-filename-sort="index.qmd">
-<td class="listing-date">
-Dec 27, 2023
-</td>
-<td class="listing-title">
-<a href="./posts/post_trial/index.html" class="title">Re-usable code for quick data visualization with <code>ggplot</code></a>
-</td>
-<td class="listing-author">
-Daniel Sánchez García, Daniel Sánchez García
-</td>
-<td class="listing-reading-time">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="ggplot2" data-listing-date-sort="1703631600000" data-listing-file-modified-sort="1703711437717" data-listing-reading-time-sort="5.69">
+<a href="./posts/post_trial/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Re-usable code for quick data visualization with <code>ggplot</code>
+</h5>
+<div class="listing-reading-time card-text text-muted">
 5 min
-</td>
-</tr>
-</tbody>
-
-</table>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Daniel Sánchez García, Daniel Sánchez García
+</div>
+<div class="listing-date">
+Dec 27, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
