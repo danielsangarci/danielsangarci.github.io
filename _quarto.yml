@@ -13,7 +13,7 @@ website:
     background: "#88A7C2"
     foreground: dark
     search: false
-    pinned: true
+    pinned: false
     right:
       - href: index.qmd
         text: Home
@@ -51,6 +51,7 @@ format:
     toc: true
     page-layout: full
     linkcolor: "#2A6292"
+    smooth-scroll: true
 
 editor: visual
 
