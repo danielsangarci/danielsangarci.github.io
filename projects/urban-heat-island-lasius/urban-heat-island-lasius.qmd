@@ -8,4 +8,3 @@ about:
   image-width: 22em
   image-shape: rounded
 ---
-
