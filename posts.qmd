@@ -3,7 +3,7 @@ title: "RCode"
 listing: 
   contents: posts # all Quarto docs in the `posts` directory will be included on your listing page
   type: default # or `default` or `table`; each type has its own set of yaml options to include
-  fields: [date, title, reading-time]
+  fields: [date, title, author, reading-time]
   date-format: "D MMMM YYYY"
   sort: "date desc" # can also sort on more than one field
   categories: true # allows you to sort posts by assigned categories
