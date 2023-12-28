@@ -3,7 +3,8 @@ title: "Re-usable code for quick data visualization with `ggplot`"
 description: ""
 author:
     - name: Daniel Sánchez-García
-    url: https://danielsangarci.netlify.app/
+    - url: https://danielsangarci.netlify.app/
+    - orcid: 0000-0002-0710-6292
 date: 28 12 2023
 date-format: "D MMMM YYYY"
 categories: [ggplot2] # self-defined categories
