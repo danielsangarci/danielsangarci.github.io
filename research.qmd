@@ -2,7 +2,7 @@
 title: "Research"
 listing:
   contents: projects
-  sort: "title desc"
+  sort: false
   type: grid
   categories: false
   sort-ui: false
