@@ -50,7 +50,7 @@ format:
     css: styles.css
     toc: true
     page-layout: full
-    urlcolor: "#224C6F"
+    urlcolor: "#88A7C2"
 
 editor: visual
 
