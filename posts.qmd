@@ -7,7 +7,7 @@ listing:
   date-format: "D MMMM YYYY"
   sort: "date desc" # can also sort on more than one field
   categories: true # allows you to sort posts by assigned categories
-  sort-ui: [date]
+  sort-ui: false
   filter-ui: [title]
   feed: true
 page-layout: full
