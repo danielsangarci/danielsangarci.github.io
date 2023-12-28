@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-title-block-banner: true
+title-block-banner: false
 comments: false
 ---
 
