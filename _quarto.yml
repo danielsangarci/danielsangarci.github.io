@@ -50,8 +50,8 @@ format:
     css: styles.css
     toc: true
     page-layout: full
-    colorlinks: #f48686
-    urlcolor: #f48686
+    colorlinks: "#f48686"
+    urlcolor: "#f48686"
 
 editor: visual
 
