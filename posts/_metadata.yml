@@ -25,6 +25,7 @@ comments:
 
 format:
   html:
+    highlight-style: tango
     code-copy: true
     code-line-numbers: false
     code-fold: false
