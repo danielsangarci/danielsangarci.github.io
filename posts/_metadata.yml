@@ -6,10 +6,6 @@ freeze: auto
 # Enable banner style title blocks
 title-block-banner: false
 
-monofont: 'Source Code Pro'
-monofontoptions: 
-  - Scale=0.55
-
 # Table of content settings
 toc: true
 toc-depth: 3

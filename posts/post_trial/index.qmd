@@ -13,6 +13,9 @@ image: preview-image.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 editor_options: 
   chunk_output_type: console
+monofont: 'Source Code Pro'
+monofontoptions: 
+  - Scale=0.55
 ---
 
 ```{r, echo=FALSE, include=FALSE}
