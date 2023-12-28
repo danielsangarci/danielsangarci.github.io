@@ -9,7 +9,7 @@ date-format: "D MMMM YYYY"
 categories: [ggplot2] # self-defined categories
 citation: 
   url: https://danielsangarci.netlify.app/posts/post_trial/ 
-image: preview-image.png
+image: image1.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 editor_options: 
   chunk_output_type: console
