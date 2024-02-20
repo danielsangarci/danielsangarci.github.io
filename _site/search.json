@@ -66,29 +66,29 @@
     "objectID": "publications.html#section",
     "href": "publications.html#section",
     "title": "Publications",
-    "section": "2022",
-    "text": "2022\nSánchez-García, D., Cerdá, X. and Angulo, E. (2022) Temperature or competition: Which has more influence on Mediterranean ant communities? PloS ONE 17(4): e0267547."
+    "section": "2024",
+    "text": "2024\nTrigos‑Peral, G., Maák, I.E., Schmid, S., Chudzik, P., Czaczkes, T.J., Witek, M., Casacci, L.P., Sánchez‑García, D., Lorincz, Á., Kochanowski, M., and Heinze, J. (2024). Urban abiotic stressors drive changes in the foraging activity and colony growth of the black garden ant Lasius niger. Science of the Total Environment, 915, 170157."
   },
   {
     "objectID": "publications.html#section-1",
     "href": "publications.html#section-1",
     "title": "Publications",
-    "section": "2019",
-    "text": "2019\nGarcía, F., Cuesta-Segura, A., Espadaler, X., García, J.C. and Sánchez-García, D. (2019) Lasius piliferus Seifert, 1992: descripción de la reina y actualización de su distribución ibérica (Hymenoptera: Formicidae). Boletín de la Sociedad Entomológica Aragonesa (S.E.A.) 65: 39-44."
+    "section": "2022",
+    "text": "2022\nSánchez-García, D., Cerdá, X. and Angulo, E. (2022) Temperature or competition: Which has more influence on Mediterranean ant communities? PloS ONE 17(4): e0267547."
   },
   {
     "objectID": "publications.html#section-2",
     "href": "publications.html#section-2",
     "title": "Publications",
-    "section": "2018",
-    "text": "2018\nGarcía García, F., Espadaler Gelabert, X., Cuesta‑Segura, A.D., & Sánchez‑García, D. (2018) Primera cita ibérica para Temnothorax conatensis Galkowski & Lebas, 2016, y actualización de la distribución para Temnothorax grouvellei (bondroit, 1918) (Hymenoptera: Formicidae). Iberomyrmex, 10: 22–27."
+    "section": "2019",
+    "text": "2019\nGarcía, F., Cuesta-Segura, A., Espadaler, X., García, J.C. and Sánchez-García, D. (2019) Lasius piliferus Seifert, 1992: descripción de la reina y actualización de su distribución ibérica (Hymenoptera: Formicidae). Boletín de la Sociedad Entomológica Aragonesa (S.E.A.) 65: 39-44."
   },
   {
     "objectID": "publications.html#section-3",
     "href": "publications.html#section-3",
     "title": "Publications",
-    "section": "2017",
-    "text": "2017\nEspadaler, X., Sánchez-García, D., García-García, F. (2017) Temnothorax ibericus Menozzi (1922), un endemismo ibérico orófilo (Hymenoptera, Formicidae). Iberomyrmex 9: 5-9. \nSánchez-García, D. and Espadaler, X. (2017) Una nueva especie parásita social para la península ibérica. Bothriomyrmex communista Santschi, 1919 (Hymenoptera: Formicidae) en España. Iberomyrmex 9: 11-13."
+    "section": "2018",
+    "text": "2018\nGarcía García, F., Espadaler Gelabert, X., Cuesta‑Segura, A.D., & Sánchez‑García, D. (2018) Primera cita ibérica para Temnothorax conatensis Galkowski & Lebas, 2016, y actualización de la distribución para Temnothorax grouvellei (bondroit, 1918) (Hymenoptera: Formicidae). Iberomyrmex, 10: 22–27."
   },
   {
     "objectID": "contact.html",
@@ -171,8 +171,8 @@
     "objectID": "publications.html#section-4",
     "href": "publications.html#section-4",
     "title": "Publications",
-    "section": "2015",
-    "text": "2015\nSánchez-García, D. and Espadaler, X. (2015) Cardiocondyla obscurior Wheeler, 1929 (Hymenoptera, Formicidae) en España. Iberomyrmex 7: 7-9."
+    "section": "2017",
+    "text": "2017\nEspadaler, X., Sánchez-García, D., García-García, F. (2017) Temnothorax ibericus Menozzi (1922), un endemismo ibérico orófilo (Hymenoptera, Formicidae). Iberomyrmex 9: 5-9. \nSánchez-García, D. and Espadaler, X. (2017) Una nueva especie parásita social para la península ibérica. Bothriomyrmex communista Santschi, 1919 (Hymenoptera: Formicidae) en España. Iberomyrmex 9: 11-13."
   },
   {
     "objectID": "posts.html",
@@ -187,5 +187,12 @@
     "title": "Re-usable code for quick data visualization with ggplot\n",
     "section": "",
     "text": "Visualizing data is an important part of communicating results, but it can turn into a tricky coding process when you need to plot your data in a very specific way. Not even talking if you expect having graphs with a similar looking along all your results.\nThis is the quick way I use to plot my data to get a consistent data visualization for all my related results.\nFirst of all, I start by specifying the common settings I want for the aesthetics of all my graphs. This first bunch of setting specify font, line and dot size.\n\ntext.size <- 8\ntitle.size <- 9\nstrip.size <- 9\npoint.size <- 1\nline.size <- 0.3\ndot.size <- 1\n\nThe second bunch of objects specify different color palettes for graphs with different amount of groups (from 1 to 6). I designed this palette with complementary colors following the recommendations from Lisa Charlotte Muth in “How to pick more beautiful colors for your data visualizations”. If you design your own palettes don`t hesitate to share with me :)\n\ncolor1 <- \"#2C6594\"\ncolor2 <- \"#239081\"\ncolor3 <- \"#2AAA51\"\ncolor4 <- \"#E69C38\"\ncolor5 <- \"#E67E38\"\ncolor6 <- \"#E64C38\"\ncolor7 <- \"gray90\"\n\npalette1 <- c(color1)\npalette2 <- c(color1, color4)\npalette3 <- c(color1, color4, color7)\npalette4 <- c(color1, color2, color4, color5)\npalette5 <- c(color1, color2, color4, color5, color7)\npalette6 <- c(color1, color2, color3, color4, color5, color6)\n\nThis settings will be just created once at the beginning of you script, and will be applied to as many graphs as you create getting a consistent data visualization.\nNow that the common settings have been already specified we can focus on the data we want to plot. I will use the public dataset iris for this example. I start creating three objects, one for the dataset and two more for the X and Y variables. These are the only three objects that need to be modified to adapt the code to different datasets.\n\nlibrary(datasets)\ndata(iris)\n\ndf <- iris\nvariabley <- df$Sepal.Length\nvariablex <- df$Species\n\nAnd… here we go a custom ggplot code to plot your data in a consistent way with your favourite settings in just a minute. The code include all settings previously specified in our objects to easily change several values with a single modification.\n\nlibrary(ggplot2)\nplot1 <- ggplot(data=df, aes(x=variablex, y=variabley, fill = variablex))+\n  geom_boxplot(notch=T)+\n  scale_x_discrete(name = \"Variable X\")+\n  scale_y_continuous(name = \"Variable Y\", limits = c(min(variabley),max(variabley)*1.03))+\n  scale_fill_manual(name = \"Variable X\", values = palette3)+\n  ggtitle(\"a)\")+\n  theme(axis.title.x = element_text(size=title.size, color = 'black', margin=margin(t=6, r=0, b=0, l=0)),\n        axis.title.y = element_text(size=title.size, color = 'black', margin=margin(t=0, r=6, b=0, l=0)),\n        axis.text.x = element_text(size=text.size, color = 'black'),\n        axis.text.y = element_text(size=text.size, colour = 'black'),\n        axis.line=element_line(size=line.size, colour='black'),\n        axis.ticks.x = element_line(),\n        axis.ticks.y = element_line(),\n        panel.grid.major.x = element_blank(),\n        panel.grid.major.y = element_line(linewidth =  line.size, linetype = 'dotted', color = \"grey50\"),\n        panel.grid.minor = element_blank(),\n        strip.text.x = element_text(size = strip.size),\n        strip.background = element_blank(),\n        panel.border = element_rect(fill = NA, size = line.size),\n        panel.background = element_blank(),\n        legend.title = element_text(size = title.size, margin=margin(t=0, r=0, b=0, l=0)),\n        legend.text = element_text(size = text.size),\n        legend.position=\"none\",\n        legend.key.size = unit(0.2, \"in\"),\n        legend.margin=unit(c(0.1,0.1,0.1,0.1),\"cm\"),\n        plot.title = element_text(size = title.size, face = \"plain\", hjust = -0.05, vjust = 0),\n        plot.margin=unit(c(0.1,0.1,0.1,0.1), \"cm\"))\nplot1\n\n\n\n\n\n\n\nIf you want a graph different than a boxplot just substitute geom_boxplot() by geom_bar() for a barplot or geom_point() for a scatterplot. You can easily check all different options in the ggplot2 Cheatsheet.\nLooking forward to hearing your ideas on how to enhance the code for a more efficient data visualization. Don’t hesitate to get in touch with me!\nYou can find here the whole code in a single code block here.\n# SETTINGS FOR SIZE\ntext.size <- 8\ntitle.size <- 9\nstrip.size <- 9\npoint.size <- 1\nline.size <- 0.3\ndot.size <- 1\n\n#PALETTES\ncolor1 <- \"#2C6594\"\ncolor2 <- \"#239081\"\ncolor3 <- \"#2AAA51\"\ncolor4 <- \"#E69C38\"\ncolor5 <- \"#E67E38\"\ncolor6 <- \"#E64C38\"\ncolor7 <- \"gray90\"\n\npalette1 <- c(color1)\npalette2 <- c(color1, color4)\npalette3 <- c(color1, color4, color7)\npalette4 <- c(color1, color2, color4, color5)\npalette5 <- c(color1, color2, color4, color5, color7)\npalette6 <- c(color1, color2, color3, color4, color5, color6)\n\n#DATA\nlibrary(datasets)\ndata(iris)\n\ndf <- iris\nvariabley <- df$Sepal.Length\nvariablex <- df$Species\n\n#PLOT CODE\nlibrary(ggplot2)\nplot1 <- ggplot(data=df, aes(x=variablex, y=variabley, fill = variablex))+\n  geom_boxplot(notch=T)+\n  scale_x_discrete(name = \"Variable X\")+\n  scale_y_continuous(name = \"Variable Y\", limits = c(min(variabley),max(variabley)*1.03))+\n  scale_fill_manual(name = \"Variable X\", values = palette3)+\n  ggtitle(\"a)\")+\n  theme(axis.title.x = element_text(size=title.size, color = 'black', margin=margin(t=6, r=0, b=0, l=0)),\n        axis.title.y = element_text(size=title.size, color = 'black', margin=margin(t=0, r=6, b=0, l=0)),\n        axis.text.x = element_text(size=text.size, color = 'black'),\n        axis.text.y = element_text(size=text.size, colour = 'black'),\n        axis.line=element_line(size=line.size, colour='black'),\n        axis.ticks.x = element_line(),\n        axis.ticks.y = element_line(),\n        panel.grid.major.x = element_blank(),\n        panel.grid.major.y = element_line(linewidth =  line.size, linetype = 'dotted', color = \"grey50\"),\n        panel.grid.minor = element_blank(),\n        strip.text.x = element_text(size = strip.size),\n        strip.background = element_blank(),\n        panel.border = element_rect(fill = NA, size = line.size),\n        panel.background = element_blank(),\n        legend.title = element_text(size = title.size, margin=margin(t=0, r=0, b=0, l=0)),\n        legend.text = element_text(size = text.size),\n        legend.position=\"none\",\n        legend.key.size = unit(0.2, \"in\"),\n        legend.margin=unit(c(0.1,0.1,0.1,0.1),\"cm\"),\n        plot.title = element_text(size = title.size, face = \"plain\", hjust = -0.03, vjust = 0),\n        plot.margin=unit(c(0.1,0.1,0.1,0.1), \"cm\"))\n\n\n\n\n\n\n\n\n\nCitationBibTeX citation:@online{sánchez-garcía2023,\n  author = {Daniel Sánchez-García},\n  title = {Re-Usable Code for Quick Data Visualization with `Ggplot`},\n  date = {2023-12-28},\n  url = {https://danielsangarci.netlify.app/posts/post_trial/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nDaniel Sánchez-García. 2023. “Re-Usable Code for Quick Data\nVisualization with `Ggplot`.” December 28, 2023. https://danielsangarci.netlify.app/posts/post_trial/."
+  },
+  {
+    "objectID": "publications.html#section-5",
+    "href": "publications.html#section-5",
+    "title": "Publications",
+    "section": "2015",
+    "text": "2015\nSánchez-García, D. and Espadaler, X. (2015) Cardiocondyla obscurior Wheeler, 1929 (Hymenoptera, Formicidae) en España. Iberomyrmex 7: 7-9."
   }
 ]

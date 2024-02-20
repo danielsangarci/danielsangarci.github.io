@@ -6,6 +6,10 @@ comments: false
 
 Also in [my Google Scholar profile](https://scholar.google.com/citations?hl=en&user=5EQSDqwAAAAJ)
 
+## 2024
+
+Trigos‑Peral, G., Maák, I.E., Schmid, S., Chudzik, P., Czaczkes, T.J., Witek, M., Casacci, L.P., **Sánchez‑García, D.**, Lorincz, Á., Kochanowski, M., and Heinze, J. (2024). Urban abiotic stressors drive changes in the foraging activity and colony growth of the black garden ant *Lasius niger*. Science of the Total Environment, 915, 170157. [{{< fa file-pdf >}}](https://doi.org/10.1016/j.scitotenv.2024.170157) 
+
 ## 2022
 
 **Sánchez-García, D.**, Cerdá, X. and Angulo, E. (2022) Temperature or competition: Which has more influence on Mediterranean ant communities? PloS ONE 17(4): e0267547. [{{< fa file-pdf >}}](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0267547&type=printable)
