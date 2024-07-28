@@ -4,11 +4,11 @@ title-block-banner: false
 comments: false
 ---
 
-{{< fa envelope >}} [danielsangarci\@gmail.com](mailto:danielsangarci@gmail.com)
+{{< fa envelope >}} &nbsp; [danielsangarci\@gmail.com](mailto:danielsangarci@gmail.com)
 
-{{< fa location-dot >}} Museum and Institute of Zoology (Polish Academy of Science) Wilcza 64, 00-679 Warsaw (Poland)
+{{< fa location-dot >}} &nbsp; Museum and Institute of Zoology (Polish Academy of Science) Wilcza 64, 00-679 Warsaw (Poland)
 
-{{< fa people-group >}} Group of Social Insects and Myrmecophylus
+{{< fa people-group >}} &nbsp; Group of Social Insects and Myrmecophylus
 
 ```{r, echo=FALSE, warning=FALSE}
 library(leaflet)
