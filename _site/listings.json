@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/post_trial/index.html"
+    ]
+  },
+  {
     "listing": "/research.html",
     "items": [
       "/projects/phd-thesis/phd-thesis.html",
@@ -7,12 +13,6 @@
       "/projects/ant-community-ecology-donana/ant-community-ecology-donana.html",
       "/projects/ant-plant-bacteria/ant-plant-bacteria.html",
       "/projects/urban-heat-island-lasius/urban-heat-island-lasius.html"
-    ]
-  },
-  {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/post_trial/index.html"
     ]
   }
 ]

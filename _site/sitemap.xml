@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://danielsangarci.netlify.app/publications.html</loc>
-    <lastmod>2024-07-28T15:12:35.035Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielsangarci.netlify.app/index.html</loc>
-    <lastmod>2024-07-28T15:10:01.084Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielsangarci.netlify.app/posts.html</loc>
-    <lastmod>2024-02-20T15:55:02.986Z</lastmod>
+    <loc>https://danielsangarci.netlify.app/contact.html</loc>
+    <lastmod>2024-07-28T15:14:16.608Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.netlify.app/cv.html</loc>
-    <lastmod>2024-02-20T15:48:22.598Z</lastmod>
+    <lastmod>2024-07-28T15:14:17.872Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.netlify.app/gallery.html</loc>
-    <lastmod>2024-02-20T15:55:16.361Z</lastmod>
+    <lastmod>2024-07-28T15:14:19.071Z</lastmod>
   </url>
   <url>
-    <loc>https://danielsangarci.netlify.app/research.html</loc>
-    <lastmod>2024-02-20T15:50:28.987Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielsangarci.netlify.app/contact.html</loc>
-    <lastmod>2024-02-20T15:50:17.448Z</lastmod>
+    <loc>https://danielsangarci.netlify.app/index.html</loc>
+    <lastmod>2024-07-28T15:14:20.328Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.netlify.app/posts/post_trial/index.html</loc>
-    <lastmod>2024-02-20T15:48:16.287Z</lastmod>
+    <lastmod>2024-07-28T15:14:31.101Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielsangarci.netlify.app/posts.html</loc>
+    <lastmod>2024-07-28T15:14:33.849Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.netlify.app/projects/ant-community-ecology-donana/ant-community-ecology-donana.html</loc>
-    <lastmod>2023-12-28T18:23:14.834Z</lastmod>
+    <lastmod>2024-07-28T15:14:34.875Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.netlify.app/projects/ant-plant-bacteria/ant-plant-bacteria.html</loc>
-    <lastmod>2023-12-28T18:23:27.528Z</lastmod>
+    <lastmod>2024-07-28T15:14:35.840Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.netlify.app/projects/maculinea-myrmica-microbiome/maculinea-myrmica-microbiome.html</loc>
-    <lastmod>2023-12-28T18:23:33.072Z</lastmod>
+    <lastmod>2024-07-28T15:14:36.823Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.netlify.app/projects/phd-thesis/phd-thesis.html</loc>
-    <lastmod>2023-12-28T18:23:48.794Z</lastmod>
+    <lastmod>2024-07-28T15:14:37.791Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.netlify.app/projects/urban-heat-island-lasius/urban-heat-island-lasius.html</loc>
-    <lastmod>2023-12-28T18:23:59.944Z</lastmod>
+    <lastmod>2024-07-28T15:14:38.894Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielsangarci.netlify.app/publications.html</loc>
+    <lastmod>2024-07-28T15:14:49.415Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielsangarci.netlify.app/research.html</loc>
+    <lastmod>2024-07-28T15:14:41.282Z</lastmod>
   </url>
 </urlset>
