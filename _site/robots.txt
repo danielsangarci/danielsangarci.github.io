@@ -1,1 +1,0 @@
-Sitemap: https://danielsangarci.netlify.app/sitemap.xml
