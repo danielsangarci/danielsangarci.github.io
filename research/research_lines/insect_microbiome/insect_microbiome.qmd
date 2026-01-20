@@ -1,0 +1,16 @@
+---
+title: "Insect Microbiome: From Symbiosis to Ecosystem Services"
+description: "Exploring how microbial communities shape host fitness and ecological interactions."
+image: insect_microbiome.png
+about:
+  template: jolla
+  image: insect_microbiome.png
+  image-width: 22em
+  image-shape: rounded
+---
+
+Most insects are not solitary entities but complex **holobionts**. Their internal and external microbial communities—the microbiome—play a crucial role in their development, nutrition, and defense against pathogens. My research delves into these hidden partnerships to understand how they influence not only the host's biology but also the broader ecosystem processes.
+
+Currently, I am focused on characterizing the bacterial diversity of ants. By integrating high-throughput sequencing (16S rRNA for bacteria and ITS-LSU for fungi) with network analysis, I aim to unravel the ecological drivers that shape the assembly and structure of the host-associated microbiome.
+
+The ultimate goal of this research line is to bridge the gap between molecular microbial ecology and field entomology. By understanding the factors that shape microbiome assembly, we can better predict how insect populations and their associated functions will respond to environmental changes and anthropogenic pressures.

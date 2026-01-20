@@ -1,0 +1,16 @@
+---
+title: "Community Assembly & Multi-level Networks"
+description: "Integrating host and microbiome data to understand complex co-occurrence patterns."
+image: network_complex.png
+about:
+  template: jolla
+  image: network_complex.png
+  image-width: 22em
+  image-shape: rounded
+---
+
+Understanding the rules of coexistence requires looking across different levels of biological organization. My research focuses on the **assembly mechanisms of ant communities** and how these patterns scale up to influence their associated microbial life.
+
+The core of my current work is the study of **complex co-occurrence networks**. I combine data from ant community composition with microbial profiling to explore how host-level interactions (like competition or thermal filtering) dictate the structure of the microbiome. By analyzing these **nested networks**, I can decipher if the microbiome assembly is a direct reflection of the host's environment or a result of complex biotic filters within the ant community.
+
+The goal is to move beyond simple species lists and build a multi-level framework that predicts how global change—from urbanization to climate shifts—affects the stability of both macro and micro-ecological networks.

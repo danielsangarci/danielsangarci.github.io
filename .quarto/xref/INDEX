@@ -58,5 +58,32 @@
   },
   "posts/post_trial/index.qmd": {
     "index.html": "ad5b79cb"
+  },
+  "research/current_projects/ant-plant-bacteria/ant-plant-bacteria.qmd": {
+    "ant-plant-bacteria.html": "a15ae3e5"
+  },
+  "research/current_projects/maculinea-myrmica-microbiome/maculinea-myrmica-microbiome.qmd": {
+    "maculinea-myrmica-microbiome.html": "06790963"
+  },
+  "research/past_projects/phd-thesis/phd-thesis.qmd": {
+    "phd-thesis.html": "4ef78b27"
+  },
+  "research/past_projects/urban-heat-island-lasius/urban-heat-island-lasius.qmd": {
+    "urban-heat-island-lasius.html": "8df3e508"
+  },
+  "research/past_projects/ant-community-ecology-donana/ant-community-ecology-donana.qmd": {
+    "ant-community-ecology-donana.html": "6a6dbc5e"
+  },
+  "research/past_projects/phd-thesis.qmd": {
+    "phd-thesis.html": "bc48cece"
+  },
+  "research/research_lines/insect_microbiome/insect_microbiome.qmd": {
+    "insect_microbiome.html": "7133afd3"
+  },
+  "research/research_lines/community_assembly_dynamics/community_assembly_dynamics.qmd": {
+    "community_assembly_dynamics.html": "9a2c2b18"
+  },
+  "research/research_lines/diy_lab_protocols/diy_lab_protocols.qmd": {
+    "diy_lab_protocols.html": "44929a86"
   }
 }

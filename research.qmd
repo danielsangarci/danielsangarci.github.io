@@ -1,13 +1,49 @@
 ---
 title: "Research"
 listing:
-  contents: projects
-  sort: "title asc"
-  type: grid
-  categories: false
-  sort-ui: false
-  filter-ui: false
+ - id: research_lines
+   contents: "research/research_lines/*/*.qmd"
+   sort: "title asc"
+   type: grid
+   fields: [title, image]
+   categories: false
+   sort-ui: false
+   filter-ui: false
+   
+ - id: current_projects
+   contents: "research/current_projects/*/*.qmd"
+   sort: "title asc"
+   type: grid
+   fields: [title, image]
+   categories: false
+   sort-ui: false
+   filter-ui: false
+   
+ - id: past_projects
+   contents: "research/past_projects/*/*.qmd"
+   sort: "title asc"
+   type: grid
+   fields: [title, image]
+   categories: false
+   sort-ui: false
+   filter-ui: false
+  
 page-layout: full
 title-block-banner: false
 comments: false
 ---
+
+## Research lines
+
+::: {#research_lines}
+:::
+
+## Current projects
+
+::: {#current_projects}
+:::
+
+## Past projects
+
+::: {#past_projects}
+:::

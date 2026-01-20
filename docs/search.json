@@ -32,7 +32,7 @@
     "href": "posts.html",
     "title": "RCode",
     "section": "",
-    "text": "Re-usable code for quick data visualization with ggplot\n\n\n\n\n\n\n\n\n16 June 2025\n\n\nDaniel Sánchez-García\n\n\n6 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Re-usable code for quick data visualization with ggplot\n\n\n\n\n\n16 June 2025\n\n\nDaniel Sánchez-García\n\n6 min\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/ant-plant-bacteria/ant-plant-bacteria.html",
@@ -109,7 +109,7 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Phengaris teleius adaptations after reintroduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhengaris teleius and Myrmica spp. microbiome interaction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnt community structuring and invasive species in Doñana National Park\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnts as bacteria dispersal vectors and indirect drivers of plant health\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUrban heat island effect on Lasius niger activity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "No matching items"
   },
   {
     "objectID": "index.html",
@@ -117,5 +117,75 @@
     "title": "DanielSánchez-García",
     "section": "",
     "text": "I am an ecologist working on species interactions and adaptations. I am currently finishing my PhD thesis in the Museum and Institute of Zoology of Warsaw. My PhD project focus on studying the adaptations of the mirmecophylus butterfly Phengaris (=Maculinea) teleius after 30 years of its reintroduction in the Netherlands. Additionally, during my third year of Phd I got a PRELUDIUM grant from the Polish government to carry out a project to study the effect of ant activity on bacteria dispersion in the forest.\nWhen not doing science you can also find me shooting macrophotography, which is a great way of getting cool images to use during your talks!\nFeel free to contact me for scientific collaboration or getting some of my photos to use in your papers/presentations."
+  },
+  {
+    "objectID": "research.html#research-lines",
+    "href": "research.html#research-lines",
+    "title": "Research",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "research.html#current-projects",
+    "href": "research.html#current-projects",
+    "title": "Research",
+    "section": "Current projects",
+    "text": "Current projects\n\n\n\n\n\n\n\n\n\n\nPhengaris teleius and Myrmica spp. microbiome interaction\n\n\n\n\n\n\n\n\n\n\n\n\nAnts as bacteria dispersal vectors and indirect drivers of plant health\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research.html#past-projects",
+    "href": "research.html#past-projects",
+    "title": "Research",
+    "section": "Past projects",
+    "text": "Past projects\n\n\n\n\n\n\n\n\n\n\nPhengaris teleius adaptations after reintroduction\n\n\n\n\n\n\n\n\n\n\n\n\nAnt community structuring and invasive species in Doñana National Park\n\n\n\n\n\n\n\n\n\n\n\n\nUrban heat island effect on Lasius niger activity\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/past_projects/phd-thesis/phd-thesis.html",
+    "href": "research/past_projects/phd-thesis/phd-thesis.html",
+    "title": "Phengaris teleius adaptations after reintroduction",
+    "section": "",
+    "text": "Phengaris (=Maculinea) teleius is a mirmecophylus butterfly which parasite Myrmica spp. ant nests to complete its lyfe cycle. The adult butterflies lay the eggs on Saguisorba officinalis flowers, in which also the caterpillars will live and feed on during their first three weeks of life. Once they are enough developed they drop to the soil and start mimicking ant sounds and perform specific behaviours to be picked up by the ants to their nest a continue their life cycle. P. teleius caterpillars will live as ant parasites for almost one year until they completely develop and as adult butteflies leave the nest.\nThis species is considered endangered in Europe. In 1976 P. teleius got extinct from the Netherlands and in 1990 it was performed a successful reintroduction. Eighty-six butterflies were taken from a Polish population and translocated to Moerputten nature reserve. A difference of almost 30 butterfly generations between the original Polish and the reintroduced Dutch population offers a great and unique opportunity to study the local adaptations of P. teleius butterflies to their host ants and to detect ongoing co-evolution processes between parasite and host populations.\nTo get a better understanding of how reintroductions of parasites work, we are performing a multi-level comparison of source and reintroduced populations of P. teleius by studying 1) population genetics, 2) morphology of adult butterflies and 3) behavioural, chemical and acoustical adaptations of butterfly caterpillar to the Myrmica host ants."
+  },
+  {
+    "objectID": "research/current_projects/ant-plant-bacteria/ant-plant-bacteria.html",
+    "href": "research/current_projects/ant-plant-bacteria/ant-plant-bacteria.html",
+    "title": "Ants as bacteria dispersal vectors and indirect drivers of plant health",
+    "section": "",
+    "text": "Insects like ants can be considered as one of the most important bacterial dispersal vectors. Moreover, because ants are able to produce antibiotic compounds to protect themselves against pathogenic microbes, they may selectively disperse bacteria. Ants are formidable ecosystems engineers and frequently interact with various plants on which they can spread bacteria while foraging. Once bacteria have colonized the leaves, plant-segregated compounds and microbe-microbe competition shape the plant-associated bacterial community and affects the plant health. Therefore, it could be assumed that ants could selectively disperse specific bacteria communities to their foraging plants and indirectly drive the plant health status.\nThe project aims to get deeper in the role of ants in selectively dispersing bacteria species and its effect on plant health. It will fill the gap of knowledge about bacterial communities’ dispersion by insects with direct evidence of dispersal interactions at community level.\nProject Funded by a pre-doc PRELUDIUM grant from the Polish National Science Center (NCN)."
+  },
+  {
+    "objectID": "research/current_projects/maculinea-myrmica-microbiome/maculinea-myrmica-microbiome.html",
+    "href": "research/current_projects/maculinea-myrmica-microbiome/maculinea-myrmica-microbiome.html",
+    "title": "Phengaris teleius and Myrmica spp. microbiome interaction",
+    "section": "",
+    "text": "Under construction…"
+  },
+  {
+    "objectID": "research/past_projects/phd-thesis.html",
+    "href": "research/past_projects/phd-thesis.html",
+    "title": "Phengaris teleius adaptations after reintroduction",
+    "section": "",
+    "text": "Phengaris (=Maculinea) teleius is a mirmecophylus butterfly which parasite Myrmica spp. ant nests to complete its lyfe cycle. The adult butterflies lay the eggs on Saguisorba officinalis flowers, in which also the caterpillars will live and feed on during their first three weeks of life. Once they are enough developed they drop to the soil and start mimicking ant sounds and perform specific behaviours to be picked up by the ants to their nest a continue their life cycle. P. teleius caterpillars will live as ant parasites for almost one year until they completely develop and as adult butteflies leave the nest.\nThis species is considered endangered in Europe. In 1976 P. teleius got extinct from the Netherlands and in 1990 it was performed a successful reintroduction. Eighty-six butterflies were taken from a Polish population and translocated to Moerputten nature reserve. A difference of almost 30 butterfly generations between the original Polish and the reintroduced Dutch population offers a great and unique opportunity to study the local adaptations of P. teleius butterflies to their host ants and to detect ongoing co-evolution processes between parasite and host populations.\nTo get a better understanding of how reintroductions of parasites work, we are performing a multi-level comparison of source and reintroduced populations of P. teleius by studying 1) population genetics, 2) morphology of adult butterflies and 3) behavioural, chemical and acoustical adaptations of butterfly caterpillar to the Myrmica host ants."
+  },
+  {
+    "objectID": "research/research_lines/insect_microbiome/insect_microbiome.html",
+    "href": "research/research_lines/insect_microbiome/insect_microbiome.html",
+    "title": "Insect Microbiome: From Symbiosis to Ecosystem Services",
+    "section": "",
+    "text": "Most insects are not solitary entities but complex holobionts. Their internal and external microbial communities—the microbiome—play a crucial role in their development, nutrition, and defense against pathogens. My research delves into these hidden partnerships to understand how they influence not only the host’s biology but also the broader ecosystem processes.\nCurrently, I am focused on characterizing the bacterial diversity of ants. By integrating high-throughput sequencing (16S rRNA for bacteria and ITS-LSU for fungi) with network analysis, I aim to unravel the ecological drivers that shape the assembly and structure of the host-associated microbiome.\nThe ultimate goal of this research line is to bridge the gap between molecular microbial ecology and field entomology. By understanding the factors that shape microbiome assembly, we can better predict how insect populations and their associated functions will respond to environmental changes and anthropogenic pressures."
+  },
+  {
+    "objectID": "research/research_lines/community_assembly_dynamics/community_assembly_dynamics.html",
+    "href": "research/research_lines/community_assembly_dynamics/community_assembly_dynamics.html",
+    "title": "Community Assembly & Multi-level Networks",
+    "section": "",
+    "text": "Understanding the rules of coexistence requires looking across different levels of biological organization. My research focuses on the assembly mechanisms of ant communities and how these patterns scale up to influence their associated microbial life.\nThe core of my current work is the study of complex co-occurrence networks. I combine data from ant community composition with microbial profiling to explore how host-level interactions (like competition or thermal filtering) dictate the structure of the microbiome. By analyzing these nested networks, I can decipher if the microbiome assembly is a direct reflection of the host’s environment or a result of complex biotic filters within the ant community.\nThe goal is to move beyond simple species lists and build a multi-level framework that predicts how global change—from urbanization to climate shifts—affects the stability of both macro and micro-ecological networks."
+  },
+  {
+    "objectID": "research/research_lines/diy_lab_protocols/diy_lab_protocols.html",
+    "href": "research/research_lines/diy_lab_protocols/diy_lab_protocols.html",
+    "title": "Open Science & DIY Lab Protocols",
+    "section": "",
+    "text": "I am a strong advocate for Open and Reproducible Science. I believe that high-quality research should not be limited by expensive proprietary equipment or “black-box” analytical methods. My work in this line focuses on developing and sharing the tools necessary to make molecular ecology more accessible to the global scientific community.\n\nCore Pillars\n\nDIY Lab protocols: I design and implement “home-made” and low cost laboratory protocols.\nReproducible Workflows: Transparency is at the heart of my lab work. My protocols can be found in public protocol repositories or my website. Reach me out if you interested in it!\n\n\n\nDIY from Dani\nI have developed and optimized several open-access protocols to streamline molecular workflows:\n\nCustom Insect Microbiome DNA Extraction: Tailored protocols designed to maximize yield from low-biomass samples (e.g., individual ants) while minimizing the presence of PCR inhibitors common in insect tissues.\nOptimized SPRI Bead Workflows: Precise protocols for DNA size selection using SPRI (Solid Phase Reversible Immobilization) technology, offering a cost-effective alternative to commercial kits without sacrificing quality."
   }
 ]

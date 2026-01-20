@@ -8,11 +8,14 @@
   {
     "listing": "/research.html",
     "items": [
-      "/projects/phd-thesis/phd-thesis.html",
-      "/projects/maculinea-myrmica-microbiome/maculinea-myrmica-microbiome.html",
-      "/projects/ant-community-ecology-donana/ant-community-ecology-donana.html",
-      "/projects/ant-plant-bacteria/ant-plant-bacteria.html",
-      "/projects/urban-heat-island-lasius/urban-heat-island-lasius.html"
+      "/research/research_lines/community_assembly_dynamics/community_assembly_dynamics.html",
+      "/research/research_lines/insect_microbiome/insect_microbiome.html",
+      "/research/research_lines/diy_lab_protocols/diy_lab_protocols.html",
+      "/research/current_projects/maculinea-myrmica-microbiome/maculinea-myrmica-microbiome.html",
+      "/research/current_projects/ant-plant-bacteria/ant-plant-bacteria.html",
+      "/research/past_projects/phd-thesis/phd-thesis.html",
+      "/research/past_projects/ant-community-ecology-donana/ant-community-ecology-donana.html",
+      "/research/past_projects/urban-heat-island-lasius/urban-heat-island-lasius.html"
     ]
   }
 ]

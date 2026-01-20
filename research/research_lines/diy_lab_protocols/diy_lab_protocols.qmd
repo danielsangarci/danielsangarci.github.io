@@ -1,0 +1,24 @@
+---
+title: "Open Science & DIY Lab Protocols"
+description: "Democratizing research through low-cost hardware and reproducible workflows."
+image: diy_lab_protocols.png
+about:
+  template: jolla
+  image: diy_lab_protocols.png
+  image-width: 22em
+  image-shape: rounded
+---
+
+I am a strong advocate for **Open and Reproducible Science**. I believe that high-quality research should not be limited by expensive proprietary equipment or "black-box" analytical methods. My work in this line focuses on developing and sharing the tools necessary to make molecular ecology more accessible to the global scientific community.
+
+### Core Pillars
+
+1. **DIY Lab protocols:** I design and implement **"home-made" and low cost laboratory protocols**.
+2. **Reproducible Workflows:** Transparency is at the heart of my lab work. My protocols can be found in public protocol repositories or my website. Reach me out if you interested in it!
+
+### DIY from Dani
+
+I have developed and optimized several open-access protocols to streamline molecular workflows:
+
+* **Custom Insect Microbiome DNA Extraction:** Tailored protocols designed to maximize yield from low-biomass samples (e.g., individual ants) while minimizing the presence of PCR inhibitors common in insect tissues.
+* **Optimized SPRI Bead Workflows:** Precise protocols for DNA size selection using SPRI (Solid Phase Reversible Immobilization) technology, offering a cost-effective alternative to commercial kits without sacrificing quality.
