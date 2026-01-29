@@ -32,7 +32,7 @@
     "href": "posts.html",
     "title": "RCode",
     "section": "",
-    "text": "Re-usable code for quick data visualization with ggplot\n\n\n\n\n\n16 June 2025\n\n\nDaniel Sánchez-García\n\n6 min\n\n\n\n\nNo matching items"
+    "text": "DNA Molar Pooling Calculator\n\n\n\n\n\n29 January 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nRe-usable code for quick data visualization with ggplot\n\n\n\n\n\n16 June 2025\n\n\nDaniel Sánchez-García\n\n6 min\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/ant-plant-bacteria/ant-plant-bacteria.html",
@@ -187,5 +187,33 @@
     "title": "DIY Lab Protocols for Open Science",
     "section": "",
     "text": "I am a strong advocate for Open and Reproducible Science. I believe that high-quality research should not be limited by expensive proprietary equipment or “black-box” analytical methods. My work in this line focuses on developing and sharing the tools necessary to make molecular ecology more accessible to the global scientific community.\n\nCore Pillars\n\nDIY Lab protocols: I design and implement “home-made” and low cost laboratory protocols.\nReproducible Workflows: Transparency is at the heart of my lab work. My protocols can be found in public protocol repositories or my website. Reach me out if you interested in it!\n\n\n\nDIY from Dani\nI have developed and optimized several open-access protocols to streamline molecular workflows:\n\nCustom Insect Microbiome DNA Extraction: Tailored protocols designed to maximize yield from low-biomass samples (e.g., individual ants) while minimizing the presence of PCR inhibitors common in insect tissues.\nOptimized SPRI Bead Workflows: Precise protocols for DNA size selection using SPRI (Solid Phase Reversible Immobilization) technology, offering a cost-effective alternative to commercial kits without sacrificing quality."
+  },
+  {
+    "objectID": "posts/dna_molar_pooling_calculator/index.html",
+    "href": "posts/dna_molar_pooling_calculator/index.html",
+    "title": "DNA Molar Pooling Calculator",
+    "section": "",
+    "text": "In the laboratory, we are often taught to quantify DNA in nanograms (ng). However, for biological reactions like Next-Generation Sequencing (NGS), Gibson Assembly, or PCR pooling, the weight of the DNA matters much less than the number of molecules.\nIf you mix a 500bp amplicon and a 2000bp amplicon at the same mass (e.g., 50ng each), you actually have 4 times more molecules of the small fragment. This imbalance can ruin sequencing libraries or lower cloning efficiency."
+  },
+  {
+    "objectID": "posts/dna_molar_pooling_calculator/index.html#the-problem-mass-molecules",
+    "href": "posts/dna_molar_pooling_calculator/index.html#the-problem-mass-molecules",
+    "title": "DNA Molar Pooling Calculator",
+    "section": "",
+    "text": "In the laboratory, we are often taught to quantify DNA in nanograms (ng). However, for biological reactions like Next-Generation Sequencing (NGS), Gibson Assembly, or PCR pooling, the weight of the DNA matters much less than the number of molecules.\nIf you mix a 500bp amplicon and a 2000bp amplicon at the same mass (e.g., 50ng each), you actually have 4 times more molecules of the small fragment. This imbalance can ruin sequencing libraries or lower cloning efficiency."
+  },
+  {
+    "objectID": "posts/dna_molar_pooling_calculator/index.html#the-solution",
+    "href": "posts/dna_molar_pooling_calculator/index.html#the-solution",
+    "title": "DNA Molar Pooling Calculator",
+    "section": "The Solution",
+    "text": "The Solution\nI developed the DNA Molar Pooling Calculator to solve this. It is an R Shiny application that automates the physics of DNA normalization. By calculating based on molarity (fmol) rather than mass, it ensures perfectly balanced pools regardless of fragment size.\n\nKey Features\n\nUniversal: Works for Nanopore, Illumina, PacBio, or standard cloning vectors.\nBatch Mode: You can paste data directly from Excel (Sample Name, Conc1, Conc2…) to process entire plates at once.\nSafety Checks: The app automatically flags samples (in red) that are too dilute to meet your target concentration."
+  },
+  {
+    "objectID": "posts/dna_molar_pooling_calculator/index.html#live-calculator",
+    "href": "posts/dna_molar_pooling_calculator/index.html#live-calculator",
+    "title": "DNA Molar Pooling Calculator",
+    "section": "🚀 Live Calculator",
+    "text": "🚀 Live Calculator\nYou can use the tool directly below, or open it in a new window."
   }
 ]

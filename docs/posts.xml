@@ -10,7 +10,62 @@
 <atom:link href="https://danielsangarci.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 16 Jun 2025 13:09:48 GMT</lastBuildDate>
+<lastBuildDate>Thu, 29 Jan 2026 00:42:01 GMT</lastBuildDate>
+<item>
+  <title>DNA Molar Pooling Calculator</title>
+  <dc:creator>Daniel Sánchez-García</dc:creator>
+  <link>https://danielsangarci.github.io/posts/dna_molar_pooling_calculator/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="the-problem-mass-molecules" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-mass-molecules">The Problem: Mass ≠ Molecules</h2>
+<p>In the laboratory, we are often taught to quantify DNA in nanograms (ng). However, for biological reactions like <strong>Next-Generation Sequencing (NGS)</strong>, <strong>Gibson Assembly</strong>, or <strong>PCR pooling</strong>, the weight of the DNA matters much less than the <strong>number of molecules</strong>.</p>
+<p>If you mix a 500bp amplicon and a 2000bp amplicon at the same mass (e.g., 50ng each), you actually have <strong>4 times more molecules</strong> of the small fragment. This imbalance can ruin sequencing libraries or lower cloning efficiency.</p>
+</section>
+<section id="the-solution" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution">The Solution</h2>
+<p>I developed the <strong>DNA Molar Pooling Calculator</strong> to solve this. It is an R Shiny application that automates the physics of DNA normalization. By calculating based on <strong>molarity (fmol)</strong> rather than mass, it ensures perfectly balanced pools regardless of fragment size.</p>
+<section id="key-features" class="level3">
+<h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
+<ul>
+<li><strong>Universal:</strong> Works for Nanopore, Illumina, PacBio, or standard cloning vectors.</li>
+<li><strong>Batch Mode:</strong> You can paste data directly from Excel (Sample Name, Conc1, Conc2…) to process entire plates at once.</li>
+<li><strong>Safety Checks:</strong> The app automatically flags samples (in red) that are too dilute to meet your target concentration.</li>
+</ul>
+</section>
+</section>
+<section id="live-calculator" class="level2">
+<h2 class="anchored" data-anchor-id="live-calculator">🚀 Live Calculator</h2>
+<p>You can use the tool directly below, or open it in a <a href="https://danielsangarci.shinyapps.io/dna-molar-pooling-calculator/">new window</a>.</p>
+<iframe src="https://danielsangarci.shinyapps.io/dna-molar-pooling-calculator/" width="100%" height="1250px" style="border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+</iframe>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{sánchez-garcía2026,
+  author = {Sánchez-García, Daniel},
+  title = {DNA {Molar} {Pooling} {Calculator}},
+  date = {2026-01-29},
+  url = {https://danielsangarci.com/posts/dna_molar_pooling_calculator/},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-sánchez-garcía2026" class="csl-entry quarto-appendix-citeas">
+Sánchez-García, Daniel. 2026. <span>“DNA Molar Pooling
+Calculator.”</span> January 29, 2026. <a href="https://danielsangarci.com/posts/dna_molar_pooling_calculator/">https://danielsangarci.com/posts/dna_molar_pooling_calculator/</a>.
+</div></div></section></div> ]]></description>
+  <category>R</category>
+  <category>Shiny</category>
+  <category>Bioinformatics</category>
+  <category>Lab Tools</category>
+  <guid>https://danielsangarci.github.io/posts/dna_molar_pooling_calculator/</guid>
+  <pubDate>Thu, 29 Jan 2026 00:42:01 GMT</pubDate>
+  <media:content url="https://danielsangarci.github.io/posts/dna_molar_pooling_calculator/dna_molar_pooling_calculator.png" medium="image" type="image/png" height="79" width="144"/>
+</item>
 <item>
   <title>Re-usable code for quick data visualization with ggplot
 </title>

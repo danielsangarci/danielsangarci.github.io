@@ -1,0 +1,43 @@
+---
+title: "DNA Molar Pooling Calculator"
+description: "A precision R Shiny tool for normalizing and pooling double-stranded DNA based on molarity, automating the calculations for NGS library prep, cloning, and PCR."
+author:
+  - name: Daniel Sánchez-García
+    url: https://danielsangarci.com/
+date: last-modified
+date-format: "D MMMM YYYY"
+categories: [R, Shiny, Bioinformatics, Lab Tools]
+citation: 
+  url: https://danielsangarci.com/posts/dna_molar_pooling_calculator/ 
+image: dna_molar_pooling_calculator.png
+draft: false
+editor_options: 
+  chunk_output_type: console
+---
+
+## The Problem: Mass ≠ Molecules
+
+In the laboratory, we are often taught to quantify DNA in nanograms (ng). However, for biological reactions like **Next-Generation Sequencing (NGS)**, **Gibson Assembly**, or **PCR pooling**, the weight of the DNA matters much less than the **number of molecules**.
+
+If you mix a 500bp amplicon and a 2000bp amplicon at the same mass (e.g., 50ng each), you actually have **4 times more molecules** of the small fragment. This imbalance can ruin sequencing libraries or lower cloning efficiency.
+
+## The Solution
+
+I developed the **DNA Molar Pooling Calculator** to solve this. It is an R Shiny application that automates the physics of DNA normalization. By calculating based on **molarity (fmol)** rather than mass, it ensures perfectly balanced pools regardless of fragment size.
+
+### Key Features
+
+-   **Universal:** Works for Nanopore, Illumina, PacBio, or standard cloning vectors.
+-   **Batch Mode:** You can paste data directly from Excel (Sample Name, Conc1, Conc2...) to process entire plates at once.
+-   **Safety Checks:** The app automatically flags samples (in red) that are too dilute to meet your target concentration.
+
+## 🚀 Live Calculator
+
+You can use the tool directly below, or open it in a [new window](https://danielsangarci.shinyapps.io/dna-molar-pooling-calculator/).
+
+<iframe 
+  src="https://danielsangarci.shinyapps.io/dna-molar-pooling-calculator/"
+  width="100%" 
+  height="1250px" 
+  style="border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+</iframe>

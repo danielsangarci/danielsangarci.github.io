@@ -85,5 +85,8 @@
   },
   "research/research_lines/diy_lab_protocols/diy_lab_protocols.qmd": {
     "diy_lab_protocols.html": "44929a86"
+  },
+  "posts/dna_molar_pooling_calculator/index.qmd": {
+    "index.html": "999c424b"
   }
 }
