@@ -24,7 +24,11 @@ about:
       href: https://www.researchgate.net/profile/Daniel-Sanchez-Garcia/research
 ---
 
-I am an ecologist working on species interactions and adaptations. I am currently finishing my [PhD thesis](projects/phd-thesis/phd-thesis.qmd) in the [Museum and Institute of Zoology of Warsaw](https://miiz.waw.pl/en/2-uncategorised?type=926). My PhD project focus on studying the adaptations of the mirmecophylus butterfly *Phengaris* (=*Maculinea*) *teleius* after 30 years of its reintroduction in the Netherlands. Additionally, during my third year of Phd I got a PRELUDIUM grant from the Polish government to carry out a [project](projects/ant-plant-bacteria/ant-plant-bacteria.qmd) to study the effect of ant activity on bacteria dispersion in the forest.
+I am an ecologist and Postdoctoral Researcher at the Doñana Biological Station (EBD-CSIC). My work explores the hidden layers of biodiversity—specifically species interactions within ant, microbiome and mycobiome communities.
+
+Currently, I lead the PRELUDIUM [project](projects/ant-plant-bacteria/ant-plant-bacteria.qmd), where I investigate the role of ants as bacteria dispersal vectors and their indirect impact on plant health. While my [PhD](projects/phd-thesis/phd-thesis.qmd) at the Museum and Institute of Zoology (Warsaw) was built on studying the multimodal adaptations (chemical, acoustic, and genetic) of social parasites, my current research focuses on species co-ocurrence and host-microbiome interactions.
+
+I am a staunch defender of Open Science, Reproducibility and "home-made" lab protocols. I believe in making high-level molecular ecology accessible and reproducible by developing DIY laboratory solutions.
 
 When not doing science you can also find me shooting macrophotography, which is a great way of getting cool images to use during your talks!
 
