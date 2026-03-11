@@ -1,0 +1,41 @@
+---
+title: "PCR Master Mix Calculator"
+description: "An intuitive R Shiny tool that automates PCR master mix calculations, featuring smart unit auto-conversion and one-click protocol exports for the lab bench."
+author:
+  - name: Daniel Sánchez-García
+    url: https://danielsangarci.com/
+date: last-modified
+date-format: "D MMMM YYYY"
+categories: [R, Shiny, Molecular Biology, Lab Tools]
+citation: 
+  url: https://danielsangarci.com/posts/pcr_master_mix_calculator/ 
+image: pcr_master_mix_calculator.png
+draft: false
+editor_options: 
+  chunk_output_type: console
+---
+
+## The Problem: Math Errors at the Bench
+
+Setting up PCR reactions often involves repetitive and error-prone math. You might have stock solutions in `mM`, but your protocol asks for a final concentration in `µM`. You then need to scale a single 25 µL reaction for 24 samples, plus calculate a slight overage for pipetting error. 
+
+A single miscalculated decimal point, a forgotten unit conversion, or failing to subtract the template volume from the final water calculation can result in failed amplification, wasted reagents, and lost time.
+
+## The Solution
+
+I developed the **PCR Master Mix Calculator** to take the mental gymnastics out of PCR prep. It is an R Shiny application that automatically handles the $C_1V_1 = C_2V_2$ equations behind the scenes, ensuring your final concentrations are perfect and your total volumes always add up exactly.
+
+### Key Features
+
+-   **Smart Auto-Conversion:** Mix and match stock and target units (`mM` to `µM`, `mg/mL` to `µg/µL`, etc.). The app calculates the correct conversion factor automatically and blocks impossible conversions.
+-   **Dual Workflows:** Choose whether you are building a custom reaction entirely from scratch (Buffer, MgCl2, dNTPs, Taq) or just adding primers to a commercial Master Mix (e.g., 2X or 5X).
+-   **Fail-Safe Alerts:** The calculator dynamically determines the required nuclease-free water. If your components exceed the target reaction volume, it immediately flags a warning.
+-   **Lab-Book Ready:** A custom "Copy" button lets you paste the generated pipetting protocol directly into Microsoft Word or a digital lab notebook with perfect table formatting, automatically highlighting which volumes belong in the bulk Master Mix tube.
+
+## 🚀 Live Calculator
+
+You can use the tool directly below, or open it in a [new window](https://danielsangarci.shinyapps.io/PCR-calculator/).
+
+<iframe src="https://danielsangarci.shinyapps.io/PCR-calculator/" width="100%" height="1150px" style="border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+
+</iframe>

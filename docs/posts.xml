@@ -10,7 +10,63 @@
 <atom:link href="https://danielsangarci.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Thu, 29 Jan 2026 00:42:01 GMT</lastBuildDate>
+<lastBuildDate>Wed, 11 Mar 2026 23:39:19 GMT</lastBuildDate>
+<item>
+  <title>PCR Master Mix Calculator</title>
+  <dc:creator>Daniel Sánchez-García</dc:creator>
+  <link>https://danielsangarci.github.io/posts/pcr_calculator/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="the-problem-math-errors-at-the-bench" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-math-errors-at-the-bench">The Problem: Math Errors at the Bench</h2>
+<p>Setting up PCR reactions often involves repetitive and error-prone math. You might have stock solutions in <code>mM</code>, but your protocol asks for a final concentration in <code>µM</code>. You then need to scale a single 25 µL reaction for 24 samples, plus calculate a slight overage for pipetting error.</p>
+<p>A single miscalculated decimal point, a forgotten unit conversion, or failing to subtract the template volume from the final water calculation can result in failed amplification, wasted reagents, and lost time.</p>
+</section>
+<section id="the-solution" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution">The Solution</h2>
+<p>I developed the <strong>PCR Master Mix Calculator</strong> to take the mental gymnastics out of PCR prep. It is an R Shiny application that automatically handles the <img src="https://latex.codecogs.com/png.latex?C_1V_1%20=%20C_2V_2"> equations behind the scenes, ensuring your final concentrations are perfect and your total volumes always add up exactly.</p>
+<section id="key-features" class="level3">
+<h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
+<ul>
+<li><strong>Smart Auto-Conversion:</strong> Mix and match stock and target units (<code>mM</code> to <code>µM</code>, <code>mg/mL</code> to <code>µg/µL</code>, etc.). The app calculates the correct conversion factor automatically and blocks impossible conversions.</li>
+<li><strong>Dual Workflows:</strong> Choose whether you are building a custom reaction entirely from scratch (Buffer, MgCl2, dNTPs, Taq) or just adding primers to a commercial Master Mix (e.g., 2X or 5X).</li>
+<li><strong>Fail-Safe Alerts:</strong> The calculator dynamically determines the required nuclease-free water. If your components exceed the target reaction volume, it immediately flags a warning.</li>
+<li><strong>Lab-Book Ready:</strong> A custom “Copy” button lets you paste the generated pipetting protocol directly into Microsoft Word or a digital lab notebook with perfect table formatting, automatically highlighting which volumes belong in the bulk Master Mix tube.</li>
+</ul>
+</section>
+</section>
+<section id="live-calculator" class="level2">
+<h2 class="anchored" data-anchor-id="live-calculator">🚀 Live Calculator</h2>
+<p>You can use the tool directly below, or open it in a <a href="https://danielsangarci.shinyapps.io/PCR-calculator/">new window</a>.</p>
+<iframe src="https://danielsangarci.shinyapps.io/PCR-calculator/" width="100%" height="1150px" style="border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+</iframe>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{sánchez-garcía2026,
+  author = {Sánchez-García, Daniel},
+  title = {PCR {Master} {Mix} {Calculator}},
+  date = {2026-03-12},
+  url = {https://danielsangarci.com/posts/pcr_master_mix_calculator/},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-sánchez-garcía2026" class="csl-entry quarto-appendix-citeas">
+Sánchez-García, Daniel. 2026. <span>“PCR Master Mix Calculator.”</span>
+March 12, 2026. <a href="https://danielsangarci.com/posts/pcr_master_mix_calculator/">https://danielsangarci.com/posts/pcr_master_mix_calculator/</a>.
+</div></div></section></div> ]]></description>
+  <category>R</category>
+  <category>Shiny</category>
+  <category>Molecular Biology</category>
+  <category>Lab Tools</category>
+  <guid>https://danielsangarci.github.io/posts/pcr_calculator/</guid>
+  <pubDate>Wed, 11 Mar 2026 23:39:19 GMT</pubDate>
+  <media:content url="https://danielsangarci.github.io/posts/pcr_calculator/pcr_master_mix_calculator.png" medium="image" type="image/png" height="79" width="144"/>
+</item>
 <item>
   <title>DNA Molar Pooling Calculator</title>
   <dc:creator>Daniel Sánchez-García</dc:creator>

@@ -32,7 +32,7 @@
     "href": "posts.html",
     "title": "RCode",
     "section": "",
-    "text": "DNA Molar Pooling Calculator\n\n\n\n\n\n29 January 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nRe-usable code for quick data visualization with ggplot\n\n\n\n\n\n16 June 2025\n\n\nDaniel Sánchez-García\n\n6 min\n\n\n\n\nNo matching items"
+    "text": "PCR Master Mix Calculator\n\n\n\n\n\n12 March 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nDNA Molar Pooling Calculator\n\n\n\n\n\n29 January 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nRe-usable code for quick data visualization with ggplot\n\n\n\n\n\n16 June 2025\n\n\nDaniel Sánchez-García\n\n6 min\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/ant-plant-bacteria/ant-plant-bacteria.html",
@@ -213,6 +213,34 @@
     "objectID": "posts/dna_molar_pooling_calculator/index.html#live-calculator",
     "href": "posts/dna_molar_pooling_calculator/index.html#live-calculator",
     "title": "DNA Molar Pooling Calculator",
+    "section": "🚀 Live Calculator",
+    "text": "🚀 Live Calculator\nYou can use the tool directly below, or open it in a new window."
+  },
+  {
+    "objectID": "posts/pcr_calculator/index.html",
+    "href": "posts/pcr_calculator/index.html",
+    "title": "PCR Master Mix Calculator",
+    "section": "",
+    "text": "Setting up PCR reactions often involves repetitive and error-prone math. You might have stock solutions in mM, but your protocol asks for a final concentration in µM. You then need to scale a single 25 µL reaction for 24 samples, plus calculate a slight overage for pipetting error.\nA single miscalculated decimal point, a forgotten unit conversion, or failing to subtract the template volume from the final water calculation can result in failed amplification, wasted reagents, and lost time."
+  },
+  {
+    "objectID": "posts/pcr_calculator/index.html#the-problem-math-errors-at-the-bench",
+    "href": "posts/pcr_calculator/index.html#the-problem-math-errors-at-the-bench",
+    "title": "PCR Master Mix Calculator",
+    "section": "",
+    "text": "Setting up PCR reactions often involves repetitive and error-prone math. You might have stock solutions in mM, but your protocol asks for a final concentration in µM. You then need to scale a single 25 µL reaction for 24 samples, plus calculate a slight overage for pipetting error.\nA single miscalculated decimal point, a forgotten unit conversion, or failing to subtract the template volume from the final water calculation can result in failed amplification, wasted reagents, and lost time."
+  },
+  {
+    "objectID": "posts/pcr_calculator/index.html#the-solution",
+    "href": "posts/pcr_calculator/index.html#the-solution",
+    "title": "PCR Master Mix Calculator",
+    "section": "The Solution",
+    "text": "The Solution\nI developed the PCR Master Mix Calculator to take the mental gymnastics out of PCR prep. It is an R Shiny application that automatically handles the \\(C_1V_1 = C_2V_2\\) equations behind the scenes, ensuring your final concentrations are perfect and your total volumes always add up exactly.\n\nKey Features\n\nSmart Auto-Conversion: Mix and match stock and target units (mM to µM, mg/mL to µg/µL, etc.). The app calculates the correct conversion factor automatically and blocks impossible conversions.\nDual Workflows: Choose whether you are building a custom reaction entirely from scratch (Buffer, MgCl2, dNTPs, Taq) or just adding primers to a commercial Master Mix (e.g., 2X or 5X).\nFail-Safe Alerts: The calculator dynamically determines the required nuclease-free water. If your components exceed the target reaction volume, it immediately flags a warning.\nLab-Book Ready: A custom “Copy” button lets you paste the generated pipetting protocol directly into Microsoft Word or a digital lab notebook with perfect table formatting, automatically highlighting which volumes belong in the bulk Master Mix tube."
+  },
+  {
+    "objectID": "posts/pcr_calculator/index.html#live-calculator",
+    "href": "posts/pcr_calculator/index.html#live-calculator",
+    "title": "PCR Master Mix Calculator",
     "section": "🚀 Live Calculator",
     "text": "🚀 Live Calculator\nYou can use the tool directly below, or open it in a new window."
   }
