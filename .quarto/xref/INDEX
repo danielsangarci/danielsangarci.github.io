@@ -91,5 +91,8 @@
   },
   "posts/pcr_calculator/index.qmd": {
     "index.html": "dc02bc75"
+  },
+  "posts/DNA_purity_QC_nanodrop/index.qmd": {
+    "index.html": "8def3aca"
   }
 }

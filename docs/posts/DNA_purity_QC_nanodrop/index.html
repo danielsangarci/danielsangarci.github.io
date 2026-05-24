@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Daniel Sánchez-García">
+<meta name="dcterms.date" content="2026-05-25">
+<meta name="description" content="An intuitive R Shiny application that automates Nanodrop data analysis, seamlessly pairing pre- and post-purification results while exporting lab-ready, conditionally formatted Excel reports.">
 
-<title>Code &amp; Tools – Daniel Sánchez-García</title>
+<title>DNA Quality Control &amp; Traceability App – Daniel Sánchez-García</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,35 +26,33 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./img/network.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fd2c72b0fc76fd55ebbf55a6e9afa7e3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-7433ba30d1ee6639e01ad59862473bf2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-fd2c72b0fc76fd55ebbf55a6e9afa7e3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../img/network.png" rel="icon" type="image/png">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0064751d40d537987f8b6fa9fc1b9cef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-84aec2f60d7167055bda08cc6d10d6a7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-0064751d40d537987f8b6fa9fc1b9cef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,35 +80,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-reading-time','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-H3GD3Z7KWV"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -137,43 +109,16 @@ cookieconsent.run({
   
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Daniel Sánchez-García" href="posts.xml" data-external="1"><meta property="og:title" content="Code &amp; Tools – Daniel Sánchez-García">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="DNA Quality Control &amp; Traceability App – Daniel Sánchez-García">
+<meta property="og:description" content="An intuitive R Shiny application that automates Nanodrop data analysis, seamlessly pairing pre- and post-purification results while exporting lab-ready, conditionally formatted Excel reports.">
 <meta property="og:image" content="https://danielsangarci.github.io/posts/DNA_purity_QC_nanodrop/dna_purity_qc_nanodrop.png">
 <meta property="og:site_name" content="Daniel Sánchez-García">
 <meta property="og:image:height" content="1536">
 <meta property="og:image:width" content="2816">
-<meta name="twitter:title" content="Code &amp; Tools – Daniel Sánchez-García">
+<meta name="twitter:title" content="DNA Quality Control &amp; Traceability App – Daniel Sánchez-García">
+<meta name="twitter:description" content="An intuitive R Shiny application that automates Nanodrop data analysis, seamlessly pairing pre- and post-purification results while exporting lab-ready, conditionally formatted Excel reports.">
 <meta name="twitter:image" content="https://danielsangarci.github.io/posts/DNA_purity_QC_nanodrop/dna_purity_qc_nanodrop.png">
 <meta name="twitter:creator" content="@DanielSánchez-García">
 <meta name="twitter:card" content="summary_large_image">
@@ -350,9 +295,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Daniel Sánchez-García</span>
     </a>
   </div>
@@ -362,31 +307,31 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.pdf"> 
+    <a class="nav-link" href="../../cv.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Code &amp; Tools</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./gallery.html"> 
+    <a class="nav-link" href="../../gallery.html"> 
 <span class="menu-text">Gallery</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
+    <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
   <li class="nav-item">
@@ -403,26 +348,61 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="QmlvaW5mb3JtYXRpY3M=">Bioinformatics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyME1hbmFnZW1lbnQ=">Data Management <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Z2dwbG90Mg==">ggplot2 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGFiJTIwVG9vbHM=">Lab Tools <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TW9sZWN1bGFyJTIwQmlvbG9neQ==">Molecular Biology <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(3)</span></div><div class="category" data-category="U2hpbnk=">Shiny <span class="quarto-category-count">(3)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-problem-the-chaos-of-nanodrop-data" id="toc-the-problem-the-chaos-of-nanodrop-data" class="nav-link active" data-scroll-target="#the-problem-the-chaos-of-nanodrop-data">The Problem: The Chaos of Nanodrop Data</a></li>
+  <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution">The Solution</a>
+  <ul class="collapse">
+  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
+  </ul></li>
+  <li><a href="#live-application" id="toc-live-application" class="nav-link" data-scroll-target="#live-application">🚀 Live Application</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Code &amp; Tools</h1>
+<h1 class="title">DNA Quality Control &amp; Traceability App</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Shiny</div>
+    <div class="quarto-category">Molecular Biology</div>
+    <div class="quarto-category">Lab Tools</div>
+    <div class="quarto-category">Data Management</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    An intuitive R Shiny application that automates Nanodrop data analysis, seamlessly pairing pre- and post-purification results while exporting lab-ready, conditionally formatted Excel reports.
+  </div>
 </div>
 
 
+<div class="quarto-title-meta">
 
-<div class="quarto-title-meta column-page-left">
-
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="https://danielsangarci.com/">Daniel Sánchez-García</a> </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">25 May 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -432,113 +412,35 @@ window.Quarto = {
 </header>
 
 
+<section id="the-problem-the-chaos-of-nanodrop-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-the-chaos-of-nanodrop-data">The Problem: The Chaos of Nanodrop Data</h2>
+<p>Evaluating DNA purity after extraction can quickly become a logistical headache. You run dozens of samples on the Nanodrop, copy and paste the raw data into Excel, and then manually review the 260/280 and 260/230 ratios to decide which samples require cleanup.</p>
+<p>The real trouble begins during phase 2: once you apply a purification method (such as SPRI beads or a Zymo cleanup kit), you must re-quantify the samples. Manually cross-referencing and pairing the new data with the initial readings to determine whether a sample has been successfully rescued or must be permanently discarded is a time-consuming, error-prone process. Furthermore, maintaining flawless traceability of extraction kits and purification methods across multiple batches is incredibly difficult.</p>
+</section>
+<section id="the-solution" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution">The Solution</h2>
+<p>I developed the <strong>DNA Quality Control &amp; Traceability App</strong> to completely automate this workflow.</p>
+<p>This R Shiny application ingests raw <code>.csv</code> or <code>.txt</code> files directly exported from your spectrophotometer, applies your custom quality thresholds, and automatically pairs initial and post-purification datasets. It provides a crystal-clear, automated diagnostic status for every single sample.</p>
+<section id="key-features" class="level3">
+<h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
+<ul>
+<li><strong>Automated Quality Assessment:</strong> Set your own minimum and maximum thresholds for 260/280 and 260/230 ratios. The app instantly classifies samples into <code>APPROVED</code>, <code>PENDING PURIFICATION</code>, or <code>DISCARDED</code>.</li>
+<li><strong>Full Traceability:</strong> Track sample types, initial extraction kits (e.g., <em>Qiagen PowerSoil</em>), and the specific purification method used. The algorithm intelligently matches cleaned samples by looking for the <code>_cl</code> suffix in the Sample ID.</li>
+<li><strong>Dynamic, Visual Management:</strong> Monitor your workflow across separate, interactive data tables: a global overview, a dedicated workspace for samples needing purification, and a log of permanently discarded samples.</li>
+<li><strong>Lab-Ready Excel Export:</strong> Download a multi-sheet <code>.xlsx</code> report with a single click. It features an embedded data dictionary and automatic conditional formatting (color-coded by sample status), making it completely ready for your digital lab notebook or quality control records.</li>
+</ul>
+</section>
+</section>
+<section id="live-application" class="level2">
+<h2 class="anchored" data-anchor-id="live-application">🚀 Live Application</h2>
+<p>You can interact with the live tool directly below, or open it in a <a href="https://danielsangarci.shinyapps.io/DNA_purity_QC_nanodrop/">new window</a>.</p>
+<iframe src="https://danielsangarci.shinyapps.io/DNA_purity_QC_nanodrop/" width="100%" height="900px" style="border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+</iframe>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UiUyQ1NoaW55JTJDTW9sZWN1bGFyJTIwQmlvbG9neSUyQ0xhYiUyMFRvb2xzJTJDRGF0YSUyME1hbmFnZW1lbnQ=" data-listing-date-sort="1779660613000" data-listing-file-modified-sort="1779660613339" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="334">
-<div class="thumbnail"><a href="./posts/DNA_purity_QC_nanodrop/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/DNA_purity_QC_nanodrop/dna_purity_qc_nanodrop.png" class="thumbnail-image" style="height: 120px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/DNA_purity_QC_nanodrop/index.html" class="no-external">DNA Quality Control &amp; Traceability App</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./posts/DNA_purity_QC_nanodrop/index.html" class="no-external">
-<div class="listing-date">
-25 May 2026
-</div>
-<div class="listing-author">
-Daniel Sánchez-García
-</div>
-<div class="listing-reading-time">2 min</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UiUyQ1NoaW55JTJDTW9sZWN1bGFyJTIwQmlvbG9neSUyQ0xhYiUyMFRvb2xz" data-listing-date-sort="1773272359000" data-listing-file-modified-sort="1773272359686" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="285">
-<div class="thumbnail"><a href="./posts/pcr_calculator/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/pcr_calculator/pcr_master_mix_calculator.png" class="thumbnail-image" style="height: 120px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/pcr_calculator/index.html" class="no-external">PCR Master Mix Calculator</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./posts/pcr_calculator/index.html" class="no-external">
-<div class="listing-date">
-12 March 2026
-</div>
-<div class="listing-author">
-Daniel Sánchez-García
-</div>
-<div class="listing-reading-time">2 min</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="UiUyQ1NoaW55JTJDQmlvaW5mb3JtYXRpY3MlMkNMYWIlMjBUb29scw==" data-listing-date-sort="1769647321000" data-listing-file-modified-sort="1769647321302" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="210">
-<div class="thumbnail"><a href="./posts/dna_molar_pooling_calculator/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/dna_molar_pooling_calculator/dna_molar_pooling_calculator.png" class="thumbnail-image" style="height: 120px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/dna_molar_pooling_calculator/index.html" class="no-external">DNA Molar Pooling Calculator</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./posts/dna_molar_pooling_calculator/index.html" class="no-external">
-<div class="listing-date">
-29 January 2026
-</div>
-<div class="listing-author">
-Daniel Sánchez-García
-</div>
-<div class="listing-reading-time">2 min</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Z2dwbG90Mg==" data-listing-date-sort="1750079388000" data-listing-file-modified-sort="1750079388940" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1139">
-<div class="thumbnail"><a href="./posts/post_trial/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/post_trial/image2.jpg" class="thumbnail-image" style="height: 120px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post_trial/index.html" class="no-external">Re-usable code for quick data visualization with <code>ggplot</code></a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./posts/post_trial/index.html" class="no-external">
-<div class="listing-date">
-16 June 2025
-</div>
-<div class="listing-author">
-Daniel Sánchez-García
-</div>
-<div class="listing-reading-time">6 min</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -952,6 +854,8 @@ Daniel Sánchez-García
     }
   });
   </script>
+<script src="https://utteranc.es/client.js" repo="danielsangarci/danielsangarci_website_posts_comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -970,5 +874,5 @@ Daniel Sánchez-García
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

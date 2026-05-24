@@ -30,9 +30,9 @@
   {
     "objectID": "posts.html",
     "href": "posts.html",
-    "title": "RCode",
+    "title": "Code & Tools",
     "section": "",
-    "text": "PCR Master Mix Calculator\n\n\n\n\n\n12 March 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nDNA Molar Pooling Calculator\n\n\n\n\n\n29 January 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nRe-usable code for quick data visualization with ggplot\n\n\n\n\n\n16 June 2025\n\n\nDaniel Sánchez-García\n\n6 min\n\n\n\n\nNo matching items"
+    "text": "DNA Quality Control & Traceability App\n\n\n\n\n\n25 May 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nPCR Master Mix Calculator\n\n\n\n\n\n12 March 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nDNA Molar Pooling Calculator\n\n\n\n\n\n29 January 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nRe-usable code for quick data visualization with ggplot\n\n\n\n\n\n16 June 2025\n\n\nDaniel Sánchez-García\n\n6 min\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/ant-plant-bacteria/ant-plant-bacteria.html",
@@ -243,5 +243,33 @@
     "title": "PCR Master Mix Calculator",
     "section": "🚀 Live Calculator",
     "text": "🚀 Live Calculator\nYou can use the tool directly below, or open it in a new window."
+  },
+  {
+    "objectID": "posts/DNA_purity_QC_nanodrop/index.html",
+    "href": "posts/DNA_purity_QC_nanodrop/index.html",
+    "title": "DNA Quality Control & Traceability App",
+    "section": "",
+    "text": "Evaluating DNA purity after extraction can quickly become a logistical headache. You run dozens of samples on the Nanodrop, copy and paste the raw data into Excel, and then manually review the 260/280 and 260/230 ratios to decide which samples require cleanup.\nThe real trouble begins during phase 2: once you apply a purification method (such as SPRI beads or a Zymo cleanup kit), you must re-quantify the samples. Manually cross-referencing and pairing the new data with the initial readings to determine whether a sample has been successfully rescued or must be permanently discarded is a time-consuming, error-prone process. Furthermore, maintaining flawless traceability of extraction kits and purification methods across multiple batches is incredibly difficult."
+  },
+  {
+    "objectID": "posts/DNA_purity_QC_nanodrop/index.html#the-problem-the-chaos-of-nanodrop-data",
+    "href": "posts/DNA_purity_QC_nanodrop/index.html#the-problem-the-chaos-of-nanodrop-data",
+    "title": "DNA Quality Control & Traceability App",
+    "section": "",
+    "text": "Evaluating DNA purity after extraction can quickly become a logistical headache. You run dozens of samples on the Nanodrop, copy and paste the raw data into Excel, and then manually review the 260/280 and 260/230 ratios to decide which samples require cleanup.\nThe real trouble begins during phase 2: once you apply a purification method (such as SPRI beads or a Zymo cleanup kit), you must re-quantify the samples. Manually cross-referencing and pairing the new data with the initial readings to determine whether a sample has been successfully rescued or must be permanently discarded is a time-consuming, error-prone process. Furthermore, maintaining flawless traceability of extraction kits and purification methods across multiple batches is incredibly difficult."
+  },
+  {
+    "objectID": "posts/DNA_purity_QC_nanodrop/index.html#the-solution",
+    "href": "posts/DNA_purity_QC_nanodrop/index.html#the-solution",
+    "title": "DNA Quality Control & Traceability App",
+    "section": "The Solution",
+    "text": "The Solution\nI developed the DNA Quality Control & Traceability App to completely automate this workflow.\nThis R Shiny application ingests raw .csv or .txt files directly exported from your spectrophotometer, applies your custom quality thresholds, and automatically pairs initial and post-purification datasets. It provides a crystal-clear, automated diagnostic status for every single sample.\n\nKey Features\n\nAutomated Quality Assessment: Set your own minimum and maximum thresholds for 260/280 and 260/230 ratios. The app instantly classifies samples into APPROVED, PENDING PURIFICATION, or DISCARDED.\nFull Traceability: Track sample types, initial extraction kits (e.g., Qiagen PowerSoil), and the specific purification method used. The algorithm intelligently matches cleaned samples by looking for the _cl suffix in the Sample ID.\nDynamic, Visual Management: Monitor your workflow across separate, interactive data tables: a global overview, a dedicated workspace for samples needing purification, and a log of permanently discarded samples.\nLab-Ready Excel Export: Download a multi-sheet .xlsx report with a single click. It features an embedded data dictionary and automatic conditional formatting (color-coded by sample status), making it completely ready for your digital lab notebook or quality control records."
+  },
+  {
+    "objectID": "posts/DNA_purity_QC_nanodrop/index.html#live-application",
+    "href": "posts/DNA_purity_QC_nanodrop/index.html#live-application",
+    "title": "DNA Quality Control & Traceability App",
+    "section": "🚀 Live Application",
+    "text": "🚀 Live Application\nYou can interact with the live tool directly below, or open it in a new window."
   }
 ]
