@@ -32,7 +32,7 @@
     "href": "posts.html",
     "title": "Code & Tools",
     "section": "",
-    "text": "DNA Quality Control & Traceability App\n\n\n\n\n\n25 May 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nPCR Master Mix Calculator\n\n\n\n\n\n12 March 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nDNA Molar Pooling Calculator\n\n\n\n\n\n29 January 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nRe-usable code for quick data visualization with ggplot\n\n\n\n\n\n16 June 2025\n\n\nDaniel Sánchez-García\n\n6 min\n\n\n\n\nNo matching items"
+    "text": "Data Plotter & Script Generator\n\n\n\n\n\n25 May 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nDNA Quality Control & Traceability App\n\n\n\n\n\n25 May 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nPCR Master Mix Calculator\n\n\n\n\n\n12 March 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nDNA Molar Pooling Calculator\n\n\n\n\n\n29 January 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nRe-usable code for quick data visualization with ggplot\n\n\n\n\n\n16 June 2025\n\n\nDaniel Sánchez-García\n\n6 min\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/ant-plant-bacteria/ant-plant-bacteria.html",
@@ -271,5 +271,33 @@
     "title": "DNA Quality Control & Traceability App",
     "section": "🚀 Live Application",
     "text": "🚀 Live Application\nYou can interact with the live tool directly below, or open it in a new window."
+  },
+  {
+    "objectID": "posts/data_plotter/index.html",
+    "href": "posts/data_plotter/index.html",
+    "title": "Data Plotter & Script Generator",
+    "section": "",
+    "text": "As ecologists and biologists, we spend a massive amount of time collecting and organizing data in Excel. However, when you just want to take a quick look at that data to spot a trend or check if an experiment worked, the friction is immense.\nYou have to open RStudio, wrestle with formatting issues (the classic headache of European commas versus decimal points in .csv files), and write blocks of ggplot2 code just to render an exploratory plot. If you then need to filter out a few variables or tweak colors, time quickly slips away. And when you finally nail the perfect chart for your manuscript, you realize you didn’t save the script properly to reproduce it months later."
+  },
+  {
+    "objectID": "posts/data_plotter/index.html#the-problem-friction-in-data-exploration",
+    "href": "posts/data_plotter/index.html#the-problem-friction-in-data-exploration",
+    "title": "Data Plotter & Script Generator",
+    "section": "",
+    "text": "As ecologists and biologists, we spend a massive amount of time collecting and organizing data in Excel. However, when you just want to take a quick look at that data to spot a trend or check if an experiment worked, the friction is immense.\nYou have to open RStudio, wrestle with formatting issues (the classic headache of European commas versus decimal points in .csv files), and write blocks of ggplot2 code just to render an exploratory plot. If you then need to filter out a few variables or tweak colors, time quickly slips away. And when you finally nail the perfect chart for your manuscript, you realize you didn’t save the script properly to reproduce it months later."
+  },
+  {
+    "objectID": "posts/data_plotter/index.html#the-solution",
+    "href": "posts/data_plotter/index.html#the-solution",
+    "title": "Data Plotter & Script Generator",
+    "section": "The Solution",
+    "text": "The Solution\nTrue to the philosophy of Open and Reproducible Science, I developed the DIY Data Plotter & Script Generator.\nThis interactive application allows you to drag and drop your raw data, configure your charts visually in seconds, and most importantly, it gives you the exact R script required to reproduce that very same plot on your own local machine.\n\nKey Features\n\nSmart Upload & Auto-Cleaning: It accepts .csv, .txt, and .xlsx formats (allowing you to select specific Excel sheets). Furthermore, it features a background cleaning engine that automatically detects and corrects numeric formatting issues (like commas used as decimals) so ggplot2 doesn’t crash.\nMultiple Dynamic Filters: Filter your data in real-time. The app automatically generates sliders for numeric variables and multi-select dropdowns for categorical data, updating the chart instantly.\nReproducible Code Generation: Forget about coding from scratch. The app writes a clean, fully commented R script (using dplyr and ggplot2) that covers everything from reading the file and applying your filters to setting the plot aesthetics. Just copy and paste.\nPublication-Ready Export: Download your plots directly in the high-quality formats required by scientific journals (.tiff, .pdf, .png, .jpg), allowing you to set the exact size in centimeters and the resolution (e.g., 300 DPI)."
+  },
+  {
+    "objectID": "posts/data_plotter/index.html#live-application",
+    "href": "posts/data_plotter/index.html#live-application",
+    "title": "Data Plotter & Script Generator",
+    "section": "🚀 Live Application",
+    "text": "🚀 Live Application\nUpload your data and generate your reproducible plot directly below, or open the tool in a new window. (Note: Your data is not saved on any server; all processing is temporary)."
   }
 ]

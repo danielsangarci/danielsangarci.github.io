@@ -10,7 +10,55 @@
 <atom:link href="https://danielsangarci.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Sun, 24 May 2026 22:10:13 GMT</lastBuildDate>
+<lastBuildDate>Mon, 25 May 2026 14:10:37 GMT</lastBuildDate>
+<item>
+  <title>Data Plotter &amp; Script Generator</title>
+  <dc:creator>Daniel Sánchez-García</dc:creator>
+  <link>https://danielsangarci.github.io/posts/data_plotter/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="the-problem-friction-in-data-exploration" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-friction-in-data-exploration">The Problem: Friction in Data Exploration</h2>
+<p>As ecologists and biologists, we spend a massive amount of time collecting and organizing data in Excel. However, when you just want to take a quick look at that data to spot a trend or check if an experiment worked, the friction is immense.</p>
+<p>You have to open RStudio, wrestle with formatting issues (the classic headache of European commas versus decimal points in <code>.csv</code> files), and write blocks of <code>ggplot2</code> code just to render an exploratory plot. If you then need to filter out a few variables or tweak colors, time quickly slips away. And when you finally nail the perfect chart for your manuscript, you realize you didn’t save the script properly to reproduce it months later.</p>
+</section>
+<section id="the-solution" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution">The Solution</h2>
+<p>True to the philosophy of Open and Reproducible Science, I developed the <strong>DIY Data Plotter &amp; Script Generator</strong>.</p>
+<p>This interactive application allows you to drag and drop your raw data, configure your charts visually in seconds, and most importantly, <strong>it gives you the exact R script</strong> required to reproduce that very same plot on your own local machine.</p>
+<section id="key-features" class="level3">
+<h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
+<ul>
+<li><strong>Smart Upload &amp; Auto-Cleaning:</strong> It accepts <code>.csv</code>, <code>.txt</code>, and <code>.xlsx</code> formats (allowing you to select specific Excel sheets). Furthermore, it features a background cleaning engine that automatically detects and corrects numeric formatting issues (like commas used as decimals) so <code>ggplot2</code> doesn’t crash.</li>
+<li><strong>Multiple Dynamic Filters:</strong> Filter your data in real-time. The app automatically generates sliders for numeric variables and multi-select dropdowns for categorical data, updating the chart instantly.</li>
+<li><strong>Reproducible Code Generation:</strong> Forget about coding from scratch. The app writes a clean, fully commented R script (using <code>dplyr</code> and <code>ggplot2</code>) that covers everything from reading the file and applying your filters to setting the plot aesthetics. Just copy and paste.</li>
+<li><strong>Publication-Ready Export:</strong> Download your plots directly in the high-quality formats required by scientific journals (<code>.tiff</code>, <code>.pdf</code>, <code>.png</code>, <code>.jpg</code>), allowing you to set the exact size in centimeters and the resolution (e.g., 300 DPI).</li>
+</ul>
+</section>
+</section>
+<section id="live-application" class="level2">
+<h2 class="anchored" data-anchor-id="live-application">🚀 Live Application</h2>
+<p>Upload your data and generate your reproducible plot directly below, or open the tool in a <a href="https://danielsangarci.shinyapps.io/quick_plot/">new window</a>. <em>(Note: Your data is not saved on any server; all processing is temporary).</em></p>
+<iframe src="https://danielsangarci.shinyapps.io/quick_plot/" width="100%" height="950px" style="border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+</iframe>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>Shiny</category>
+  <category>Data Visualization</category>
+  <category>Open Science</category>
+  <category>Lab Tools</category>
+  <guid>https://danielsangarci.github.io/posts/data_plotter/</guid>
+  <pubDate>Mon, 25 May 2026 14:10:37 GMT</pubDate>
+  <media:content url="https://danielsangarci.github.io/posts/data_plotter/data_plotter.png" medium="image" type="image/png" height="79" width="144"/>
+</item>
 <item>
   <title>DNA Quality Control &amp; Traceability App</title>
   <dc:creator>Daniel Sánchez-García</dc:creator>

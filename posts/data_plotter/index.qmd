@@ -1,0 +1,41 @@
+---
+title: "Data Plotter & Script Generator"
+description: "An interactive R Shiny application to explore data, generate high-quality ggplot2 charts, and automatically export the reproducible script—without writing a single line of code."
+author:
+  - name: Daniel Sánchez-García
+    url: https://danielsangarci.com/
+date: last-modified
+date-format: "D MMMM YYYY"
+categories: [R, Shiny, Data Visualization, Open Science, Lab Tools]
+image: data_plotter.png
+draft: false
+editor_options: 
+  chunk_output_type: console
+---
+
+## The Problem: Friction in Data Exploration
+
+As ecologists and biologists, we spend a massive amount of time collecting and organizing data in Excel. However, when you just want to take a quick look at that data to spot a trend or check if an experiment worked, the friction is immense.
+
+You have to open RStudio, wrestle with formatting issues (the classic headache of European commas versus decimal points in `.csv` files), and write blocks of `ggplot2` code just to render an exploratory plot. If you then need to filter out a few variables or tweak colors, time quickly slips away. And when you finally nail the perfect chart for your manuscript, you realize you didn't save the script properly to reproduce it months later.
+
+## The Solution
+
+True to the philosophy of Open and Reproducible Science, I developed the **DIY Data Plotter & Script Generator**.
+
+This interactive application allows you to drag and drop your raw data, configure your charts visually in seconds, and most importantly, **it gives you the exact R script** required to reproduce that very same plot on your own local machine.
+
+### Key Features
+
+-   **Smart Upload & Auto-Cleaning:** It accepts `.csv`, `.txt`, and `.xlsx` formats (allowing you to select specific Excel sheets). Furthermore, it features a background cleaning engine that automatically detects and corrects numeric formatting issues (like commas used as decimals) so `ggplot2` doesn't crash.
+-   **Multiple Dynamic Filters:** Filter your data in real-time. The app automatically generates sliders for numeric variables and multi-select dropdowns for categorical data, updating the chart instantly.
+-   **Reproducible Code Generation:** Forget about coding from scratch. The app writes a clean, fully commented R script (using `dplyr` and `ggplot2`) that covers everything from reading the file and applying your filters to setting the plot aesthetics. Just copy and paste.
+-   **Publication-Ready Export:** Download your plots directly in the high-quality formats required by scientific journals (`.tiff`, `.pdf`, `.png`, `.jpg`), allowing you to set the exact size in centimeters and the resolution (e.g., 300 DPI).
+
+## 🚀 Live Application
+
+Upload your data and generate your reproducible plot directly below, or open the tool in a [new window](https://danielsangarci.shinyapps.io/quick_plot/). *(Note: Your data is not saved on any server; all processing is temporary).*
+
+<iframe src="https://danielsangarci.shinyapps.io/quick_plot/" width="100%" height="950px" style="border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+
+</iframe>
