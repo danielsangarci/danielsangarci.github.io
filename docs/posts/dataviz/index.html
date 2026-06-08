@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Daniel Sánchez-García">
+<meta name="dcterms.date" content="2026-06-09">
+<meta name="description" content="An interactive R Shiny application to explore data, customize ggplot2 charts visually, filter variables on the fly, and automatically export the reproducible script.">
 
-<title>Daniel Sánchez-García – Daniel Sánchez-García</title>
+<title>DataViz &amp; Script Generator: Publication-Ready Plots in Seconds – Daniel Sánchez-García</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,31 +29,32 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./img/network.png" rel="icon" type="image/png">
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-372ba00c76f2237325bc1c83b8257c65.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0ace1d7239200a24ae5a69d2cd853dca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-372ba00c76f2237325bc1c83b8257c65.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../img/network.png" rel="icon" type="image/png">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a4e6ed1c540880cfd43ca8abd9d0f340.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-33d8e75ddd6359ecfeb638b850b58262.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a4e6ed1c540880cfd43ca8abd9d0f340.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,14 +112,20 @@ cookieconsent.run({
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="DanielSánchez-García – Daniel Sánchez-García">
-<meta property="og:description" content="">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="DataViz &amp; Script Generator: Publication-Ready Plots in Seconds – Daniel Sánchez-García">
+<meta property="og:description" content="An interactive R Shiny application to explore data, customize ggplot2 charts visually, filter variables on the fly, and automatically export the reproducible script.">
+<meta property="og:image" content="https://danielsangarci.github.io/posts/dataviz/dataviz.png">
 <meta property="og:site_name" content="Daniel Sánchez-García">
-<meta name="twitter:title" content="DanielSánchez-García – Daniel Sánchez-García">
-<meta name="twitter:description" content="">
+<meta property="og:image:height" content="1536">
+<meta property="og:image:width" content="2816">
+<meta name="twitter:title" content="DataViz &amp; Script Generator: Publication-Ready Plots in Seconds – Daniel Sánchez-García">
+<meta name="twitter:description" content="An interactive R Shiny application to explore data, customize ggplot2 charts visually, filter variables on the fly, and automatically export the reproducible script.">
+<meta name="twitter:image" content="https://danielsangarci.github.io/posts/dataviz/dataviz.png">
 <meta name="twitter:creator" content="@DanielSánchez-García">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="1536">
+<meta name="twitter:image-width" content="2816">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -287,7 +297,7 @@ cookieconsent.run({
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Daniel Sánchez-García</span>
     </a>
   </div>
@@ -297,31 +307,31 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.pdf"> 
+    <a class="nav-link" href="../../cv.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Code &amp; Tools</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./gallery.html"> 
+    <a class="nav-link" href="../../gallery.html"> 
 <span class="menu-text">Gallery</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
+    <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
   <li class="nav-item">
@@ -338,59 +348,101 @@ cookieconsent.run({
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-problem-the-visualization-bottleneck" id="toc-the-problem-the-visualization-bottleneck" class="nav-link active" data-scroll-target="#the-problem-the-visualization-bottleneck">The Problem: The Visualization Bottleneck</a></li>
+  <li><a href="#the-solution-a-visual-interface-with-reproducible-output" id="toc-the-solution-a-visual-interface-with-reproducible-output" class="nav-link" data-scroll-target="#the-solution-a-visual-interface-with-reproducible-output">The Solution: A Visual Interface with Reproducible Output</a>
+  <ul class="collapse">
+  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
+  </ul></li>
+  <li><a href="#live-application" id="toc-live-application" class="nav-link" data-scroll-target="#live-application">🚀 Live Application</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="img/dani.jpg" class="about-image
-  round " style="height: 13em; width: 13em;">
+<main class="content" id="quarto-document-content">
+
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Daniel<br>Sánchez-García</h1>
-</div>
-<div class="quarto-title-meta column-page">
+<h1 class="title">DataViz &amp; Script Generator: Publication-Ready Plots in Seconds</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Shiny</div>
+    <div class="quarto-category">Data Visualization</div>
+    <div class="quarto-category">Open Science</div>
+    <div class="quarto-category">Lab Tools</div>
   </div>
+  </div>
+
+<div>
+  <div class="description">
+    An interactive R Shiny application to explore data, customize ggplot2 charts visually, filter variables on the fly, and automatically export the reproducible script.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="https://danielsangarci.com/">Daniel Sánchez-García</a> </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">9 June 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="/contact.html" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="https://scholar.google.com/citations?user=5EQSDqwAAAAJ&amp;hl=es" class="about-link" rel="" target="">
-     <span class="about-link-text">Google Scholar</span>
-  </a>
-  <a href="https://www.instagram.com/danielsangarci_wildlife/?hl=es" class="about-link" rel="" target="">
-    <i class="bi bi-instagram"></i>
-     <span class="about-link-text">instagram</span>
-  </a>
-  <a href="https://github.com/danielsangarci?tab=repositories" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://orcid.org/0000-0002-0710-6292" class="about-link" rel="" target="">
-    <i class="bi bi-orcid"></i>
-     <span class="about-link-text">ORCID</span>
-  </a>
-  <a href="https://www.researchgate.net/profile/Daniel-Sanchez-Garcia/research" class="about-link" rel="" target="">
-     <span class="about-link-text">Researchgate</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content column-page" id="quarto-document-content">
-
-<p>I am an ecologist and Postdoctoral Researcher at the Doñana Biological Station (EBD-CSIC). My work explores the hidden layers of biodiversity—specifically species interactions within ant, microbiome and mycobiome communities.</p>
-<p>Currently, I lead the PRELUDIUM <a href="projects/ant-plant-bacteria/ant-plant-bacteria.qmd">project</a>, where I investigate the role of ants as bacteria dispersal vectors and their indirect impact on plant health. While my <a href="projects/phd-thesis/phd-thesis.qmd">PhD</a> at the Museum and Institute of Zoology (Warsaw) was built on studying the multimodal adaptations (chemical, acoustic, and genetic) of social parasites, my current research focuses on species co-ocurrence and host-microbiome interactions.</p>
-<p>I am a staunch defender of Open Science, Reproducibility and “home-made” lab protocols. I believe in making high-level molecular ecology accessible and reproducible by developing DIY laboratory solutions.</p>
-<p>When not doing science you can also find me shooting macrophotography, which is a great way of getting cool images to use during your talks!</p>
-<p>Feel free to <a href="./contact.html">contact me</a> for scientific collaboration or getting some of my <a href="https://www.instagram.com/danielsangarci_wildlife/?hl=es">photos</a> to use in your papers/presentations.</p>
 
 
-</main></div>
-</div>
- <!-- /main -->
+<section id="the-problem-the-visualization-bottleneck" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-the-visualization-bottleneck">The Problem: The Visualization Bottleneck</h2>
+<p>Whether you are analyzing complex behavioral metrics from ant colonies or running quick checks on molecular data, data exploration shouldn’t be a bottleneck. However, rendering a high-quality exploratory plot usually involves a lot of repetitive coding.</p>
+<p>You open RStudio, import your data, realize the decimal separators are formatted incorrectly, and start writing the same <code>ggplot2</code> boilerplate. By the time you filter out specific outliers, map the right color palettes, and adjust the axis text sizes to make it legible, you’ve spent more time coding than actually analyzing the biological trends. And if you don’t save the script perfectly, reproducing that exact aesthetic for a manuscript later becomes a headache.</p>
+</section>
+<section id="the-solution-a-visual-interface-with-reproducible-output" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution-a-visual-interface-with-reproducible-output">The Solution: A Visual Interface with Reproducible Output</h2>
+<p>To keep data exploration frictionless without sacrificing the principles of Open Science, I built the <strong>DataViz &amp; Script Generator</strong>.</p>
+<p>This tool provides a complete, drag-and-drop GUI for <code>ggplot2</code>. It allows you to upload your raw data, manipulate parameters visually in real-time, and download your finalized, high-resolution figure. Most importantly, it bridges the gap between no-code tools and reproducible science by <strong>generating the exact R script</strong> (<code>dplyr</code> and <code>ggplot2</code>) needed to recreate your custom plot from scratch.</p>
+<section id="key-features" class="level3">
+<h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
+<ul>
+<li><strong>Smart Uploads &amp; Auto-Cleaning:</strong> Drag and drop <code>.csv</code>, <code>.txt</code>, or <code>.xlsx</code> files. The app’s background engine automatically detects and corrects European comma-decimal formatting, ensuring your numeric columns don’t crash the plot.</li>
+<li><strong>Dynamic Filtering &amp; Renaming:</strong> No need to use <code>filter()</code> or <code>mutate()</code> before plotting. You can actively include or exclude specific categorical levels and rename axis labels on the fly directly from the UI.</li>
+<li><strong>Complete Aesthetic Control:</strong> Build Histograms, Density plots, Barplots, Boxplots, Violins, or Scatterplots. Customize them with professional palettes (including ColorBrewer and colorblind-friendly Viridis options), adjust opacity, and toggle standard <code>ggplot2</code> themes (minimal, classic, dark, etc.).</li>
+<li><strong>Reproducible Code Generation:</strong> As you tweak sliders and dropdowns, the app writes a clean, fully functional R script alongside your plot. Simply copy and paste the code to your local machine to guarantee long-term reproducibility.</li>
+<li><strong>Publication-Ready Export:</strong> Download your visualizations in the exact format required by scientific journals (<code>.tiff</code>, <code>.png</code>, <code>.jpg</code>), with full control over the physical dimensions (in centimeters) and resolution (up to 600 DPI).</li>
+</ul>
+</section>
+</section>
+<section id="live-application" class="level2">
+<h2 class="anchored" data-anchor-id="live-application">🚀 Live Application</h2>
+<p>Upload your dataset and start building your reproducible plot below, or open the tool in a <a href="https://danielsangarci.shinyapps.io/dataviz/">new window</a>.</p>
+<p><em>(Note: Your data is processed locally in the session and is never saved on any server).</em></p>
+<iframe src="https://danielsangarci.shinyapps.io/dataviz/" width="100%" height="950px" style="border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+</iframe>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -406,6 +458,13 @@ cookieconsent.run({
       window.document.body.appendChild(a);
     }
     setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -797,6 +856,8 @@ cookieconsent.run({
     }
   });
   </script>
+<script src="https://utteranc.es/client.js" repo="danielsangarci/danielsangarci_website_posts_comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -815,5 +876,5 @@ cookieconsent.run({
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

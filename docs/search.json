@@ -32,7 +32,7 @@
     "href": "posts.html",
     "title": "Code & Tools",
     "section": "",
-    "text": "Data Plotter & Script Generator\n\n\n\n\n\n25 May 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nDNA Quality Control & Traceability App\n\n\n\n\n\n25 May 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nPCR Master Mix Calculator\n\n\n\n\n\n12 March 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nDNA Molar Pooling Calculator\n\n\n\n\n\n29 January 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nRe-usable code for quick data visualization with ggplot\n\n\n\n\n\n16 June 2025\n\n\nDaniel Sánchez-García\n\n6 min\n\n\n\n\nNo matching items"
+    "text": "DataViz & Script Generator: Publication-Ready Plots in Seconds\n\n\n\n\n\n9 June 2026\n\n\nDaniel Sánchez-García\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\nDNA Quality Control & Traceability App\n\n\n\n\n\n25 May 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nPCR Master Mix Calculator\n\n\n\n\n\n12 March 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nDNA Molar Pooling Calculator\n\n\n\n\n\n29 January 2026\n\n\nDaniel Sánchez-García\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nRe-usable code for quick data visualization with ggplot\n\n\n\n\n\n16 June 2025\n\n\nDaniel Sánchez-García\n\n6 min\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/ant-plant-bacteria/ant-plant-bacteria.html",
@@ -275,9 +275,9 @@
   {
     "objectID": "posts/data_plotter/index.html",
     "href": "posts/data_plotter/index.html",
-    "title": "Data Plotter & Script Generator",
+    "title": "DataViz & Script Generator: Publication-Ready Plots in Seconds",
     "section": "",
-    "text": "As ecologists and biologists, we spend a massive amount of time collecting and organizing data in Excel. However, when you just want to take a quick look at that data to spot a trend or check if an experiment worked, the friction is immense.\nYou have to open RStudio, wrestle with formatting issues (the classic headache of European commas versus decimal points in .csv files), and write blocks of ggplot2 code just to render an exploratory plot. If you then need to filter out a few variables or tweak colors, time quickly slips away. And when you finally nail the perfect chart for your manuscript, you realize you didn’t save the script properly to reproduce it months later."
+    "text": "Whether you are analyzing complex behavioral metrics from ant colonies or running quick checks on molecular data, data exploration shouldn’t be a bottleneck. However, rendering a high-quality exploratory plot usually involves a lot of repetitive coding.\nYou open RStudio, import your data, realize the decimal separators are formatted incorrectly, and start writing the same ggplot2 boilerplate. By the time you filter out specific outliers, map the right color palettes, and adjust the axis text sizes to make it legible, you’ve spent more time coding than actually analyzing the biological trends. And if you don’t save the script perfectly, reproducing that exact aesthetic for a manuscript later becomes a headache."
   },
   {
     "objectID": "posts/data_plotter/index.html#the-problem-friction-in-data-exploration",
@@ -296,8 +296,50 @@
   {
     "objectID": "posts/data_plotter/index.html#live-application",
     "href": "posts/data_plotter/index.html#live-application",
-    "title": "Data Plotter & Script Generator",
+    "title": "DataViz & Script Generator: Publication-Ready Plots in Seconds",
     "section": "🚀 Live Application",
-    "text": "🚀 Live Application\nUpload your data and generate your reproducible plot directly below, or open the tool in a new window. (Note: Your data is not saved on any server; all processing is temporary)."
+    "text": "🚀 Live Application\nUpload your dataset and start building your reproducible plot below, or open the tool in a new window.\n(Note: Your data is processed locally in the session and is never saved on any server)."
+  },
+  {
+    "objectID": "posts/data_plotter/index.html#the-problem-the-visualization-bottleneck",
+    "href": "posts/data_plotter/index.html#the-problem-the-visualization-bottleneck",
+    "title": "DataViz & Script Generator: Publication-Ready Plots in Seconds",
+    "section": "",
+    "text": "Whether you are analyzing complex behavioral metrics from ant colonies or running quick checks on molecular data, data exploration shouldn’t be a bottleneck. However, rendering a high-quality exploratory plot usually involves a lot of repetitive coding.\nYou open RStudio, import your data, realize the decimal separators are formatted incorrectly, and start writing the same ggplot2 boilerplate. By the time you filter out specific outliers, map the right color palettes, and adjust the axis text sizes to make it legible, you’ve spent more time coding than actually analyzing the biological trends. And if you don’t save the script perfectly, reproducing that exact aesthetic for a manuscript later becomes a headache."
+  },
+  {
+    "objectID": "posts/data_plotter/index.html#the-solution-a-visual-interface-with-reproducible-output",
+    "href": "posts/data_plotter/index.html#the-solution-a-visual-interface-with-reproducible-output",
+    "title": "DataViz & Script Generator: Publication-Ready Plots in Seconds",
+    "section": "The Solution: A Visual Interface with Reproducible Output",
+    "text": "The Solution: A Visual Interface with Reproducible Output\nTo keep data exploration frictionless without sacrificing the principles of Open Science, I built the DataViz & Script Generator.\nThis tool provides a complete, drag-and-drop GUI for ggplot2. It allows you to upload your raw data, manipulate parameters visually in real-time, and download your finalized, high-resolution figure. Most importantly, it bridges the gap between no-code tools and reproducible science by generating the exact R script (dplyr and ggplot2) needed to recreate your custom plot from scratch.\n\nKey Features\n\nSmart Uploads & Auto-Cleaning: Drag and drop .csv, .txt, or .xlsx files. The app’s background engine automatically detects and corrects European comma-decimal formatting, ensuring your numeric columns don’t crash the plot.\nDynamic Filtering & Renaming: No need to use filter() or mutate() before plotting. You can actively include or exclude specific categorical levels and rename axis labels on the fly directly from the UI.\nComplete Aesthetic Control: Build Histograms, Density plots, Barplots, Boxplots, Violins, or Scatterplots. Customize them with professional palettes (including ColorBrewer and colorblind-friendly Viridis options), adjust opacity, and toggle standard ggplot2 themes (minimal, classic, dark, etc.).\nReproducible Code Generation: As you tweak sliders and dropdowns, the app writes a clean, fully functional R script alongside your plot. Simply copy and paste the code to your local machine to guarantee long-term reproducibility.\nPublication-Ready Export: Download your visualizations in the exact format required by scientific journals (.tiff, .png, .jpg), with full control over the physical dimensions (in centimeters) and resolution (up to 600 DPI)."
+  },
+  {
+    "objectID": "posts/dataviz/index.html",
+    "href": "posts/dataviz/index.html",
+    "title": "DataViz & Script Generator: Publication-Ready Plots in Seconds",
+    "section": "",
+    "text": "Whether you are analyzing complex behavioral metrics from ant colonies or running quick checks on molecular data, data exploration shouldn’t be a bottleneck. However, rendering a high-quality exploratory plot usually involves a lot of repetitive coding.\nYou open RStudio, import your data, realize the decimal separators are formatted incorrectly, and start writing the same ggplot2 boilerplate. By the time you filter out specific outliers, map the right color palettes, and adjust the axis text sizes to make it legible, you’ve spent more time coding than actually analyzing the biological trends. And if you don’t save the script perfectly, reproducing that exact aesthetic for a manuscript later becomes a headache."
+  },
+  {
+    "objectID": "posts/dataviz/index.html#the-problem-the-visualization-bottleneck",
+    "href": "posts/dataviz/index.html#the-problem-the-visualization-bottleneck",
+    "title": "DataViz & Script Generator: Publication-Ready Plots in Seconds",
+    "section": "",
+    "text": "Whether you are analyzing complex behavioral metrics from ant colonies or running quick checks on molecular data, data exploration shouldn’t be a bottleneck. However, rendering a high-quality exploratory plot usually involves a lot of repetitive coding.\nYou open RStudio, import your data, realize the decimal separators are formatted incorrectly, and start writing the same ggplot2 boilerplate. By the time you filter out specific outliers, map the right color palettes, and adjust the axis text sizes to make it legible, you’ve spent more time coding than actually analyzing the biological trends. And if you don’t save the script perfectly, reproducing that exact aesthetic for a manuscript later becomes a headache."
+  },
+  {
+    "objectID": "posts/dataviz/index.html#the-solution-a-visual-interface-with-reproducible-output",
+    "href": "posts/dataviz/index.html#the-solution-a-visual-interface-with-reproducible-output",
+    "title": "DataViz & Script Generator: Publication-Ready Plots in Seconds",
+    "section": "The Solution: A Visual Interface with Reproducible Output",
+    "text": "The Solution: A Visual Interface with Reproducible Output\nTo keep data exploration frictionless without sacrificing the principles of Open Science, I built the DataViz & Script Generator.\nThis tool provides a complete, drag-and-drop GUI for ggplot2. It allows you to upload your raw data, manipulate parameters visually in real-time, and download your finalized, high-resolution figure. Most importantly, it bridges the gap between no-code tools and reproducible science by generating the exact R script (dplyr and ggplot2) needed to recreate your custom plot from scratch.\n\nKey Features\n\nSmart Uploads & Auto-Cleaning: Drag and drop .csv, .txt, or .xlsx files. The app’s background engine automatically detects and corrects European comma-decimal formatting, ensuring your numeric columns don’t crash the plot.\nDynamic Filtering & Renaming: No need to use filter() or mutate() before plotting. You can actively include or exclude specific categorical levels and rename axis labels on the fly directly from the UI.\nComplete Aesthetic Control: Build Histograms, Density plots, Barplots, Boxplots, Violins, or Scatterplots. Customize them with professional palettes (including ColorBrewer and colorblind-friendly Viridis options), adjust opacity, and toggle standard ggplot2 themes (minimal, classic, dark, etc.).\nReproducible Code Generation: As you tweak sliders and dropdowns, the app writes a clean, fully functional R script alongside your plot. Simply copy and paste the code to your local machine to guarantee long-term reproducibility.\nPublication-Ready Export: Download your visualizations in the exact format required by scientific journals (.tiff, .png, .jpg), with full control over the physical dimensions (in centimeters) and resolution (up to 600 DPI)."
+  },
+  {
+    "objectID": "posts/dataviz/index.html#live-application",
+    "href": "posts/dataviz/index.html#live-application",
+    "title": "DataViz & Script Generator: Publication-Ready Plots in Seconds",
+    "section": "🚀 Live Application",
+    "text": "🚀 Live Application\nUpload your dataset and start building your reproducible plot below, or open the tool in a new window.\n(Note: Your data is processed locally in the session and is never saved on any server)."
   }
 ]

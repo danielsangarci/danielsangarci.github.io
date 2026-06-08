@@ -1,0 +1,44 @@
+---
+title: "DataViz & Script Generator: Publication-Ready Plots in Seconds"
+description: "An interactive R Shiny application to explore data, customize ggplot2 charts visually, filter variables on the fly, and automatically export the reproducible script."
+author:
+  - name: Daniel Sánchez-García
+    url: https://danielsangarci.com/
+date: last-modified
+date-format: "D MMMM YYYY"
+categories: [R, Shiny, Data Visualization, Open Science, Lab Tools]
+image: dataviz.png
+draft: false
+editor_options: 
+  chunk_output_type: console
+---
+
+## The Problem: The Visualization Bottleneck
+
+Whether you are analyzing complex behavioral metrics from ant colonies or running quick checks on molecular data, data exploration shouldn't be a bottleneck. However, rendering a high-quality exploratory plot usually involves a lot of repetitive coding.
+
+You open RStudio, import your data, realize the decimal separators are formatted incorrectly, and start writing the same `ggplot2` boilerplate. By the time you filter out specific outliers, map the right color palettes, and adjust the axis text sizes to make it legible, you've spent more time coding than actually analyzing the biological trends. And if you don't save the script perfectly, reproducing that exact aesthetic for a manuscript later becomes a headache.
+
+## The Solution: A Visual Interface with Reproducible Output
+
+To keep data exploration frictionless without sacrificing the principles of Open Science, I built the **DataViz & Script Generator**.
+
+This tool provides a complete, drag-and-drop GUI for `ggplot2`. It allows you to upload your raw data, manipulate parameters visually in real-time, and download your finalized, high-resolution figure. Most importantly, it bridges the gap between no-code tools and reproducible science by **generating the exact R script** (`dplyr` and `ggplot2`) needed to recreate your custom plot from scratch.
+
+### Key Features
+
+- **Smart Uploads & Auto-Cleaning:** Drag and drop `.csv`, `.txt`, or `.xlsx` files. The app's background engine automatically detects and corrects European comma-decimal formatting, ensuring your numeric columns don't crash the plot.
+- **Dynamic Filtering & Renaming:** No need to use `filter()` or `mutate()` before plotting. You can actively include or exclude specific categorical levels and rename axis labels on the fly directly from the UI.
+- **Complete Aesthetic Control:** Build Histograms, Density plots, Barplots, Boxplots, Violins, or Scatterplots. Customize them with professional palettes (including ColorBrewer and colorblind-friendly Viridis options), adjust opacity, and toggle standard `ggplot2` themes (minimal, classic, dark, etc.).
+- **Reproducible Code Generation:** As you tweak sliders and dropdowns, the app writes a clean, fully functional R script alongside your plot. Simply copy and paste the code to your local machine to guarantee long-term reproducibility.
+- **Publication-Ready Export:** Download your visualizations in the exact format required by scientific journals (`.tiff`, `.png`, `.jpg`), with full control over the physical dimensions (in centimeters) and resolution (up to 600 DPI).
+
+## 🚀 Live Application
+
+Upload your dataset and start building your reproducible plot below, or open the tool in a [new window](https://danielsangarci.shinyapps.io/dataviz/).
+
+*(Note: Your data is processed locally in the session and is never saved on any server).*
+
+<iframe src="https://danielsangarci.shinyapps.io/dataviz/" width="100%" height="950px" style="border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+
+</iframe>

@@ -2,16 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Daniel Sánchez-García">
-<meta name="dcterms.date" content="2026-05-25">
-<meta name="description" content="An interactive R Shiny application to explore data, generate high-quality ggplot2 charts, and automatically export the reproducible script—without writing a single line of code.">
+<meta name="dcterms.date" content="2026-06-09">
+<meta name="description" content="An interactive R Shiny application to explore data, customize ggplot2 charts visually, filter variables on the fly, and automatically export the reproducible script.">
 
-<title>Data Plotter &amp; Script Generator – Daniel Sánchez-García</title>
+<title>DataViz &amp; Script Generator: Publication-Ready Plots in Seconds – Daniel Sánchez-García</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -38,19 +41,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0064751d40d537987f8b6fa9fc1b9cef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-84aec2f60d7167055bda08cc6d10d6a7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-0064751d40d537987f8b6fa9fc1b9cef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a4e6ed1c540880cfd43ca8abd9d0f340.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-33d8e75ddd6359ecfeb638b850b58262.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a4e6ed1c540880cfd43ca8abd9d0f340.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -94,10 +96,10 @@ gtag('config', 'G-H3GD3Z7KWV', { 'anonymize_ip': true});
 document.addEventListener('DOMContentLoaded', function () {
 cookieconsent.run({
   "notice_banner_type":"simple",
-  "consent_type":"implied",
+  "consent_type":"express",
   "palette":"light",
   "language":"en",
-  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
+  "page_load_consent_levels":["strictly-necessary"],
   "notice_banner_reject_button_hide":false,
   "preferences_center_close_button_hide":false,
   "website_name":""
@@ -111,19 +113,15 @@ cookieconsent.run({
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Data Plotter &amp; Script Generator – Daniel Sánchez-García">
-<meta property="og:description" content="An interactive R Shiny application to explore data, generate high-quality ggplot2 charts, and automatically export the reproducible script—without writing a single line of code.">
-<meta property="og:image" content="https://danielsangarci.github.io/posts/data_plotter/data_plotter.png">
+<meta property="og:title" content="DataViz &amp; Script Generator: Publication-Ready Plots in Seconds – Daniel Sánchez-García">
+<meta property="og:description" content="An interactive R Shiny application to explore data, customize ggplot2 charts visually, filter variables on the fly, and automatically export the reproducible script.">
+<meta property="og:image" content="https://danielsangarci.github.io/posts/data_plotter/dataviz_app.png">
 <meta property="og:site_name" content="Daniel Sánchez-García">
-<meta property="og:image:height" content="1536">
-<meta property="og:image:width" content="2816">
-<meta name="twitter:title" content="Data Plotter &amp; Script Generator – Daniel Sánchez-García">
-<meta name="twitter:description" content="An interactive R Shiny application to explore data, generate high-quality ggplot2 charts, and automatically export the reproducible script—without writing a single line of code.">
-<meta name="twitter:image" content="https://danielsangarci.github.io/posts/data_plotter/data_plotter.png">
+<meta name="twitter:title" content="DataViz &amp; Script Generator: Publication-Ready Plots in Seconds – Daniel Sánchez-García">
+<meta name="twitter:description" content="An interactive R Shiny application to explore data, customize ggplot2 charts visually, filter variables on the fly, and automatically export the reproducible script.">
+<meta name="twitter:image" content="https://danielsangarci.github.io/posts/data_plotter/dataviz_app.png">
 <meta name="twitter:creator" content="@DanielSánchez-García">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="1536">
-<meta name="twitter:image-width" content="2816">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -295,8 +293,6 @@ cookieconsent.run({
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Daniel Sánchez-García</span>
     </a>
@@ -356,8 +352,8 @@ cookieconsent.run({
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-problem-friction-in-data-exploration" id="toc-the-problem-friction-in-data-exploration" class="nav-link active" data-scroll-target="#the-problem-friction-in-data-exploration">The Problem: Friction in Data Exploration</a></li>
-  <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution">The Solution</a>
+  <li><a href="#the-problem-the-visualization-bottleneck" id="toc-the-problem-the-visualization-bottleneck" class="nav-link active" data-scroll-target="#the-problem-the-visualization-bottleneck">The Problem: The Visualization Bottleneck</a></li>
+  <li><a href="#the-solution-a-visual-interface-with-reproducible-output" id="toc-the-solution-a-visual-interface-with-reproducible-output" class="nav-link" data-scroll-target="#the-solution-a-visual-interface-with-reproducible-output">The Solution: A Visual Interface with Reproducible Output</a>
   <ul class="collapse">
   <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
   </ul></li>
@@ -371,7 +367,7 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Plotter &amp; Script Generator</h1>
+<h1 class="title">DataViz &amp; Script Generator: Publication-Ready Plots in Seconds</h1>
   <div class="quarto-categories">
     <div class="quarto-category">R</div>
     <div class="quarto-category">Shiny</div>
@@ -383,7 +379,7 @@ cookieconsent.run({
 
 <div>
   <div class="description">
-    An interactive R Shiny application to explore data, generate high-quality ggplot2 charts, and automatically export the reproducible script—without writing a single line of code.
+    An interactive R Shiny application to explore data, customize ggplot2 charts visually, filter variables on the fly, and automatically export the reproducible script.
   </div>
 </div>
 
@@ -400,7 +396,7 @@ cookieconsent.run({
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">25 May 2026</p>
+      <p class="date">9 June 2026</p>
     </div>
   </div>
   
@@ -412,29 +408,31 @@ cookieconsent.run({
 </header>
 
 
-<section id="the-problem-friction-in-data-exploration" class="level2">
-<h2 class="anchored" data-anchor-id="the-problem-friction-in-data-exploration">The Problem: Friction in Data Exploration</h2>
-<p>As ecologists and biologists, we spend a massive amount of time collecting and organizing data in Excel. However, when you just want to take a quick look at that data to spot a trend or check if an experiment worked, the friction is immense.</p>
-<p>You have to open RStudio, wrestle with formatting issues (the classic headache of European commas versus decimal points in <code>.csv</code> files), and write blocks of <code>ggplot2</code> code just to render an exploratory plot. If you then need to filter out a few variables or tweak colors, time quickly slips away. And when you finally nail the perfect chart for your manuscript, you realize you didn’t save the script properly to reproduce it months later.</p>
+<section id="the-problem-the-visualization-bottleneck" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-the-visualization-bottleneck">The Problem: The Visualization Bottleneck</h2>
+<p>Whether you are analyzing complex behavioral metrics from ant colonies or running quick checks on molecular data, data exploration shouldn’t be a bottleneck. However, rendering a high-quality exploratory plot usually involves a lot of repetitive coding.</p>
+<p>You open RStudio, import your data, realize the decimal separators are formatted incorrectly, and start writing the same <code>ggplot2</code> boilerplate. By the time you filter out specific outliers, map the right color palettes, and adjust the axis text sizes to make it legible, you’ve spent more time coding than actually analyzing the biological trends. And if you don’t save the script perfectly, reproducing that exact aesthetic for a manuscript later becomes a headache.</p>
 </section>
-<section id="the-solution" class="level2">
-<h2 class="anchored" data-anchor-id="the-solution">The Solution</h2>
-<p>True to the philosophy of Open and Reproducible Science, I developed the <strong>DIY Data Plotter &amp; Script Generator</strong>.</p>
-<p>This interactive application allows you to drag and drop your raw data, configure your charts visually in seconds, and most importantly, <strong>it gives you the exact R script</strong> required to reproduce that very same plot on your own local machine.</p>
+<section id="the-solution-a-visual-interface-with-reproducible-output" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution-a-visual-interface-with-reproducible-output">The Solution: A Visual Interface with Reproducible Output</h2>
+<p>To keep data exploration frictionless without sacrificing the principles of Open Science, I built the <strong>DataViz &amp; Script Generator</strong>.</p>
+<p>This tool provides a complete, drag-and-drop GUI for <code>ggplot2</code>. It allows you to upload your raw data, manipulate parameters visually in real-time, and download your finalized, high-resolution figure. Most importantly, it bridges the gap between no-code tools and reproducible science by <strong>generating the exact R script</strong> (<code>dplyr</code> and <code>ggplot2</code>) needed to recreate your custom plot from scratch.</p>
 <section id="key-features" class="level3">
 <h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
 <ul>
-<li><strong>Smart Upload &amp; Auto-Cleaning:</strong> It accepts <code>.csv</code>, <code>.txt</code>, and <code>.xlsx</code> formats (allowing you to select specific Excel sheets). Furthermore, it features a background cleaning engine that automatically detects and corrects numeric formatting issues (like commas used as decimals) so <code>ggplot2</code> doesn’t crash.</li>
-<li><strong>Multiple Dynamic Filters:</strong> Filter your data in real-time. The app automatically generates sliders for numeric variables and multi-select dropdowns for categorical data, updating the chart instantly.</li>
-<li><strong>Reproducible Code Generation:</strong> Forget about coding from scratch. The app writes a clean, fully commented R script (using <code>dplyr</code> and <code>ggplot2</code>) that covers everything from reading the file and applying your filters to setting the plot aesthetics. Just copy and paste.</li>
-<li><strong>Publication-Ready Export:</strong> Download your plots directly in the high-quality formats required by scientific journals (<code>.tiff</code>, <code>.pdf</code>, <code>.png</code>, <code>.jpg</code>), allowing you to set the exact size in centimeters and the resolution (e.g., 300 DPI).</li>
+<li><strong>Smart Uploads &amp; Auto-Cleaning:</strong> Drag and drop <code>.csv</code>, <code>.txt</code>, or <code>.xlsx</code> files. The app’s background engine automatically detects and corrects European comma-decimal formatting, ensuring your numeric columns don’t crash the plot.</li>
+<li><strong>Dynamic Filtering &amp; Renaming:</strong> No need to use <code>filter()</code> or <code>mutate()</code> before plotting. You can actively include or exclude specific categorical levels and rename axis labels on the fly directly from the UI.</li>
+<li><strong>Complete Aesthetic Control:</strong> Build Histograms, Density plots, Barplots, Boxplots, Violins, or Scatterplots. Customize them with professional palettes (including ColorBrewer and colorblind-friendly Viridis options), adjust opacity, and toggle standard <code>ggplot2</code> themes (minimal, classic, dark, etc.).</li>
+<li><strong>Reproducible Code Generation:</strong> As you tweak sliders and dropdowns, the app writes a clean, fully functional R script alongside your plot. Simply copy and paste the code to your local machine to guarantee long-term reproducibility.</li>
+<li><strong>Publication-Ready Export:</strong> Download your visualizations in the exact format required by scientific journals (<code>.tiff</code>, <code>.png</code>, <code>.jpg</code>), with full control over the physical dimensions (in centimeters) and resolution (up to 600 DPI).</li>
 </ul>
 </section>
 </section>
 <section id="live-application" class="level2">
 <h2 class="anchored" data-anchor-id="live-application">🚀 Live Application</h2>
-<p>Upload your data and generate your reproducible plot directly below, or open the tool in a <a href="https://danielsangarci.shinyapps.io/quick_plot/">new window</a>. <em>(Note: Your data is not saved on any server; all processing is temporary).</em></p>
-<iframe src="https://danielsangarci.shinyapps.io/quick_plot/" width="100%" height="950px" style="border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+<p>Upload your dataset and start building your reproducible plot below, or open the tool in a <a href="https://danielsangarci.shinyapps.io/dataviz/">new window</a>.</p>
+<p><em>(Note: Your data is processed locally in the session and is never saved on any server).</em></p>
+<iframe src="https://danielsangarci.shinyapps.io/dataviz/" width="100%" height="950px" style="border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
 </iframe>
 
 
