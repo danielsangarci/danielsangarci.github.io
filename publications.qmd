@@ -8,6 +8,10 @@ Also in [my Google Scholar profile](https://scholar.google.com/citations?hl=en&u
 
 Reach me out to obtain the paper if it is not available through open access!   [{{< fa envelope >}}](contact.qmd)
 
+## 2025
+
+10.  Hervé Ambakina, H., Kiko Gómez, K., Monzenga, J.C., Sánchez-García, D., Dekoninck, W. (2026). Uncovering ant diversity across forest successional stages in the Yangambi Biosphere Reserve (DRC): Insights from Winkler and pitfall trap sampling. *African Invertebrates*, 67: 65-91.   [{{< fa link >}}](https://doi.org/10.3897/AfrInvertebr.67.180461)     [{{< fa file-pdf >}}](https://africaninvertebrates.pensoft.net/article/180461/download/pdf/1635810)
+
 ## 2024
 
 9.  **Sánchez‑García, D.**, Wynhoff, I., Kajzer‑Bonk, J., Sztencel‑Jablonka, A., Nowicki, P., Casacci, L. P., and Witek, M. (2024). Temporal and spatial variation of morphological traits and genetic structure in *Phengaris teleius* myrmecophilous butterflies following habitat and climate changes three decades after reintroduction. *Global Ecology and Conservation*, 54, e03104.   [{{< fa link >}}](https://doi.org/10.1016/j.gecco.2024.e03104)     [{{< fa file-pdf >}}](https://www.sciencedirect.com/science/article/pii/S2351989424003081/pdfft?md5=df6f2a0432f9ac4d2cf5b814ddaaa7b6&pid=1-s2.0-S2351989424003081-main.pdf)

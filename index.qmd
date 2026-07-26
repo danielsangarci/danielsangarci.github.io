@@ -26,9 +26,9 @@ about:
 
 I am an ecologist and Postdoctoral Researcher at the Doñana Biological Station (EBD-CSIC). My work explores the hidden layers of biodiversity—specifically species interactions within ant, microbiome and mycobiome communities.
 
-Currently, I lead the PRELUDIUM [project](projects/ant-plant-bacteria/ant-plant-bacteria.qmd), where I investigate the role of ants as bacteria dispersal vectors and their indirect impact on plant health. While my [PhD](projects/phd-thesis/phd-thesis.qmd) at the Museum and Institute of Zoology (Warsaw) was built on studying the multimodal adaptations (chemical, acoustic, and genetic) of social parasites, my current research focuses on species co-ocurrence and host-microbiome interactions.
+Currently, I lead the PRELUDIUM [project](projects/ant-plant-bacteria/ant-plant-bacteria.qmd), where I investigate the role of ants as bacteria dispersal vectors and their indirect impact on plant health. While my [PhD](projects/phd-thesis/phd-thesis.qmd) at the Museum and Institute of Zoology (Warsaw) was built on studying the multimodal adaptations (chemical, acoustic, and genetic) of social parasites, my current research focuses on species co-occurrence and host-microbiome interactions leveraging long-read sequencing technologies.
 
-I am a staunch defender of Open Science, Reproducibility and "home-made" lab protocols. I believe in making high-level molecular ecology accessible and reproducible by developing DIY laboratory solutions.
+I am a staunch defender of Open Science, reproducibility and "home-made" lab protocols. I believe in making high-level molecular ecology accessible by bridging the gap between benchwork and computational biology. A core part of my current technical workflow involves **Oxford Nanopore sequencing and bioinformatics** to streamline data processing from raw amplicon DNA reads to ecological insights.
 
 When not doing science you can also find me shooting macrophotography, which is a great way of getting cool images to use during your talks!
 
