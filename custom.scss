@@ -1,0 +1,1267 @@
+/*-- scss:defaults --*/
+
+// =====================================================================
+//  Daniel Sánchez-García — Tema personalizado
+//  Base "ALA Labs": limpio, amplio, alto contraste tipográfico.
+//  Interacción "Hertie Coding Club": tarjetas elevables y hero animada.
+//  Construido sobre Bootstrap 5.3 + Cosmo (Quarto).
+// =====================================================================
+
+// ---------------------------------------------------------------------
+//  1. Tipografía (Google Fonts)
+//     Montserrat -> titulares de alto contraste | Inter -> cuerpo
+//     Se desactiva la fuente que carga Cosmo (Source Sans Pro) para no
+//     hacer una petición de red inútil.
+// ---------------------------------------------------------------------
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap");
+
+$web-font-path: false;
+
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji" !default;
+$headings-font-family: "Montserrat", "Inter", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, sans-serif !default;
+
+// ---------------------------------------------------------------------
+//  2. Paleta — se conserva la identidad actual del sitio
+//     (#2A6292 enlaces / #88A7C2 navbar) sobre un fondo casi blanco.
+// ---------------------------------------------------------------------
+$white:    #ffffff;
+$gray-100: #f7f8f9;
+$gray-200: #eceef0;
+$gray-300: #dfe3e6;
+$gray-400: #c3cad1;
+$gray-500: #98a2ad;
+$gray-600: #6b7683;
+$gray-700: #49525c;
+$gray-800: #2b3138;
+$gray-900: #16191d;
+
+$primary:   #2a6292;   // azul del sitio
+$secondary: #88a7c2;   // azul de la navbar
+$success:   #3f8f6b;
+$info:      #4b8bbe;
+$warning:   #d99a2b;
+$danger:    #c0453b;
+$light:     $gray-100;
+$dark:      $gray-900;
+
+// Tinte de acento para fondos suaves y estados hover
+$dsg-ink:          #14213d;              // "tinta" para titulares
+$dsg-primary-soft: rgba(42, 98, 146, 0.08);
+$dsg-hairline:     rgba(20, 33, 61, 0.08); // bordes sutiles
+
+// ---------------------------------------------------------------------
+//  3. Lienzo y texto
+// ---------------------------------------------------------------------
+$body-bg:    #fafafa;
+$body-color: $gray-800;
+
+$font-size-base:   1rem;
+$line-height-base: 1.75;    // interlineado generoso (aire)
+$line-height-sm:   1.5;
+$line-height-lg:   1.9;
+
+$paragraph-margin-bottom: 1.4rem;
+
+$headings-font-weight:    800;
+$headings-line-height:    1.18;
+$headings-color:          $dsg-ink;
+$headings-margin-bottom:  1rem;
+
+$h1-font-size: 2.6rem;
+$h2-font-size: 1.9rem;
+$h3-font-size: 1.45rem;
+$h4-font-size: 1.2rem;
+$h5-font-size: 1.05rem;
+$h6-font-size: 0.95rem;
+
+$display-font-weight: 800;
+$display-line-height: 1.06;
+
+$lead-font-size:   1.15rem;
+$lead-font-weight: 400;
+
+// ---------------------------------------------------------------------
+//  4. Enlaces
+// ---------------------------------------------------------------------
+$link-color:            $primary;
+$link-hover-color:      #1c456b;
+$link-decoration:       none;
+$link-hover-decoration: underline;
+
+// ---------------------------------------------------------------------
+//  5. Geometría: radios amplios y espaciado generoso
+// ---------------------------------------------------------------------
+$border-radius:      0.75rem;
+$border-radius-sm:   0.5rem;
+$border-radius-lg:   1rem;
+$border-radius-xl:   1.25rem;
+$border-radius-xxl:  2rem;
+$border-radius-pill: 50rem;
+
+$border-color: $dsg-hairline;
+
+$spacer:             1rem;
+$grid-gutter-width:  2.25rem;
+
+// Sombras suaves y difusas (estilo "airy")
+$box-shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.05);
+$box-shadow:    0 4px 18px rgba(16, 24, 40, 0.06);
+$box-shadow-lg: 0 20px 44px rgba(16, 24, 40, 0.13);
+
+// Sombras propias para los estados :hover
+$dsg-shadow-rest:  0 1px 2px rgba(16, 24, 40, 0.04),
+                   0 6px 20px rgba(16, 24, 40, 0.05);
+$dsg-shadow-hover: 0 2px 4px rgba(16, 24, 40, 0.06),
+                   0 18px 38px rgba(16, 24, 40, 0.14);
+$dsg-ease:         all 0.3s ease;
+
+// ---------------------------------------------------------------------
+//  6. Componentes
+// ---------------------------------------------------------------------
+// Botones
+$btn-font-family:      $headings-font-family;
+$btn-font-weight:      600;
+$btn-padding-y:        0.7rem;
+$btn-padding-x:        1.65rem;
+$btn-font-size:        0.95rem;
+$btn-padding-y-lg:     0.9rem;
+$btn-padding-x-lg:     2.1rem;
+$btn-font-size-lg:     1.05rem;
+$btn-border-radius:    $border-radius-pill;
+$btn-border-radius-sm: $border-radius-pill;
+$btn-border-radius-lg: $border-radius-pill;
+$btn-border-width:     2px;
+$btn-focus-width:      0.2rem;
+$btn-transition:       $dsg-ease;
+
+// Tarjetas
+$card-bg:            $white;
+$card-border-width:  1px;
+$card-border-color:  $dsg-hairline;
+$card-border-radius: $border-radius-lg;
+$card-spacer-y:      1.5rem;
+$card-spacer-x:      1.5rem;
+$card-cap-bg:        transparent;
+$card-cap-padding-y: 1.25rem;
+
+// Formularios / buscador
+$input-bg:            $white;
+$input-border-color:  $gray-300;
+$input-border-radius: $border-radius;
+$input-padding-y:     0.6rem;
+$input-padding-x:     1rem;
+
+// Navbar
+$navbar-padding-y:         0.85rem;
+$navbar-brand-font-size:   1.15rem;
+$navbar-nav-link-padding-x: 0.5rem;  // Montserrat 600 es más ancha que la fuente de Cosmo
+
+// Código
+$code-color:      #9c3d6b;
+$code-bg:         rgba(20, 33, 61, 0.05);
+$code-block-bg:   #fbfbfc;
+$code-block-border-left: true;
+
+// Tablas
+$table-border-color: $gray-200;
+$table-cell-padding-y: 0.75rem;
+
+// Citas / hr
+$blockquote-font-size: 1.05rem;
+$hr-color:   $dsg-hairline;
+$hr-opacity: 1;
+
+// Índice lateral (TOC)
+$toc-color:      $gray-600;
+$toc-font-size:  0.85rem;
+
+
+/*-- scss:rules --*/
+
+// =====================================================================
+//  A. Base tipográfica
+// =====================================================================
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.005em;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  letter-spacing: -0.021em;
+  text-wrap: balance;
+}
+
+// styles.css justifica todo el body. En titulares y elementos de
+// interfaz eso abre huecos enormes entre palabras, así que el
+// justificado se reserva para el texto corrido.
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.listing-title, .listing-title a,
+.card-title, .card-title a,
+.btn, .navbar, .nav-footer,
+.quarto-listing-category, .listing-actions-group,
+.callout-title-container, figcaption,
+.quarto-title-block, #TOC, .sidebar nav[role="doc-toc"] {
+  text-align: left;
+}
+
+h1, .h1 { font-weight: 800; }
+h2, .h2 { font-weight: 700; margin-top: 2.75rem; }
+h3, .h3 { font-weight: 700; margin-top: 2rem; }
+
+.display-1, .display-2, .display-3,
+.display-4, .display-5, .display-6 {
+  font-family: $headings-font-family;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: $dsg-ink;
+}
+
+.lead {
+  color: $gray-700;
+  line-height: 1.75;
+}
+
+// Separadores discretos
+hr {
+  border: 0;
+  border-top: 1px solid $dsg-hairline;
+  margin: 3rem 0;
+  opacity: 1;
+}
+
+// Enlaces de contenido: subrayado elegante que aparece al pasar
+main a:not(.btn):not(.nav-link):not(.about-link):not(.quarto-grid-link):not(.toc-action) {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(42, 98, 146, 0.35);
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+
+// =====================================================================
+//  B. Botones — llamativos y con elevación al pasar el cursor
+// =====================================================================
+.btn {
+  font-family: $headings-font-family;
+  letter-spacing: 0.01em;
+  transition: $dsg-ease;
+  will-change: transform;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: $dsg-shadow-hover;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  color: $white;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #1c456b;
+    border-color: #1c456b;
+    color: $white;
+  }
+}
+
+.btn-outline-primary {
+  border-color: rgba(42, 98, 146, 0.35);
+  color: $primary;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus-visible {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+  color: $dsg-ink;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #6f92b2;
+    border-color: #6f92b2;
+    color: $white;
+  }
+}
+
+
+// =====================================================================
+//  C. Tarjetas — limpias en reposo, elevadas al hacer hover
+//     Cubre .card nativa, las fichas de los listings en grid
+//     (research.qmd) y las entradas del listado por defecto (posts.qmd).
+// =====================================================================
+.card,
+.quarto-grid-item,
+.quarto-post {
+  background-color: $card-bg;
+  border: 1px solid $dsg-hairline;
+  border-radius: $card-border-radius;
+  box-shadow: $dsg-shadow-rest;
+  overflow: hidden;
+  transition: $dsg-ease;
+  will-change: transform;
+}
+
+.card:hover,
+.quarto-grid-item:hover,
+.quarto-post:hover {
+  transform: translateY(-8px);
+  box-shadow: $dsg-shadow-hover;
+  border-color: rgba(42, 98, 146, 0.22);
+}
+
+// Utilidad reutilizable para elevar cualquier bloque
+.hover-lift {
+  transition: $dsg-ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $dsg-shadow-hover;
+  }
+}
+
+// El listado por defecto (posts) no trae padding propio
+.quarto-post {
+  padding: 1.25rem 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+// Code & Tools: la ficha se organiza en dos filas.
+// Arriba, fecha · autor · tiempo de lectura en una sola línea.
+// Abajo, el título a la izquierda y la miniatura a la derecha.
+// (Por defecto Quarto lo monta como tres columnas en una fila, con los
+//  metadatos aplastados a 122 px y el nombre partido en tres líneas.)
+.quarto-listing-container-default .quarto-post {
+  display: grid;
+  grid-template-columns: 1fr 13.5rem;
+  grid-template-areas:
+    "meta meta"
+    "body thumb";
+  column-gap: 1.75rem;
+  // Quarto deja un gap de 2rem que aquí se sumaba al margen de los
+  // metadatos y abría 60 px entre la línea superior y el título
+  row-gap: 0;
+  align-items: start;
+
+  // --- Fila superior: los metadatos en línea ---
+  .metadata {
+    grid-area: meta;
+    display: block;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid $dsg-hairline;
+    font-size: 0.78rem;
+
+    // Al bajar el tamaño, el gris de Quarto se quedaba en 4,62:1 de
+    // contraste, al filo del mínimo. Este tono da 5,9:1 y sigue
+    // leyéndose claramente como secundario frente al título.
+    .listing-date,
+    .listing-author,
+    .listing-reading-time {
+      font-size: inherit;
+      color: #5a636f;
+    }
+
+    // Los tres campos viven dentro de un <a>: la fila se hace ahí
+    > a {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    // Punto separador. Va como ::after del campo anterior, no como
+    // ::before del siguiente: así, cuando la línea se parte en móvil,
+    // el punto se queda pegado al campo de arriba y no abre línea.
+    > a > *:not(:last-child)::after {
+      content: "·";
+      margin-left: 0.5rem;
+      color: $gray-400;
+    }
+  }
+
+  // --- Fila inferior: título e imagen ---
+  // El título se centra respecto a la imagen: si ocupa una sola línea,
+  // pegado arriba quedaba descolgado.
+  .body {
+    grid-area: body;
+    min-width: 0;
+    align-self: center;
+  }
+
+  // 27,8 px era el tamaño de un h3 de página, desproporcionado dentro
+  // de una ficha. A 1.15rem dos líneas ocupan 57 px en vez de 66.
+  .listing-title {
+    font-size: 1.15rem;
+    line-height: 1.32;
+    margin: 0;
+  }
+
+  // align-self centra la miniatura dentro de su celda de la rejilla
+  // (la rejilla alinea al inicio); align-items la centra dentro de la
+  // propia caja. Hacen falta las dos para que quede centrada siempre,
+  // también si algún día un título supera la altura de la foto.
+  .thumbnail {
+    grid-area: thumb;
+    align-self: center;
+    display: flex;
+    align-items: center;
+
+    // El <a> que envuelve la imagen se encogía al contenido y dejaba
+    // 30 px muertos a la derecha de su columna
+    > a {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  // Quarto le pone a la miniatura un margen superior de 7,7 px
+  .thumbnail-image {
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+  }
+}
+
+// En móvil todo se apila: metadatos, título e imagen a ancho completo
+@media (max-width: 767.98px) {
+  .quarto-listing-container-default .quarto-post {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "meta"
+      "body"
+      "thumb";
+
+    .thumbnail {
+      margin-top: 1.1rem;
+    }
+  }
+}
+
+// Imágenes de las tarjetas: recorte suave + zoom sutil
+.quarto-grid-item .card-img-top,
+.quarto-grid-item .thumbnail-image,
+.quarto-post .thumbnail-image {
+  border-radius: 0;
+  transition: transform 0.45s ease;
+}
+
+.quarto-grid-item:hover .thumbnail-image,
+.quarto-post:hover .thumbnail-image {
+  transform: scale(1.045);
+}
+
+.quarto-grid-item .card-img-top,
+.quarto-post .thumbnail {
+  overflow: hidden;
+}
+
+.quarto-post .thumbnail img {
+  border-radius: $border-radius;
+}
+
+// Títulos de las fichas
+.card-title,
+.listing-title {
+  font-family: $headings-font-family;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: $dsg-ink;
+}
+
+.quarto-grid-link,
+.quarto-grid-link:hover {
+  text-decoration: none;
+}
+
+.listing-date,
+.listing-author,
+.listing-reading-time {
+  color: $gray-600;
+  font-size: 0.85rem;
+}
+
+// Categorías como "chips"
+.quarto-listing-category .category,
+.listing-category {
+  border-radius: $border-radius-pill;
+  padding: 0.15rem 0.75rem;
+  transition: $dsg-ease;
+
+  &:hover {
+    background-color: $dsg-primary-soft;
+    color: $primary;
+  }
+}
+
+
+// =====================================================================
+//  D. Callouts — mismo lenguaje visual que las tarjetas
+// =====================================================================
+.callout {
+  border: 1px solid $dsg-hairline !important;
+  border-radius: $card-border-radius !important;
+  box-shadow: $dsg-shadow-rest;
+  overflow: hidden;
+  transition: $dsg-ease;
+  will-change: transform;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $dsg-shadow-hover;
+  }
+}
+
+.callout.callout-style-default > .callout-header {
+  background-color: rgba(20, 33, 61, 0.03);
+  border-bottom: 1px solid $dsg-hairline;
+  font-family: $headings-font-family;
+  font-weight: 600;
+}
+
+.callout .callout-title-container {
+  letter-spacing: -0.01em;
+}
+
+
+// =====================================================================
+//  E. Animaciones (hero y entradas de contenido)
+// =====================================================================
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatImage {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-16px); }
+  100% { transform: translateY(0); }
+}
+
+// Texto que entra desde abajo
+.animate-fade-up {
+  opacity: 0;
+  animation: fadeInUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+// Retardos encadenables para escalonar la aparición
+.animate-fade-up.delay-1 { animation-delay: 0.15s; }
+.animate-fade-up.delay-2 { animation-delay: 0.3s;  }
+.animate-fade-up.delay-3 { animation-delay: 0.45s; }
+.animate-fade-up.delay-4 { animation-delay: 0.6s;  }
+
+// Imagen que flota suavemente, en bucle
+.animate-float {
+  animation: floatImage 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+
+// --- Portada a pantalla completa -------------------------------------
+// Pequeño rebote del indicador "scroll"
+@keyframes heroNudge {
+  0%, 100% { transform: rotate(45deg) translate(0, 0); }
+  50%      { transform: rotate(45deg) translate(0.22rem, 0.22rem); }
+}
+
+
+// =====================================================================
+//  F. Hero a pantalla completa (portada)
+//     Ocupa el alto de la ventana menos la barra de menú. Un script
+//     en index.qmd mantiene --dsg-navbar-h con la altura real de la
+//     navbar (cambia al colapsar entre 992 y 1200 px).
+// =====================================================================
+:root {
+  --dsg-navbar-h: 5rem;
+}
+
+.hero-full {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - var(--dsg-navbar-h));
+  min-height: calc(100svh - var(--dsg-navbar-h));
+  padding: 4rem 1.5rem 6rem;
+  overflow: hidden;
+  isolation: isolate;
+  text-align: center;
+
+  // Fondo claro con lavados de color muy difusos, a medio camino
+  // entre el blanco del sitio y el desenfoque de una foto macro.
+  background:
+    radial-gradient(58% 48% at 12% 18%, rgba(136, 167, 194, 0.34) 0%, rgba(136, 167, 194, 0) 100%),
+    radial-gradient(52% 44% at 88% 26%, rgba(214, 160, 66, 0.20) 0%, rgba(214, 160, 66, 0) 100%),
+    radial-gradient(62% 52% at 74% 88%, rgba(122, 154, 84, 0.22) 0%, rgba(122, 154, 84, 0) 100%),
+    radial-gradient(50% 46% at 22% 86%, rgba(193, 106, 59, 0.16) 0%, rgba(193, 106, 59, 0) 100%),
+    linear-gradient(165deg, #fbfcfd 0%, #f2f7fa 48%, #edf3f6 100%);
+}
+
+// --- Capas de imagen -------------------------------------------------
+.hero-full__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  will-change: transform;   // el script la desplaza al hacer scroll
+}
+
+// Lienzo de la red de nodos
+.hero-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+// Velo oscuro: mantiene el texto legible sobre cualquier foto
+.hero-full__veil {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  // Halo claro tras el título: aclara el centro para que la red no
+  // se cruce con las letras, y se disuelve antes de tapar los bordes.
+  background:
+    radial-gradient(
+      52% 40% at 50% 46%,
+      rgba(250, 252, 253, 0.94) 0%,
+      rgba(250, 252, 253, 0.72) 42%,
+      rgba(250, 252, 253, 0) 100%
+    );
+}
+
+// --- Contenido -------------------------------------------------------
+// El script escribe --hero-progreso (0 arriba del todo, 1 al salir de
+// la portada). Con un solo número se resuelve todo el desvanecido.
+.hero-full__inner {
+  position: relative;
+  max-width: 62rem;
+  opacity: calc(1 - var(--hero-progreso, 0));
+  transform:
+    translate3d(0, calc(var(--hero-progreso, 0) * -36px), 0)
+    scale(calc(1 - var(--hero-progreso, 0) * 0.05));
+  will-change: opacity, transform;
+}
+
+.hero-full__title {
+  font-family: $headings-font-family;
+  // El máximo baja a 3.7rem; el mínimo evita que el apellido
+  // se parta en tres líneas en móvil.
+  font-size: clamp(1.5rem, 5vw, 3.1rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  color: $dsg-ink;
+  // Menos hueco que antes: el nombre y el lema forman una unidad
+  margin: 0 0 0.85rem;
+  text-align: center;
+}
+
+// Lema bajo el nombre: bastante más pequeño, para que el nombre
+// siga mandando, y en un gris que no compita con él.
+.hero-full__tagline {
+  font-family: $headings-font-family;
+  font-size: clamp(0.9rem, 1.8vw, 1.3rem);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.005em;
+  color: $gray-700;
+  margin: 0;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.hero-full__lead {
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.7;
+  color: $gray-700;
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-full__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem;
+  margin-top: 2.25rem;
+}
+
+// Botón pequeño de la portada: discreto, al estilo "Learn more"
+.hero-cta {
+  padding: 0.6rem 1.6rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+// Botón de la portada sobre el fondo claro
+.hero-full .hero-cta {
+  border: 2px solid rgba(20, 33, 61, 0.55);
+  color: $dsg-ink;
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(4px);
+
+  &:hover,
+  &:focus-visible {
+    background-color: $dsg-ink;
+    border-color: $dsg-ink;
+    color: #ffffff;
+  }
+}
+
+// --- Invitación a bajar ---------------------------------------------
+.hero-scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  // 0.72 mantiene el contraste por encima de 4.5:1 sobre el fondo claro
+  color: rgba(20, 33, 61, 0.72);
+  font-family: $headings-font-family;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  // Se apaga en cuanto empiezas a bajar: ya has entendido el mensaje
+  opacity: calc(1 - var(--hero-progreso, 0) * 2.4);
+
+  &:hover,
+  &:focus-visible {
+    color: $dsg-ink;
+    text-decoration: none;
+  }
+}
+
+.hero-scroll__chevron {
+  display: block;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  animation: heroNudge 2s ease-in-out infinite;
+}
+
+// --- Sección siguiente ----------------------------------------------
+// Compensa la navbar fija al saltar con el ancla o el menú
+#about,
+.anchor-offset {
+  scroll-margin-top: calc(var(--dsg-navbar-h) + 1.5rem);
+}
+
+
+// =====================================================================
+//  F-bis. Piezas reutilizadas en el cuerpo de la portada
+// =====================================================================
+.hero-title {
+  // Tamaño fluido: evita que el apellido desborde en móvil.
+  font-size: clamp(1.75rem, 6.5vw, 3.5rem);
+  color: $dsg-ink;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  overflow-wrap: break-word;
+}
+
+.hero-lead {
+  font-size: 1.12rem;
+  line-height: 1.8;
+  color: $gray-700;
+  text-align: left;
+  max-width: 38em;
+}
+
+// Párrafo de presentación bajo la portada: algo más grande y oscuro
+.hero-lead-intro {
+  font-size: clamp(1.05rem, 1.5vw, 1.28rem);
+  line-height: 1.7;
+  color: $gray-800;
+  max-width: 34em;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 767.98px) {
+  .hero-lead {
+    max-width: none;
+    font-size: 1rem;
+  }
+  .hero-actions { justify-content: flex-start; }
+  .hero-full { padding-bottom: 5rem; }
+}
+
+
+// =====================================================================
+//  G. Cabeceras de página, navbar, TOC y pie
+// =====================================================================
+.navbar {
+  border-bottom: 1px solid rgba(20, 33, 61, 0.06);
+  box-shadow: 0 1px 12px rgba(16, 24, 40, 0.05);
+}
+
+.navbar .navbar-brand {
+  font-family: $headings-font-family;
+  letter-spacing: -0.01em;
+}
+
+// Los enlaces van en Inter: Montserrat es demasiado ancha y hacía
+// que la barra se partiera en dos líneas.
+.navbar .nav-link {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.navbar .nav-link {
+  border-radius: $border-radius-pill;
+  font-size: 0.9rem;
+  transition: $dsg-ease;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.45);
+    transform: translateY(-1px);
+  }
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-title {
+  // Montserrat 800 desbordaba la barra en móvil: peso 700 y
+  // tamaño fluido para que el nombre completo quepa siempre.
+  font-weight: 700;
+  // El mínimo no baja más: en móvil Quarto limita la marca a
+  // calc(100% - 115px) y el nombre completo necesitaría ~9 px a 320 px.
+  // Ahí se corta con puntos suspensivos, como ya hacía antes.
+  font-size: clamp(0.85rem, 2.6vw + 0.3rem, 0.95rem);
+}
+
+
+// Bloque de título de cada página
+.quarto-title-block .title {
+  font-family: $headings-font-family;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+#title-block-header {
+  margin-bottom: 2.25rem;
+}
+
+// Índice lateral
+#TOC,
+.sidebar nav[role="doc-toc"] {
+  font-family: $font-family-sans-serif;
+
+  ul > li > a {
+    border-left: 2px solid transparent;
+    padding-left: 0.6rem;
+    transition: $dsg-ease;
+
+    &:hover {
+      border-left-color: rgba(42, 98, 146, 0.4);
+      color: $primary;
+    }
+
+    &.active {
+      border-left-color: $primary;
+      color: $primary;
+      font-weight: 600;
+    }
+  }
+}
+
+// Pie de página
+.nav-footer {
+  background-color: $white;
+  border-top: 1px solid $dsg-hairline;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 0.9rem;
+  color: $gray-600;
+}
+
+
+// =====================================================================
+//  H. Detalles: código, tablas, imágenes y galería
+// =====================================================================
+div.sourceCode,
+pre.sourceCode {
+  border-radius: $border-radius;
+  border: 1px solid $dsg-hairline;
+}
+
+.cell-output pre {
+  border-radius: $border-radius;
+}
+
+table,
+.table {
+  --bs-table-bg: transparent;
+}
+
+.table > :not(caption) > * > * {
+  border-bottom-color: $gray-200;
+}
+
+blockquote {
+  border-left: 3px solid $secondary;
+  padding-left: 1.25rem;
+  color: $gray-700;
+}
+
+// Imágenes del contenido (incluida la galería con layout-ncol)
+main img:not(.about-image):not(.thumbnail-image):not(.navbar-logo) {
+  border-radius: $border-radius-lg;
+  max-width: 100%;
+  height: auto;
+}
+
+// Fotos ampliables (lightbox): el cursor avisa de que se pueden abrir
+a.lightbox {
+  display: inline-block;
+  cursor: zoom-in;
+  line-height: 0;   // evita el hueco bajo la imagen dentro del enlace
+}
+
+.quarto-layout-panel img,
+.quarto-figure img,
+.photo-grid img {
+  box-shadow: $dsg-shadow-rest;
+  transition: $dsg-ease;
+
+  &:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: $dsg-shadow-hover;
+  }
+}
+
+// Tarjetas de los listados en rejilla (Research y Gallery).
+// Quarto aplica height:100% al cuerpo de la tarjeta, pensado para
+// listados con fecha, autor y descripción. Cuando solo hay un título,
+// ese cuerpo se estira y le roba el sitio a la foto: en Research la
+// imagen mide 150 px pero se veía dentro de un marco de 90.
+// Cada listado conserva su propio image-height del YAML.
+.quarto-listing-container-grid {
+  // La foto nunca se encoge
+  .card-img-top {
+    flex: 0 0 auto;
+    overflow: hidden;
+  }
+
+  // El cuerpo deja de estirarse: lo alto lo decide su contenido.
+  // Sigue creciendo si la fila iguala alturas, con el título arriba.
+  .card-body {
+    height: auto;
+    padding: 1.1rem 1.25rem 1.25rem;
+  }
+
+  .card-title {
+    margin: 0;
+    line-height: 1.35;
+  }
+}
+
+// Rejilla de la galería: baldosas del mismo tamaño se tenga el número
+// de fotos que se tenga. Con layout-ncol una fila incompleta dejaba la
+// última foto suelta y descuadrada.
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 3.25rem;
+
+  // Pandoc envuelve cada imagen en su propio <p>
+  > p {
+    margin: 0;
+  }
+
+  a.lightbox {
+    display: block;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    // Las fotos son 1000x667 (3:2), así que no se recorta nada
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+}
+
+
+// =====================================================================
+//  I. Plantilla "about" (index.qmd) — foto y enlaces sociales
+// =====================================================================
+.quarto-about-trestles .about-image {
+  box-shadow: $box-shadow-lg;
+  border: 4px solid $white;
+}
+
+.about-links {
+  gap: 0.6rem;
+}
+
+.about-links .about-link {
+  border: 1px solid $dsg-hairline;
+  border-radius: $border-radius-pill;
+  padding: 0.45rem 1.05rem;
+  background-color: $white;
+  color: $primary;
+  font-family: $headings-font-family;
+  font-weight: 600;
+  font-size: 0.85rem;
+  box-shadow: $box-shadow-sm;
+  transition: $dsg-ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: $dsg-shadow-hover;
+    border-color: rgba(42, 98, 146, 0.25);
+    color: #1c456b;
+  }
+}
+
+
+// =====================================================================
+//  H-bis. Grid de Quarto: hueco horizontal seguro en móvil
+//  El .grid de Quarto son 12 columnas con separación fija, así que su
+//  ancho mínimo es 11 × gap. Con un gutter generoso eso desborda la
+//  pantalla en móvil, de modo que el hueco horizontal se reduce ahí.
+// =====================================================================
+.grid {
+  // Por debajo de 768 px todas las celdas son g-col-12 (una sola
+  // columna visible), así que el hueco horizontal no aporta nada y
+  // en cambio fija un ancho mínimo de 11 x gap que desborda a 320 px.
+  column-gap: 0;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    column-gap: $grid-gutter-width;
+  }
+}
+
+
+// =====================================================================
+//  I-bis. Piezas de la home (hero manual + tarjetas de contenido)
+// =====================================================================
+
+// Contenedor de la home: aire a los lados aunque el layout sea "full"
+.home {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 0.5rem;
+}
+
+// Retrato redondo (pequeño en línea, grande en la sección "sobre mí")
+.hero-avatar,
+.hero-avatar-lg {
+  object-fit: cover;
+  border: 4px solid $white;
+  box-shadow: $dsg-shadow-rest;
+}
+
+.hero-avatar {
+  width: 92px;
+  height: 92px;
+  margin-bottom: 0.5rem;
+}
+
+.hero-avatar-lg {
+  width: min(260px, 68%);
+  aspect-ratio: 1;
+  height: auto;
+  border-width: 6px;
+  box-shadow: $box-shadow-lg;
+}
+
+// Enlaces sociales, en formato "pastilla"
+.social-pills {
+  margin-top: 2rem;
+
+  // Pandoc envuelve los seis enlaces en un <p>, así que el flex hay que
+  // ponerlo ahí. Estando en .social-pills, el gap se aplicaba al <p> y
+  // entre filas mandaba el interlineado (32,6 px) frente a pastillas de
+  // 39 px: se tocaban. El hueco de fila es mayor que el de columna para
+  // dejar sitio al pequeño salto que dan al pasar el cursor.
+  > p {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.6rem;
+    column-gap: 0.5rem;
+    margin: 0;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    border: 1px solid $dsg-hairline;
+    border-radius: $border-radius-pill;
+    padding: 0.4rem 1rem;
+    background-color: $white;
+    color: $gray-700;
+    font-family: $headings-font-family;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    text-decoration: none;
+    box-shadow: $box-shadow-sm;
+    transition: $dsg-ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: $dsg-shadow-hover;
+      border-color: rgba(42, 98, 146, 0.25);
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+}
+
+// Icono decorativo de cada tarjeta de la home
+.card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: $border-radius;
+  background-color: $dsg-primary-soft;
+  color: $primary;
+  font-size: 1.2rem;
+}
+
+// Sección "sobre mí"
+// Por defecto (móvil y tablet, < 992 px) va apilada y centrada: el
+// retrato arriba y el texto debajo. A partir de 992 px las dos celdas
+// de la rejilla se colocan lado a lado y el texto se alinea a la
+// izquierda, junto a la foto.
+.about-photo {
+  text-align: center;
+}
+
+.about-text {
+  text-align: center;
+
+  // Bloque centrado con líneas justificadas. text-align-last centra
+  // la última línea: si no, quedaría suelta a la izquierda y rompería
+  // la simetría de la columna.
+  .hero-lead-intro {
+    max-width: 34em;
+    margin-inline: auto;
+    text-align: justify;
+    text-align-last: center;
+  }
+
+  .social-pills > p {
+    justify-content: center;
+  }
+}
+
+// Escritorio: texto junto a la foto
+@media (min-width: 992px) {
+  .about-text {
+    text-align: left;
+
+    .hero-lead-intro {
+      margin-inline: 0;
+      // Al no ser ya un bloque centrado, la última línea vuelve a su
+      // sitio natural (izquierda), como en un párrafo justificado normal.
+      text-align-last: auto;
+    }
+
+    .social-pills > p {
+      justify-content: flex-start;
+    }
+  }
+}
+
+// Tarjetas de la home: lectura cómoda, sin justificado forzado
+.home-card {
+  text-align: left;
+
+  p:last-child { margin-bottom: 0; }
+}
+
+// =====================================================================
+//  J. Accesibilidad — respetar "reducir movimiento"
+// =====================================================================
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .animate-fade-up { opacity: 1; }
+
+  // La red se dibuja en un solo fotograma (lo decide el script) y se
+  // anulan parallax y desvanecido.
+  .hero-full__bg { transform: none !important; }
+
+  .hero-full__inner {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-scroll { opacity: 1; }
+  .hero-scroll__chevron { animation: none !important; }
+
+  .card:hover,
+  .quarto-grid-item:hover,
+  .quarto-post:hover,
+  .callout:hover,
+  .btn:hover,
+  .hover-lift:hover {
+    transform: none;
+  }
+}

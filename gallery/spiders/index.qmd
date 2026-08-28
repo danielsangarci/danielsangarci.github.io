@@ -1,0 +1,12 @@
+---
+title: "Spiders"
+image: ../../img/spider2_small.jpg
+---
+
+::: {.photo-grid}
+![](../../img/spider1_small.jpg){group="spiders"}
+
+![](../../img/spider2_small.jpg){group="spiders"}
+
+![](../../img/spider3_small.jpg){group="spiders"}
+:::

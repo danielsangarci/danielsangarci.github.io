@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  site-url: https://danielsangarci.github.io/
+  title: "Daniel Sánchez-García"
+  favicon: img/network.png
+  open-graph: true
+  twitter-card: 
+    card-style: summary_large_image
+    creator: "@DanielSánchez-García"
+  navbar:
+    background: "#88A7C2"
+    foreground: dark
+    search: false
+    pinned: false
+    right:
+      - href: index.qmd
+        text: Home
+      - research.qmd  
+      - publications.qmd
+      - text: CV
+        href: cv.pdf
+      - posts.qmd
+      - gallery.qmd
+      - contact.qmd
+      - icon: github
+        text: Report a Bug
+        href: https://github.com/danielsangarci/danielsangarci_website/issues/new
+  cookie-consent: true
+  reader-mode: false
+  google-analytics: "G-H3GD3Z7KWV"
+  
+  page-footer: 
+    left: |
+      {{< fa regular copyright >}} Daniel Sánchez-García, 2026<br>
+      All content licensed under {{< fa brands creative-commons >}}
+      {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} {{< fa brands creative-commons-nc >}} [(CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+      
+    right: |
+      Made with [{{< fa brands r-project >}}](https://posit.co/) and [Quarto](https://quarto.org/)<br>
+  
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: cosmo
+    fontsize: 1.2em
+    linestretch: 1.7
+    css: styles.css
+    toc: true
+    page-layout: full
+    linkcolor: "#2A6292"
+    smooth-scroll: true
+
+editor: visual
+

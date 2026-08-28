@@ -1,0 +1,41 @@
+---
+title: "Gallery"
+title-block-banner: false
+comments: false
+---
+
+{{< fa hammer >}} Under construction...
+
+If you are interested in any of images from this gallery or my [instagram account](https://www.instagram.com/danielsangarci_wildlife/?hl=es), please [contact me](contact.qmd).
+
+::: {layout-ncol="3"}
+![](img/messor_structor_small.jpg)
+
+![](img/bee1_small.jpg)
+
+![](img/caterpillar_small.jpg)
+
+![](img/ephem1_small.jpg)
+
+![](img/grasshopper_small.jpg)
+
+![](img/lasius_grandis_small.jpg)
+
+![](img/mantis1_small.jpg)
+
+![](img/snail1_small.jpg)
+
+![](img/solenopsis1_small.jpg)
+
+![](img/spider1_small.jpg)
+
+![](img/spider2_small.jpg)
+
+![](img/spider3_small.jpg)
+
+![](img/formica1_small.jpg)
+
+![](img/macu1_small.jpg)
+
+![](img/macu2_small.jpg)
+:::

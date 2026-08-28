@@ -6,9 +6,7 @@ comments: false
 
 {{< fa envelope >}}   [danielsangarci\@gmail.com](mailto:danielsangarci@gmail.com)
 
-{{< fa location-dot >}}   Doñana Biological Station (EBD - CSIC). Américo Vespucio, 26
-
-41092 Seville (Spain)
+{{< fa location-dot >}}   Doñana Biological Station (EBD - CSIC). Américo Vespucio, 26 41092 Seville (Spain)
 
 {{< fa people-group >}}   Department of Conservation and Global Change
 

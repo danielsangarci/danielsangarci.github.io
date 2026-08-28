@@ -21,5 +21,14 @@
       "/research/past_projects/ant-community-ecology-donana/ant-community-ecology-donana.html",
       "/research/past_projects/urban-heat-island-lasius/urban-heat-island-lasius.html"
     ]
+  },
+  {
+    "listing": "/gallery.html",
+    "items": [
+      "/gallery/ants/index.html",
+      "/gallery/butterflies-moths/index.html",
+      "/gallery/other-invertebrates/index.html",
+      "/gallery/spiders/index.html"
+    ]
   }
 ]

@@ -1,0 +1,12 @@
+---
+title: "Butterflies & moths"
+image: ../../img/macu1_small.jpg
+---
+
+::: {.photo-grid}
+![](../../img/macu1_small.jpg){group="lepidoptera"}
+
+![](../../img/macu2_small.jpg){group="lepidoptera"}
+
+![](../../img/caterpillar_small.jpg){group="lepidoptera"}
+:::

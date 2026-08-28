@@ -16,8 +16,8 @@ website:
     search: false
     pinned: false
     right:
-      - href: index.qmd
-        text: Home
+      - href: index.qmd#about
+        text: About me
       - research.qmd  
       - publications.qmd
       - text: CV
@@ -44,8 +44,8 @@ website:
 format:
   html:
     theme: 
-      light: cosmo
-      dark: cosmo
+      light: [cosmo, custom.scss]
+      dark: [cosmo, custom.scss]
     fontsize: 1.2em
     linestretch: 1.7
     css: styles.css

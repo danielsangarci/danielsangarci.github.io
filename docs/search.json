@@ -4,7 +4,7 @@
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "danielsangarci@gmail.com\n   Doñana Biological Station (EBD - CSIC). Américo Vespucio, 26\n41092 Seville (Spain)\n   Department of Conservation and Global Change"
+    "text": "danielsangarci@gmail.com\n   Doñana Biological Station (EBD - CSIC). Américo Vespucio, 26 41092 Seville (Spain)\n   Department of Conservation and Global Change"
   },
   {
     "objectID": "cv.html",
@@ -18,7 +18,7 @@
     "href": "gallery.html",
     "title": "Gallery",
     "section": "",
-    "text": "Under construction…\nIf you are interested in any of images from this gallery or my instagram account, please contact me."
+    "text": "Under construction…\nIf you are interested in any of images from this gallery or my instagram account, please contact me.\n\n\n\n\n\n\n\n\n\n\nAnts\n\n\n\n\n\n\n\n\n\n\n\n\nButterflies & moths\n\n\n\n\n\n\n\n\n\n\n\n\nOther invertebrates\n\n\n\n\n\n\n\n\n\n\n\n\nSpiders\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post_trial/index.html",
@@ -116,7 +116,7 @@
     "href": "index.html",
     "title": "DanielSánchez-García",
     "section": "",
-    "text": "I am an ecologist and Postdoctoral Researcher at the Doñana Biological Station (EBD-CSIC). My work explores the hidden layers of biodiversity—specifically species interactions within ant, microbiome and mycobiome communities.\nCurrently, I lead the PRELUDIUM project, where I investigate the role of ants as bacteria dispersal vectors and their indirect impact on plant health. While my PhD at the Museum and Institute of Zoology (Warsaw) was built on studying the multimodal adaptations (chemical, acoustic, and genetic) of social parasites, my current research focuses on species co-occurrence and host-microbiome interactions leveraging long-read sequencing technologies.\nI am a staunch defender of Open Science, reproducibility and “home-made” lab protocols. I believe in making high-level molecular ecology accessible by bridging the gap between benchwork and computational biology. A core part of my current technical workflow involves Oxford Nanopore sequencing and bioinformatics to streamline data processing from raw amplicon DNA reads to ecological insights.\nWhen not doing science you can also find me shooting macrophotography, which is a great way of getting cool images to use during your talks!\nFeel free to contact me for scientific collaboration or getting some of my photos to use in your papers/presentations."
+    "text": "DanielSánchez-García\n\n    Ants, microbiome and open science\n\n    \n      About me\n    \n  \n\n  \n    Scroll\n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nI am an ecologist and Postdoctoral Researcher at the Doñana Biological Station (EBD-CSIC). My work explores the hidden layers of biodiversity—specifically species interactions within ant, microbiome and mycobiome communities.\n\n\n Email  Google Scholar  instagram  Github  ORCID  Researchgate\n\n\n\n\n\n\nCurrently, I lead the PRELUDIUM project, where I investigate the role of ants as bacteria dispersal vectors and their indirect impact on plant health. While my PhD at the Museum and Institute of Zoology (Warsaw) was built on studying the multimodal adaptations (chemical, acoustic, and genetic) of social parasites, my current research focuses on species co-occurrence and host-microbiome interactions leveraging long-read sequencing technologies.\n\n\n\nI am a staunch defender of Open Science, reproducibility and “home-made” lab protocols. I believe in making high-level molecular ecology accessible by bridging the gap between benchwork and computational biology. A core part of my current technical workflow involves Oxford Nanopore sequencing and bioinformatics to streamline data processing from raw amplicon DNA reads to ecological insights.\n\n\n\n\n\nWhen not doing science you can also find me shooting macrophotography, which is a great way of getting cool images to use during your talks!\nFeel free to contact me for scientific collaboration or getting some of my photos to use in your papers/presentations."
   },
   {
     "objectID": "research.html#research-lines",
@@ -348,5 +348,33 @@
     "title": "Publications",
     "section": "2015",
     "text": "2015\n\nSánchez-García, D. and Espadaler, X. (2015) Cardiocondyla obscurior Wheeler, 1929 (Hymenoptera, Formicidae) en España. Iberomyrmex, 7: 7-9."
+  },
+  {
+    "objectID": "gallery.html#ants",
+    "href": "gallery.html#ants",
+    "title": "Gallery",
+    "section": "Ants",
+    "text": "Ants"
+  },
+  {
+    "objectID": "gallery.html#butterflies-moths",
+    "href": "gallery.html#butterflies-moths",
+    "title": "Gallery",
+    "section": "Butterflies & moths",
+    "text": "Butterflies & moths"
+  },
+  {
+    "objectID": "gallery.html#spiders",
+    "href": "gallery.html#spiders",
+    "title": "Gallery",
+    "section": "Spiders",
+    "text": "Spiders"
+  },
+  {
+    "objectID": "gallery.html#other-invertebrates",
+    "href": "gallery.html#other-invertebrates",
+    "title": "Gallery",
+    "section": "Other invertebrates",
+    "text": "Other invertebrates"
   }
 ]

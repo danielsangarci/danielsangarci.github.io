@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://danielsangarci.github.io/contact.html</loc>
-    <lastmod>2026-07-27T23:24:52.811Z</lastmod>
+    <lastmod>2026-08-28T13:10:58.685Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.github.io/cv.html</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://danielsangarci.github.io/gallery.html</loc>
-    <lastmod>2025-06-16T13:09:48.930Z</lastmod>
+    <lastmod>2026-08-28T10:08:30.571Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.github.io/posts/post_trial/index.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://danielsangarci.github.io/posts.html</loc>
-    <lastmod>2026-05-24T22:14:20.221Z</lastmod>
+    <lastmod>2026-08-28T11:50:42.809Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.github.io/projects/ant-community-ecology-donana/ant-community-ecology-donana.html</loc>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://danielsangarci.github.io/index.html</loc>
-    <lastmod>2026-07-26T12:35:50.854Z</lastmod>
+    <lastmod>2026-08-28T12:46:27.100Z</lastmod>
   </url>
   <url>
     <loc>https://danielsangarci.github.io/research/past_projects/ant-community-ecology-donana/ant-community-ecology-donana.html</loc>
@@ -107,5 +107,21 @@
   <url>
     <loc>https://danielsangarci.github.io/posts/dataviz/index.html</loc>
     <lastmod>2026-06-08T23:48:46.363Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielsangarci.github.io/gallery/spiders/index.html</loc>
+    <lastmod>2026-08-28T10:08:17.526Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielsangarci.github.io/gallery/ants/index.html</loc>
+    <lastmod>2026-08-28T10:08:17.521Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielsangarci.github.io/gallery/other-invertebrates/index.html</loc>
+    <lastmod>2026-08-28T10:08:17.528Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielsangarci.github.io/gallery/butterflies-moths/index.html</loc>
+    <lastmod>2026-08-28T10:08:17.524Z</lastmod>
   </url>
 </urlset>

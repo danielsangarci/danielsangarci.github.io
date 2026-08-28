@@ -1,0 +1,12 @@
+# Opciones comunes a todas las galerías de fotos de esta carpeta
+
+title-block-banner: false
+comments: false
+toc: false
+
+# Al pinchar una foto se abre a pantalla completa; las flechas
+# recorren solo las fotos de esta galería.
+lightbox:
+  match: auto
+  effect: fade
+  loop: true

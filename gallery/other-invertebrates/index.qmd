@@ -1,0 +1,16 @@
+---
+title: "Other invertebrates"
+image: ../../img/bee1_small.jpg
+---
+
+::: {.photo-grid}
+![](../../img/bee1_small.jpg){group="others"}
+
+![](../../img/grasshopper_small.jpg){group="others"}
+
+![](../../img/mantis1_small.jpg){group="others"}
+
+![](../../img/ephem1_small.jpg){group="others"}
+
+![](../../img/snail1_small.jpg){group="others"}
+:::
