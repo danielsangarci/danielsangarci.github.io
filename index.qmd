@@ -110,7 +110,7 @@ comments: false
     <p class="hero-full__tagline">Ants, microbiome and open science</p>
 
     <div class="hero-full__actions">
-      <a class="btn btn-sm hero-cta" href="#about">About me</a>
+      <a class="btn btn-sm hero-cta" href="#about"><span>About me</span></a>
     </div>
   </div>
 

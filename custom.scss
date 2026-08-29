@@ -721,24 +721,108 @@ main a:not(.btn):not(.nav-link):not(.about-link):not(.quarto-grid-link):not(.toc
 
 // Botón pequeño de la portada: discreto, al estilo "Learn more"
 .hero-cta {
-  padding: 0.6rem 1.6rem;
-  font-size: 0.82rem;
-  letter-spacing: 0.09em;
+  padding: 0.38rem 1rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
 }
 
-// Botón de la portada sobre el fondo claro
+// Botón de la portada. No lleva trazo pintado: el recuadro lo dibujan
+// cuatro líneas, una por lado, que cruzan su lado y vuelven a entrar
+// (patrón btn-21). El borde de 1.5px se queda transparente solo para que
+// la caja mida lo mismo, y las esquinas van rectas: sobre una píldora las
+// líneas chocarían con la curva.
 .hero-full .hero-cta {
-  border: 2px solid rgba(20, 33, 61, 0.55);
+  --hero-cta-luz: #{$primary};
+
+  position: relative;
+  overflow: hidden;
+  border: 1.5px solid transparent;
+  border-radius: 0;
   color: $dsg-ink;
-  background-color: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(4px);
+  background-color: transparent;
+  // El relleno va en el span para que las líneas corran por el borde exacto
+  padding: 0;
 
   &:hover,
   &:focus-visible {
+    // Sobre el fondo de tinta el azul se perdería
+    --hero-cta-luz: rgba(255, 255, 255, 0.92);
+
+    border-color: transparent;
     background-color: $dsg-ink;
-    border-color: $dsg-ink;
     color: #ffffff;
+  }
+
+  span {
+    position: relative;
+    display: block;
+    padding: 0.38rem 1rem;
+  }
+}
+
+// Las verticales llevan 1s de retardo, así que las cuatro nunca coinciden
+// y el recuadro parece dibujarse a trozos. Los lados de abajo y de la
+// izquierda salen del <span> porque un elemento solo tiene dos
+// pseudoelementos y aquí hacen falta cuatro.
+@keyframes heroCtaLineaDcha   { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+@keyframes heroCtaLineaIzda   { from { transform: translateX(100%); }  to { transform: translateX(-100%); } }
+@keyframes heroCtaLineaAbajo  { from { transform: translateY(-100%); } to { transform: translateY(100%); } }
+@keyframes heroCtaLineaArriba { from { transform: translateY(100%); }  to { transform: translateY(-100%); } }
+
+.hero-full .hero-cta {
+  // Arriba, de izquierda a derecha
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--hero-cta-luz));
+    animation: heroCtaLineaDcha 2s linear infinite;
+    pointer-events: none;
+  }
+
+  // Derecha, de arriba abajo. El transform la esconde durante el retardo
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(transparent, var(--hero-cta-luz));
+    transform: translateY(-100%);
+    animation: heroCtaLineaAbajo 2s linear 1s infinite;
+    pointer-events: none;
+  }
+
+  // Abajo, de derecha a izquierda
+  span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, var(--hero-cta-luz));
+    animation: heroCtaLineaIzda 2s linear infinite;
+    pointer-events: none;
+  }
+
+  // Izquierda, de abajo arriba
+  span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, var(--hero-cta-luz));
+    transform: translateY(-100%);
+    animation: heroCtaLineaArriba 2s linear 1s infinite;
+    pointer-events: none;
   }
 }
 
@@ -755,9 +839,9 @@ main a:not(.btn):not(.nav-link):not(.about-link):not(.quarto-grid-link):not(.toc
   // 0.72 mantiene el contraste por encima de 4.5:1 sobre el fondo claro
   color: rgba(20, 33, 61, 0.72);
   font-family: $headings-font-family;
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -773,8 +857,8 @@ main a:not(.btn):not(.nav-link):not(.about-link):not(.quarto-grid-link):not(.toc
 
 .hero-scroll__chevron {
   display: block;
-  width: 0.85rem;
-  height: 0.85rem;
+  width: 0.72rem;
+  height: 0.72rem;
   border-right: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
   transform: rotate(45deg);
@@ -1255,6 +1339,11 @@ a.lightbox {
 
   .hero-scroll { opacity: 1; }
   .hero-scroll__chevron { animation: none !important; }
+  .hero-full .hero-cta,
+  .hero-full .hero-cta::before,
+  .hero-full .hero-cta::after,
+  .hero-full .hero-cta span::before,
+  .hero-full .hero-cta span::after { animation: none !important; }
 
   .card:hover,
   .quarto-grid-item:hover,
