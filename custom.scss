@@ -25,7 +25,8 @@ $headings-font-family: "Montserrat", "Inter", -apple-system, BlinkMacSystemFont,
 
 // ---------------------------------------------------------------------
 //  2. Paleta — se conserva la identidad actual del sitio
-//     (#2A6292 enlaces / #88A7C2 navbar) sobre un fondo casi blanco.
+//     (#2A6292 enlaces / #DCE6EF navbar) sobre un fondo casi blanco.
+//     #88A7C2 sigue vivo en el resplandor del hero, las citas y btn-secondary.
 // ---------------------------------------------------------------------
 $white:    #ffffff;
 $gray-100: #f7f8f9;
@@ -826,6 +827,54 @@ main a:not(.btn):not(.nav-link):not(.about-link):not(.quarto-grid-link):not(.toc
   }
 }
 
+// --- Novedades de la portada -----------------------------------------
+// Lista de hitos: la fecha a la izquierda, en color y versalitas, para que
+// se pueda barrer la columna con la vista sin leer las entradas.
+.news-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Nada de flex aquí: en un contenedor flex cada <strong> o <em> de la
+// entrada se convertiría en un ítem suelto y el texto se partiría a
+// trozos. Con la fecha en absoluto, las líneas siguientes siguen
+// alineadas con la columna de texto.
+.news-list li {
+  position: relative;
+  padding: 0.65rem 0 0.65rem 6.4rem;
+  border-bottom: 1px solid $dsg-hairline;
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.news-date {
+  position: absolute;
+  top: 0.85rem;
+  left: 0;
+  font-family: $headings-font-family;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+// En móvil no hay sitio para la columna de fechas: la fecha pasa arriba
+@media (max-width: 575.98px) {
+  .news-list li {
+    padding-left: 0;
+    padding-top: 1.6rem;
+  }
+
+  .news-date {
+    top: 0.35rem;
+  }
+}
+
 // --- Invitación a bajar ---------------------------------------------
 .hero-scroll {
   position: absolute;
@@ -941,6 +990,16 @@ main a:not(.btn):not(.nav-link):not(.about-link):not(.quarto-grid-link):not(.toc
   letter-spacing: 0;
 }
 
+// Bootstrap pone el padding horizontal con .navbar-expand-lg .navbar-nav
+// .nav-link, que gana a cualquier regla de dos clases; hay que igualar esa
+// especificidad. Ajustado para que la marca, las ocho entradas y el
+// selector de tema quepan hasta en 992px, el ancho más estrecho antes del
+// menú hamburguesa.
+.navbar .navbar-nav .nav-link {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
 .navbar .nav-link {
   border-radius: $border-radius-pill;
   // El sitio va con fontsize: 1.2em, así que 0.9rem eran 17.3px reales y
@@ -948,14 +1007,44 @@ main a:not(.btn):not(.nav-link):not(.about-link):not(.quarto-grid-link):not(.toc
   font-size: 0.78rem;
   // Ningún enlace se parte por la mitad aunque la barra vaya justa
   white-space: nowrap;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
   transition: $dsg-ease;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.45);
+    // La barra es clara: el blanco puro es lo único que se distingue
+    background-color: rgba(255, 255, 255, 0.85);
     transform: translateY(-1px);
   }
+}
+
+// La marca no cede espacio al menú: con el nombre corto cabe entera en
+// cualquier ancho, así que se le quita el flex-shrink que le pone Quarto
+// (era lo que la recortaba con puntos suspensivos, no el tamaño de letra).
+.navbar .navbar-brand-container {
+  flex: 0 0 auto;
+}
+
+// height, no max-height: el SVG solo trae viewBox y sin altura explícita
+// el navegador lo calcula como 0
+.navbar .navbar-logo {
+  height: 2rem;
+  width: auto;
+  margin-right: 0.3rem;
+}
+
+// En móvil Quarto deja muy poco sitio a la marca (max-width: calc(100% -
+// 115px) menos el botón del menú y el selector de tema) y el nombre salía
+// cortado con puntos suspensivos. Ahí se queda solo el logo, que es el
+// patrón habitual en pantallas pequeñas.
+@media (max-width: 575.98px) {
+  .navbar .navbar-title {
+    display: none;
+  }
+}
+
+// El margen va solo en el enlace de la marca: puesto también en el título
+// se sumaba por dentro y la marca acababa ocupando más, no menos.
+.navbar .navbar-brand {
+  margin-right: 0.6rem;
 }
 
 .navbar .navbar-brand,
@@ -966,7 +1055,7 @@ main a:not(.btn):not(.nav-link):not(.about-link):not(.quarto-grid-link):not(.toc
   // El mínimo no baja más: en móvil Quarto limita la marca a
   // calc(100% - 115px) y el nombre completo necesitaría ~9 px a 320 px.
   // Ahí se corta con puntos suspensivos, como ya hacía antes.
-  font-size: clamp(0.85rem, 2.6vw + 0.3rem, 0.95rem);
+  font-size: clamp(0.85rem, 2.6vw + 0.3rem, 0.88rem);
 }
 
 

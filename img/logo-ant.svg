@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Daniel Sanchez-Garcia">
+  <g fill="none" stroke="#14213d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- antenas -->
+    <path d="M13 21 C9 17 7 14 6 10 M17 19 C16 13 16 10 17 6"/>
+    <!-- patas -->
+    <path d="M25 33 C21 38 19 42 17 47 M30 35 C29 41 29 45 29 50 M35 33 C39 38 42 41 45 45"/>
+    <!-- cintura -->
+    <path d="M20 27 L26 29 M35 31 L40 32"/>
+  </g>
+  <g fill="#14213d">
+    <ellipse cx="16" cy="24" rx="5.6" ry="5"/>
+    <ellipse cx="30" cy="30" rx="5" ry="4.4" transform="rotate(12 30 30)"/>
+    <ellipse cx="47" cy="34" rx="8.4" ry="6.8" transform="rotate(12 47 34)"/>
+  </g>
+</svg>

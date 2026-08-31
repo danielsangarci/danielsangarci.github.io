@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Daniel Sanchez-Garcia">
+  <g fill="none" stroke="#14213d" stroke-width="1.9" stroke-linecap="round">
+    <path d="M14 18 L32 12 M32 12 L50 22 M50 22 L44 42 M44 42 L22 46 M22 46 L14 18 M14 18 L44 42 M32 12 L22 46 M50 22 L22 46"/>
+  </g>
+  <g fill="#14213d">
+    <circle cx="32" cy="12" r="4"/>
+    <circle cx="50" cy="22" r="3.4"/>
+    <circle cx="44" cy="42" r="5.6"/>
+    <circle cx="22" cy="46" r="3.4"/>
+    <circle cx="14" cy="18" r="4.4"/>
+  </g>
+</svg>

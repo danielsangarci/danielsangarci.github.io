@@ -11,10 +11,16 @@ website:
     card-style: summary_large_image
     creator: "@DanielSánchez-García"
   navbar:
-    background: "#88A7C2"
+    background: "#DCE6EF"
     foreground: dark
     search: false
     pinned: false
+    # La marca va con el nombre corto: el completo no cabe junto a las ocho
+    # entradas del menu por debajo de ~1050px y Quarto lo cortaba con puntos
+    # suspensivos. El titulo completo sigue en la pestana del navegador.
+    logo: img/logo-ant-network.svg
+    logo-alt: "Daniel Sánchez-García"
+    title: "D. Sánchez-García"
     right:
       - href: index.qmd#about
         text: About me

@@ -358,4 +358,27 @@ When not doing science you can also find me shooting macrophotography, which is 
 Feel free to [contact me](contact.qmd) for scientific collaboration or getting some of my [photos](https://www.instagram.com/danielsangarci_wildlife/?hl=es) to use in your papers/presentations.
 :::
 ::::
+
+```{=html}
+<!-- Sección de novedades, lista y a la espera de contenido. Para
+     activarla: quitar esta línea de comentario y la del final, y añadir
+     una entrada por línea dentro de news-list, la más reciente arriba.
+     La fecha va en [ ]{.news-date} y el texto detrás. Con las 5 últimas
+     es suficiente. Mientras no haya noticias se queda sin renderizar:
+     una tarjeta "News" vacía en la portada parece un fallo.
+
+::::: {.grid .my-5}
+:::: {.g-col-12 .card .home-card .p-4 .animate-fade-up .delay-1}
+[{{< fa bullhorn >}}]{.card-icon}
+
+### News
+
+::: news-list
+- [Mes Año]{.news-date} Texto de la novedad.
+:::
+::::
+:::::
+
+-->
+```
 :::::::::::::
