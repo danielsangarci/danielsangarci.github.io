@@ -5,7 +5,7 @@ project:
 website:
   site-url: https://danielsangarci.github.io/
   title: "Daniel Sánchez-García"
-  favicon: img/network.png
+  favicon: img/favicon.png
   open-graph: true
   twitter-card: 
     card-style: summary_large_image
@@ -59,6 +59,7 @@ format:
     page-layout: full
     linkcolor: "#2A6292"
     smooth-scroll: true
+    include-in-header: icono.html
 
 editor: visual
 
