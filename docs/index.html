@@ -724,6 +724,47 @@ cookieconsent.run({
     requestAnimationFrame(paso);
   }
 
+  // El "About me" del menú va directo al perfil, sin recorrer la portada.
+  // Su enlace apunta a /#about, que desde /index.html el navegador trata
+  // como otra URL y recarga la página entera enseñando el hero de nuevo.
+  document.addEventListener('click', function (ev) {
+    var deMenu = ev.target.closest('.navbar a');
+    if (!deMenu) return;
+
+    var salto = deMenu.hash;
+    if (!salto || salto === '#') return;
+
+    var seccion = document.querySelector(salto);
+    // Si el ancla no existe aquí, es un enlace a otra página: se deja pasar
+    if (!seccion) return;
+
+    ev.preventDefault();
+
+    var hueco = parseFloat(getComputedStyle(seccion).scrollMarginTop) || 0;
+    var y = seccion.getBoundingClientRect().top + window.pageYOffset - hueco;
+
+    var doc = document.documentElement;
+    var previo = doc.style.scrollBehavior;
+    doc.style.scrollBehavior = 'auto';
+    window.scrollTo(0, Math.max(0, y));
+    doc.style.scrollBehavior = previo;
+
+    // En móvil el menú desplegable se queda abierto si no navegamos
+    var desplegable = document.querySelector('.navbar-collapse.show');
+    if (desplegable) {
+      if (window.bootstrap && window.bootstrap.Collapse) {
+        var col = window.bootstrap.Collapse.getInstance(desplegable);
+        if (col) col.hide(); else desplegable.classList.remove('show');
+      } else {
+        desplegable.classList.remove('show');
+      }
+    }
+
+    if (window.history && history.pushState) {
+      history.pushState(null, '', salto);
+    }
+  });
+
   document.addEventListener('click', function (ev) {
     // Ojo: Quarto reescribe los href a URL absoluta al cargar, así que no
     // sirve buscar [href^="#"]; se mira el hash ya resuelto del enlace.
