@@ -307,6 +307,87 @@ comments: false
   });
 })();
 </script>
+
+<script>
+// ---------------------------------------------------------------------
+//  Bajada lenta desde la portada
+//  El scroll suave del navegador dura lo que él decide (unos 400ms) y no
+//  se puede ajustar, así que la bajada al perfil se anima a mano: 1.6s
+//  con una curva que arranca y frena despacio. Solo afecta a los dos
+//  enlaces de la portada; el resto de anclas del sitio siguen igual.
+// ---------------------------------------------------------------------
+(function () {
+  var DURACION = 1600;
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  // Empieza y termina despacio, con el grueso del recorrido por el medio
+  function suavizar(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  }
+
+  function destino(el) {
+    // scroll-margin-top ya reserva el alto de la barra: se respeta el
+    // mismo hueco que usa el salto normal del navegador
+    var margen = parseFloat(getComputedStyle(el).scrollMarginTop) || 0;
+    var tope = el.getBoundingClientRect().top + window.pageYOffset - margen;
+    var maximo = document.documentElement.scrollHeight - window.innerHeight;
+    return Math.max(0, Math.min(tope, maximo));
+  }
+
+  function bajar(el) {
+    var inicio = window.pageYOffset;
+    var fin = destino(el);
+    var recorrido = fin - inicio;
+    if (Math.abs(recorrido) < 2) return;
+
+    // El scroll-behavior de la hoja de estilos pelearía con la animación
+    var raiz = document.documentElement;
+    var comportamiento = raiz.style.scrollBehavior;
+    raiz.style.scrollBehavior = 'auto';
+
+    var arranque = null;
+    function paso(ahora) {
+      if (arranque === null) arranque = ahora;
+      var t = Math.min((ahora - arranque) / DURACION, 1);
+      window.scrollTo(0, inicio + recorrido * suavizar(t));
+      if (t < 1) {
+        requestAnimationFrame(paso);
+      } else {
+        raiz.style.scrollBehavior = comportamiento;
+      }
+    }
+    requestAnimationFrame(paso);
+  }
+
+  document.addEventListener('click', function (ev) {
+    // Ojo: Quarto reescribe los href a URL absoluta al cargar, así que no
+    // sirve buscar [href^="#"]; se mira el hash ya resuelto del enlace.
+    var enlace = ev.target.closest('.hero-full a');
+    if (!enlace) return;
+
+    var hash = enlace.hash;
+    if (!hash || hash === '#') return;
+
+    var destinoEl = document.querySelector(hash);
+    if (!destinoEl) return;
+
+    ev.preventDefault();
+
+    if (reduce.matches) {
+      destinoEl.scrollIntoView();
+    } else {
+      bajar(destinoEl);
+    }
+
+    // La URL se actualiza igual que en un salto normal, pero sin dar el
+    // brinco que provocaría cambiar el hash directamente
+    if (window.history && history.pushState) {
+      history.pushState(null, '', hash);
+    }
+  });
+})();
+</script>
 ```
 :::
 
