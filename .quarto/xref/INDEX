@@ -97,5 +97,20 @@
   },
   "posts/data_plotter/index.qmd": {
     "index.html": "58548794"
+  },
+  "posts/dataviz/index.qmd": {
+    "index.html": "4a8b110c"
+  },
+  "gallery/ants/index.qmd": {
+    "index.html": "546cf428"
+  },
+  "gallery/other-invertebrates/index.qmd": {
+    "index.html": "e94a296b"
+  },
+  "gallery/spiders/index.qmd": {
+    "index.html": "02af1e17"
+  },
+  "gallery/butterflies-moths/index.qmd": {
+    "index.html": "e620d295"
   }
 }

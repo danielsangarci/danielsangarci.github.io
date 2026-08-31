@@ -943,7 +943,13 @@ main a:not(.btn):not(.nav-link):not(.about-link):not(.quarto-grid-link):not(.toc
 
 .navbar .nav-link {
   border-radius: $border-radius-pill;
-  font-size: 0.9rem;
+  // El sitio va con fontsize: 1.2em, así que 0.9rem eran 17.3px reales y
+  // por debajo de ~1200px cada enlace partía su texto en dos líneas.
+  font-size: 0.78rem;
+  // Ningún enlace se parte por la mitad aunque la barra vaya justa
+  white-space: nowrap;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
   transition: $dsg-ease;
 
   &:hover {
