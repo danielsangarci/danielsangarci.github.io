@@ -310,6 +310,54 @@ comments: false
 
 <script>
 // ---------------------------------------------------------------------
+//  Llegada con #ancla desde otra página
+//  Al cargar la portada con /#about el navegador coloca el ancla varias
+//  veces: primero con la maqueta a medio hacer, y otra vez cuando entran
+//  las fuentes, la foto y el script que mueve la barra bajo el hero. Con
+//  scroll-behavior: smooth cada reajuste se ve como un barrido rápido por
+//  la portada. Aquí se apaga el suavizado mientras la página se asienta y
+//  se recoloca el ancla en seco, así se aterriza directamente en la ficha.
+// ---------------------------------------------------------------------
+(function () {
+  if (!window.location.hash || window.location.hash === '#') return;
+
+  var doc = document.documentElement;
+  var suavizadoOriginal = doc.style.scrollBehavior;
+  doc.style.scrollBehavior = 'auto';
+
+  // Si la persona toca el scroll, dejamos de recolocar: manda ella
+  var tocado = false;
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (evt) {
+    window.addEventListener(evt, function () { tocado = true; },
+                            { passive: true, once: true });
+  });
+
+  function colocar() {
+    if (tocado) return;
+    var seccion = document.querySelector(window.location.hash);
+    if (!seccion) return;
+    var hueco = parseFloat(getComputedStyle(seccion).scrollMarginTop) || 0;
+    var y = Math.max(0, seccion.getBoundingClientRect().top +
+                        window.pageYOffset - hueco);
+    if (Math.abs(y - window.pageYOffset) > 1) window.scrollTo(0, y);
+  }
+
+  document.addEventListener('DOMContentLoaded', colocar);
+  window.addEventListener('load', function () {
+    colocar();
+    // La foto y las fuentes siguen moviendo la maqueta un poco después
+    setTimeout(colocar, 150);
+    setTimeout(colocar, 400);
+    setTimeout(function () {
+      colocar();
+      doc.style.scrollBehavior = suavizadoOriginal;
+    }, 700);
+  });
+})();
+</script>
+
+<script>
+// ---------------------------------------------------------------------
 //  Bajada lenta desde la portada
 //  El scroll suave del navegador dura lo que él decide (unos 400ms) y no
 //  se puede ajustar, así que la bajada al perfil se anima a mano: 1.6s
